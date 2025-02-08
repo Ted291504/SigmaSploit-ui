@@ -47,8 +47,8 @@ Main.Parent = OKAYOKAYIMNOTGAY
 Main.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.194053203, 0, 0.208002463, 0)
-Main.Size = UDim2.new(0, 390, 0, 208)
+Main.Position = UDim2.new(0.0841810405, 0, 0.0913306326, 0)
+Main.Size = UDim2.new(0, 460, 0, 249)
 
 UICorner.Parent = Main
 
@@ -57,7 +57,8 @@ Top.Parent = Main
 Top.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Top.BorderSizePixel = 0
-Top.Size = UDim2.new(0, 390, 0, 32)
+Top.Position = UDim2.new(3.31712791e-08, 0, 0, 0)
+Top.Size = UDim2.new(0, 459, 0, 32)
 
 UICorner_2.Parent = Top
 
@@ -87,7 +88,7 @@ ScriptSearch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptSearch.BackgroundTransparency = 1.000
 ScriptSearch.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptSearch.BorderSizePixel = 0
-ScriptSearch.Position = UDim2.new(0.905477345, 0, 0.1875, 0)
+ScriptSearch.Position = UDim2.new(0.931621134, 0, 0.1875, 0)
 ScriptSearch.Size = UDim2.new(0, 25, 0, 22)
 ScriptSearch.Image = "rbxassetid://97239278789958"
 
@@ -96,8 +97,8 @@ Home_tab.Parent = Main
 Home_tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Home_tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home_tab.BorderSizePixel = 0
-Home_tab.Position = UDim2.new(0.0233027525, 0, 0.213322863, 0)
-Home_tab.Size = UDim2.new(0, 370, 0, 148)
+Home_tab.Position = UDim2.new(0.0233026911, 0, 0.164014831, 0)
+Home_tab.Size = UDim2.new(0, 442, 0, 198)
 Home_tab.Visible = false
 
 UICorner_3.Parent = Home_tab
@@ -144,8 +145,8 @@ Exec_Tab.Parent = Main
 Exec_Tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Exec_Tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Exec_Tab.BorderSizePixel = 0
-Exec_Tab.Position = UDim2.new(0.0233027525, 0, 0.213322863, 0)
-Exec_Tab.Size = UDim2.new(0, 370, 0, 148)
+Exec_Tab.Position = UDim2.new(0.0229999367, 0, 0.16399996, 0)
+Exec_Tab.Size = UDim2.new(0, 442, 0, 198)
 Exec_Tab.Visible = false
 
 UICorner_5.Parent = Exec_Tab
@@ -155,8 +156,8 @@ Exec_text.Parent = Exec_Tab
 Exec_text.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Exec_text.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Exec_text.BorderSizePixel = 0
-Exec_text.Position = UDim2.new(0.0270270277, 0, 0.0405405387, 0)
-Exec_text.Size = UDim2.new(0, 352, 0, 108)
+Exec_text.Position = UDim2.new(0.0270271134, 0, 0.0405405983, 0)
+Exec_text.Size = UDim2.new(0, 423, 0, 140)
 Exec_text.Font = Enum.Font.SourceSans
 Exec_text.PlaceholderText = "print(\"SigmaSploit Beta\")"
 Exec_text.Text = ""
@@ -170,8 +171,8 @@ Execute_button.Parent = Exec_Tab
 Execute_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Execute_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Execute_button.BorderSizePixel = 0
-Execute_button.Position = UDim2.new(0.0270270277, 0, 0.844594598, 0)
-Execute_button.Size = UDim2.new(0, 110, 0, 23)
+Execute_button.Position = UDim2.new(0.0270270444, 0, 0.804190576, 0)
+Execute_button.Size = UDim2.new(0, 110, 0, 30)
 Execute_button.Font = Enum.Font.SourceSans
 Execute_button.Text = "Execute"
 Execute_button.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -184,8 +185,8 @@ Clear_button.Parent = Exec_Tab
 Clear_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Clear_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Clear_button.BorderSizePixel = 0
-Clear_button.Position = UDim2.new(0.681081057, 0, 0.844594598, 0)
-Clear_button.Size = UDim2.new(0, 110, 0, 23)
+Clear_button.Position = UDim2.new(0.733117282, 0, 0.804406345, 0)
+Clear_button.Size = UDim2.new(0, 110, 0, 30)
 Clear_button.Font = Enum.Font.SourceSans
 Clear_button.Text = "Clear"
 Clear_button.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -198,8 +199,8 @@ Paste_button.Parent = Exec_Tab
 Paste_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Paste_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Paste_button.BorderSizePixel = 0
-Paste_button.Position = UDim2.new(0.354054064, 0, 0.844594598, 0)
-Paste_button.Size = UDim2.new(0, 110, 0, 23)
+Paste_button.Position = UDim2.new(0.35857892, 0, 0.804190576, 0)
+Paste_button.Size = UDim2.new(0, 110, 0, 30)
 Paste_button.Font = Enum.Font.SourceSans
 Paste_button.Text = "Paste"
 Paste_button.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -212,8 +213,8 @@ ScriptSearch_tab.Parent = Main
 ScriptSearch_tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 ScriptSearch_tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptSearch_tab.BorderSizePixel = 0
-ScriptSearch_tab.Position = UDim2.new(0.0233027525, 0, 0.213322863, 0)
-ScriptSearch_tab.Size = UDim2.new(0, 370, 0, 148)
+ScriptSearch_tab.Position = UDim2.new(0.0233026911, 0, 0.164014831, 0)
+ScriptSearch_tab.Size = UDim2.new(0, 442, 0, 198)
 
 UICorner_10.Parent = ScriptSearch_tab
 
@@ -222,8 +223,8 @@ Search.Parent = ScriptSearch_tab
 Search.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Search.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Search.BorderSizePixel = 0
-Search.Position = UDim2.new(0.024324283, 0, 0.0675675645, 0)
-Search.Size = UDim2.new(0, 352, 0, 33)
+Search.Position = UDim2.new(0.0243243016, 0, 0.0675675794, 0)
+Search.Size = UDim2.new(0, 423, 0, 33)
 Search.Font = Enum.Font.SourceSans
 Search.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
 Search.PlaceholderText = "Powered by ScriptBlox.com"
@@ -238,8 +239,8 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0.024324324, 0, 0.364341527, 0)
-ScrollingFrame.Size = UDim2.new(0, 352, 0, 87)
+ScrollingFrame.Position = UDim2.new(0.0243243016, 0, 0.289362222, 0)
+ScrollingFrame.Size = UDim2.new(0, 423, 0, 139)
 
 UICorner_12.Parent = ScrollingFrame
 
@@ -260,7 +261,7 @@ UICorner_13.Parent = Show_button
 
 -- Scripts:
 
-local function NLJZOIV_fake_script() -- Home.LocalScript 
+local function GUXUH_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	local TweenService = game:GetService("TweenService")
@@ -311,8 +312,8 @@ local function NLJZOIV_fake_script() -- Home.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NLJZOIV_fake_script)()
-local function ESTWGKD_fake_script() -- Exec.LocalScript 
+coroutine.wrap(GUXUH_fake_script)()
+local function SZNWRO_fake_script() -- Exec.LocalScript 
 	local script = Instance.new('LocalScript', Exec)
 
 	local TweenService = game:GetService("TweenService")
@@ -363,8 +364,8 @@ local function ESTWGKD_fake_script() -- Exec.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ESTWGKD_fake_script)()
-local function MQWQ_fake_script() -- ScriptSearch.LocalScript 
+coroutine.wrap(SZNWRO_fake_script)()
+local function KXSXHVV_fake_script() -- ScriptSearch.LocalScript 
 	local script = Instance.new('LocalScript', ScriptSearch)
 
 	local TweenService = game:GetService("TweenService")
@@ -415,8 +416,8 @@ local function MQWQ_fake_script() -- ScriptSearch.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MQWQ_fake_script)()
-local function ZUKIZXK_fake_script() -- Execute_button.LocalScript 
+coroutine.wrap(KXSXHVV_fake_script)()
+local function MNOCFQ_fake_script() -- Execute_button.LocalScript 
 	local script = Instance.new('LocalScript', Execute_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
@@ -434,8 +435,8 @@ local function ZUKIZXK_fake_script() -- Execute_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZUKIZXK_fake_script)()
-local function ZGGKY_fake_script() -- Clear_button.LocalScript 
+coroutine.wrap(MNOCFQ_fake_script)()
+local function XVXUR_fake_script() -- Clear_button.LocalScript 
 	local script = Instance.new('LocalScript', Clear_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
@@ -445,8 +446,8 @@ local function ZGGKY_fake_script() -- Clear_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZGGKY_fake_script)()
-local function DOAJB_fake_script() -- Paste_button.LocalScript 
+coroutine.wrap(XVXUR_fake_script)()
+local function WHBBI_fake_script() -- Paste_button.LocalScript 
 	local script = Instance.new('LocalScript', Paste_button)
 
 	TextBox = script.Parent.Parent.Exec_text
@@ -454,8 +455,8 @@ local function DOAJB_fake_script() -- Paste_button.LocalScript
 		TextBox.Text = getclipboard()
 	end)
 end
-coroutine.wrap(DOAJB_fake_script)()
-local function PNOFZ_fake_script() -- Search.LocalScript 
+coroutine.wrap(WHBBI_fake_script)()
+local function LVYRCRG_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local textBox = script.Parent
@@ -509,9 +510,11 @@ local function PNOFZ_fake_script() -- Search.LocalScript
 					local scriptName = scriptData.title or "Unknown"
 					local scriptContent = scriptData.script or ""
 					local isVerified = scriptData.verified or false
+					local hasKey = scriptData.key or false
 					local gameName = scriptData.game and scriptData.game.name or "Unknown Game"
+					local views = scriptData.views or 0
 	
-					local resultFrame = createRoundedFrame(scrollingFrame, UDim2.new(1, -10, 0, 70), UDim2.new(0, 5, 0, 0))
+					local resultFrame = createRoundedFrame(scrollingFrame, UDim2.new(1, -10, 0, 80), UDim2.new(0, 5, 0, 0))
 					resultFrame.LayoutOrder = #scrollingFrame:GetChildren()
 	
 					local verifiedLabel = Instance.new("TextLabel")
@@ -522,9 +525,18 @@ local function PNOFZ_fake_script() -- Search.LocalScript
 					verifiedLabel.BackgroundTransparency = 1
 					verifiedLabel.Parent = resultFrame
 	
+					local viewsLabel = Instance.new("TextLabel")
+					viewsLabel.Size = UDim2.new(0, 60, 0, 20)
+					viewsLabel.Position = UDim2.new(1, -65, 0, 5)
+					viewsLabel.Text = "👀 " .. views
+					viewsLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+					viewsLabel.TextXAlignment = Enum.TextXAlignment.Right
+					viewsLabel.BackgroundTransparency = 1
+					viewsLabel.Parent = resultFrame
+	
 					local detailsFrame = Instance.new("Frame")
 					detailsFrame.Size = UDim2.new(0.7, -10, 1, -10)
-					detailsFrame.Position = UDim2.new(0, 30, 0.5, -25)
+					detailsFrame.Position = UDim2.new(0, 30, 0.5, -30)
 					detailsFrame.BackgroundTransparency = 1
 					detailsFrame.Parent = resultFrame
 	
@@ -544,9 +556,17 @@ local function PNOFZ_fake_script() -- Search.LocalScript
 					gameNameLabel.BackgroundTransparency = 1
 					gameNameLabel.Parent = detailsFrame
 	
+					local keyLabel = Instance.new("TextLabel")
+					keyLabel.Size = UDim2.new(1, 0, 0.3, 0)
+					keyLabel.Position = UDim2.new(0, 0, 0.7, 0)
+					keyLabel.Text = "Key: " .. (hasKey and "🔑" or "❌")
+					keyLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+					keyLabel.BackgroundTransparency = 1
+					keyLabel.Parent = detailsFrame
+	
 					local executeButton = Instance.new("TextButton")
-					executeButton.Size = UDim2.new(0.2, -10, 0.8, 0)
-					executeButton.Position = UDim2.new(0.8, 5, 0.1, 0)
+					executeButton.Size = UDim2.new(0.1, 0, 0.5, 0)
+					executeButton.Position = UDim2.new(0.88, 0, 0.25, 0)
 					executeButton.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
 					executeButton.Text = "Execute"
 					executeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -580,8 +600,8 @@ local function PNOFZ_fake_script() -- Search.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PNOFZ_fake_script)()
-local function NPTQP_fake_script() -- Main.LocalScript 
+coroutine.wrap(LVYRCRG_fake_script)()
+local function GGTY_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -648,8 +668,8 @@ local function NPTQP_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NPTQP_fake_script)()
-local function GFXHJ_fake_script() -- Show_button.LocalScript 
+coroutine.wrap(GGTY_fake_script)()
+local function VKRYHIO_fake_script() -- Show_button.LocalScript 
 	local script = Instance.new('LocalScript', Show_button)
 
 	local UIS = game:GetService("UserInputService")
@@ -693,4 +713,4 @@ local function GFXHJ_fake_script() -- Show_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(GFXHJ_fake_script)()
+coroutine.wrap(VKRYHIO_fake_script)()
