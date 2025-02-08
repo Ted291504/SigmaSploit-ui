@@ -230,7 +230,7 @@ UICorner_10.Parent = Show_button
 
 -- Scripts:
 
-local function KOPSF_fake_script() -- Close.LocalScript 
+local function BUDLCFB_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	-- do not modify
@@ -249,8 +249,8 @@ local function KOPSF_fake_script() -- Close.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KOPSF_fake_script)()
-local function AWRW_fake_script() -- Home.LocalScript 
+coroutine.wrap(BUDLCFB_fake_script)()
+local function OJYWPCJ_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	local TweenService = game:GetService("TweenService")
@@ -301,8 +301,8 @@ local function AWRW_fake_script() -- Home.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AWRW_fake_script)()
-local function IYMJ_fake_script() -- Exec.LocalScript 
+coroutine.wrap(OJYWPCJ_fake_script)()
+local function NZGJJAN_fake_script() -- Exec.LocalScript 
 	local script = Instance.new('LocalScript', Exec)
 
 	local TweenService = game:GetService("TweenService")
@@ -353,8 +353,8 @@ local function IYMJ_fake_script() -- Exec.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IYMJ_fake_script)()
-local function BNUXTK_fake_script() -- Settings.LocalScript 
+coroutine.wrap(NZGJJAN_fake_script)()
+local function JPFWLK_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	local TweenService = game:GetService("TweenService")
@@ -405,8 +405,8 @@ local function BNUXTK_fake_script() -- Settings.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BNUXTK_fake_script)()
-local function SLPP_fake_script() -- Execute_button.LocalScript 
+coroutine.wrap(JPFWLK_fake_script)()
+local function YTLT_fake_script() -- Execute_button.LocalScript 
 	local script = Instance.new('LocalScript', Execute_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
@@ -424,8 +424,8 @@ local function SLPP_fake_script() -- Execute_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(SLPP_fake_script)()
-local function HXWCAP_fake_script() -- Clear_button.LocalScript 
+coroutine.wrap(YTLT_fake_script)()
+local function TFNEP_fake_script() -- Clear_button.LocalScript 
 	local script = Instance.new('LocalScript', Clear_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
@@ -435,18 +435,17 @@ local function HXWCAP_fake_script() -- Clear_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(HXWCAP_fake_script)()
-local function VNTWW_fake_script() -- Paste_button.LocalScript 
+coroutine.wrap(TFNEP_fake_script)()
+local function VHNY_fake_script() -- Paste_button.LocalScript 
 	local script = Instance.new('LocalScript', Paste_button)
 
 	TextBox = script.Parent.Parent.Exec_text
-	TextBox.Text = getclipboard()
 	script.Parent.MouseButton1Click:Connect(function()
 		TextBox.Text = getclipboard()
 	end)
 end
-coroutine.wrap(VNTWW_fake_script)()
-local function MIDPA_fake_script() -- Main.LocalScript 
+coroutine.wrap(VHNY_fake_script)()
+local function ZKFM_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -513,8 +512,8 @@ local function MIDPA_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MIDPA_fake_script)()
-local function ZURQKZX_fake_script() -- Show_button.LocalScript 
+coroutine.wrap(ZKFM_fake_script)()
+local function DDCRC_fake_script() -- Show_button.LocalScript 
 	local script = Instance.new('LocalScript', Show_button)
 
 	local UIS = game:GetService("UserInputService")
@@ -552,4 +551,4 @@ local function ZURQKZX_fake_script() -- Show_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZURQKZX_fake_script)()
+coroutine.wrap(DDCRC_fake_script)()
