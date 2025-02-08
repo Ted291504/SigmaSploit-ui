@@ -230,7 +230,7 @@ UICorner_10.Parent = Show_button
 
 -- Scripts:
 
-local function QRMKFV_fake_script() -- Close.LocalScript 
+local function DMADKP_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	-- do not modify
@@ -249,8 +249,8 @@ local function QRMKFV_fake_script() -- Close.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QRMKFV_fake_script)()
-local function QCNUIC_fake_script() -- Home.LocalScript 
+coroutine.wrap(DMADKP_fake_script)()
+local function GQHFPN_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	local TweenService = game:GetService("TweenService")
@@ -301,8 +301,8 @@ local function QCNUIC_fake_script() -- Home.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QCNUIC_fake_script)()
-local function LLCRBTA_fake_script() -- Exec.LocalScript 
+coroutine.wrap(GQHFPN_fake_script)()
+local function ABNVWT_fake_script() -- Exec.LocalScript 
 	local script = Instance.new('LocalScript', Exec)
 
 	local TweenService = game:GetService("TweenService")
@@ -353,8 +353,8 @@ local function LLCRBTA_fake_script() -- Exec.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LLCRBTA_fake_script)()
-local function ZSPP_fake_script() -- Settings.LocalScript 
+coroutine.wrap(ABNVWT_fake_script)()
+local function ZJVT_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	local TweenService = game:GetService("TweenService")
@@ -405,8 +405,8 @@ local function ZSPP_fake_script() -- Settings.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZSPP_fake_script)()
-local function QTFMUQ_fake_script() -- Execute_button.LocalScript 
+coroutine.wrap(ZJVT_fake_script)()
+local function PCNDM_fake_script() -- Execute_button.LocalScript 
 	local script = Instance.new('LocalScript', Execute_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
@@ -424,26 +424,26 @@ local function QTFMUQ_fake_script() -- Execute_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(QTFMUQ_fake_script)()
-local function UGVFMQK_fake_script() -- Clear_button.LocalScript 
+coroutine.wrap(PCNDM_fake_script)()
+local function JZCYJQV_fake_script() -- Clear_button.LocalScript 
 	local script = Instance.new('LocalScript', Clear_button)
 
-	local TextBox = script.Parent.Parent
+	local TextBox = script.Parent.Parent.Exec_text
 	local ClearButton = script.Parent
 	ClearButton.MouseButton1Click:Connect(function()
 		TextBox.Text = ""
 	end)
 	
 end
-coroutine.wrap(UGVFMQK_fake_script)()
-local function EWFNBD_fake_script() -- Paste_button.LocalScript 
+coroutine.wrap(JZCYJQV_fake_script)()
+local function FJMWL_fake_script() -- Paste_button.LocalScript 
 	local script = Instance.new('LocalScript', Paste_button)
 
 	TextBox = script.Parent.Parent.Exec_text
 	TextBox.Text = getclipboard()
 end
-coroutine.wrap(EWFNBD_fake_script)()
-local function NKAKJ_fake_script() -- Main.LocalScript 
+coroutine.wrap(FJMWL_fake_script)()
+local function YSGM_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -475,10 +475,43 @@ local function NKAKJ_fake_script() -- Main.LocalScript
 			button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		end
 	end)
+	local UserInputService = game:GetService("UserInputService")
 	
+	
+	local MainFrame = script.Parent
+	local TopBar = script.Parent
+	
+	local Camera = workspace:WaitForChild("Camera")
+	
+	local DragMousePosition
+	local FramePosition
+	
+	
+	local Draggable = false
+	
+	TopBar.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Draggable = true
+			DragMousePosition = Vector2.new(input.Position.X, input.Position.Y)
+			FramePosition= Vector2.new(MainFrame.Position.X.Scale, MainFrame.Position.Y.Scale)
+		end
+	end)
+	
+	TopBar.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Draggable = false
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if Draggable == true then
+			local NewPosition = FramePosition + ( (Vector2.new(input.Position.X, input.Position.Y) - DragMousePosition) / Camera.ViewportSize)
+			MainFrame.Position = UDim2.new(NewPosition.X, 0, NewPosition.Y, 0)
+		end
+	end)
 end
-coroutine.wrap(NKAKJ_fake_script)()
-local function IGOZBAC_fake_script() -- Show_button.LocalScript 
+coroutine.wrap(YSGM_fake_script)()
+local function OXINOQ_fake_script() -- Show_button.LocalScript 
 	local script = Instance.new('LocalScript', Show_button)
 
 	local UIS = game:GetService("UserInputService")
@@ -516,4 +549,4 @@ local function IGOZBAC_fake_script() -- Show_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(IGOZBAC_fake_script)()
+coroutine.wrap(OXINOQ_fake_script)()
