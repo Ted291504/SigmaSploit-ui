@@ -230,15 +230,16 @@ UICorner_10.Parent = Show_button
 
 -- Scripts:
 
-local function XSAMIB_fake_script() -- Close.LocalScript 
+local function EZEC_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
-
-coroutine.wrap(XSAMIB_fake_script)()
-local function XYME_fake_script() -- Home.LocalScript 
-	
+end
+coroutine.wrap(EZEC_fake_script)()
+local function EILK_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
 
 	local TweenService = game:GetService("TweenService")
 	
@@ -288,8 +289,8 @@ local function XYME_fake_script() -- Home.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XYME_fake_script)()
-local function NFWAA_fake_script() -- Exec.LocalScript 
+coroutine.wrap(EILK_fake_script)()
+local function GXPCC_fake_script() -- Exec.LocalScript 
 	local script = Instance.new('LocalScript', Exec)
 
 	local TweenService = game:GetService("TweenService")
@@ -340,8 +341,9 @@ local function NFWAA_fake_script() -- Exec.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NFWAA_fake_script)()
-local function ZCVB_fake_script() -- Settings.LocalScript 
+coroutine.wrap(GXPCC_fake_script)()
+local function CZZMBTJ_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
 
 	local TweenService = game:GetService("TweenService")
 	
@@ -391,8 +393,9 @@ local function ZCVB_fake_script() -- Settings.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZCVB_fake_script)()
-local function ABTKGT_fake_script() -- Execute_button.LocalScript 
+coroutine.wrap(CZZMBTJ_fake_script)()
+local function NJLCZ_fake_script() -- Execute_button.LocalScript 
+	local script = Instance.new('LocalScript', Execute_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
 	
@@ -409,8 +412,9 @@ local function ABTKGT_fake_script() -- Execute_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(ABTKGT_fake_script)()
-local function WCSETAV_fake_script() -- Clear_button.LocalScript 
+coroutine.wrap(NJLCZ_fake_script)()
+local function HWPMLA_fake_script() -- Clear_button.LocalScript 
+	local script = Instance.new('LocalScript', Clear_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
 	local ClearButton = script.Parent
@@ -419,16 +423,18 @@ local function WCSETAV_fake_script() -- Clear_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(WCSETAV_fake_script)()
-local function MGQELLV_fake_script() -- Paste_button.LocalScript 
+coroutine.wrap(HWPMLA_fake_script)()
+local function EZJSPR_fake_script() -- Paste_button.LocalScript 
+	local script = Instance.new('LocalScript', Paste_button)
 
 	TextBox = script.Parent.Parent.Exec_text
 	script.Parent.MouseButton1Click:Connect(function()
 		TextBox.Text = getclipboard()
 	end)
 end
-coroutine.wrap(MGQELLV_fake_script)()
-local function IONJWB_fake_script() -- Main.LocalScript 
+coroutine.wrap(EZJSPR_fake_script)()
+local function HYPWS_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
 	local button = script.Parent
@@ -494,15 +500,22 @@ local function IONJWB_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IONJWB_fake_script)()
-local function TFDDATI_fake_script() -- Show_button.LocalScript 
+coroutine.wrap(HYPWS_fake_script)()
+local function UGPKCUG_fake_script() -- Show_button.LocalScript 
+	local script = Instance.new('LocalScript', Show_button)
 
 	local UIS = game:GetService("UserInputService")
 	local button = script.Parent
 	local dragging, dragInput, dragStart, startPos
-	
+	local function AlreadyVisible()
+		if button.Parent.Main.Visible == true then
+			button.Parent.Main.Visible = false
+		else
+			button.Parent.Main.Visible = true
+		end
+	end
 	button.MouseButton1Click:Connect(function()
-		button.Parent.Main.Visible = true
+		AlreadyVisible()
 	end)
 	
 	button.InputBegan:Connect(function(input)
@@ -532,4 +545,4 @@ local function TFDDATI_fake_script() -- Show_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(TFDDATI_fake_script)()
+coroutine.wrap(UGPKCUG_fake_script)()
