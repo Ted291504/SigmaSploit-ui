@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local OKAYOKAYIMNOTGAY = Instance.new("ScreenGui")
+local SigmaSploit = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Top = Instance.new("Frame")
@@ -17,6 +17,11 @@ local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
 local Exec_Tab = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
 local Exec_text = Instance.new("TextBox")
@@ -38,12 +43,12 @@ local UICorner_13 = Instance.new("UICorner")
 
 --Properties:
 
-OKAYOKAYIMNOTGAY.Name = "OKAYOKAYIMNOTGAY"
-OKAYOKAYIMNOTGAY.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-OKAYOKAYIMNOTGAY.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SigmaSploit.Name = "SigmaSploit"
+SigmaSploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SigmaSploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
-Main.Parent = OKAYOKAYIMNOTGAY
+Main.Parent = SigmaSploit
 Main.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
@@ -99,7 +104,6 @@ Home_tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home_tab.BorderSizePixel = 0
 Home_tab.Position = UDim2.new(0.0233026911, 0, 0.164014831, 0)
 Home_tab.Size = UDim2.new(0, 442, 0, 198)
-Home_tab.Visible = false
 
 UICorner_3.Parent = Home_tab
 
@@ -119,7 +123,7 @@ TextLabel_2.Parent = Home_tab
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 181, 0)
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.264864862, 0, 0.695945919, 0)
+TextLabel_2.Position = UDim2.new(0.319163471, 0, 0.695945919, 0)
 TextLabel_2.Size = UDim2.new(0, 174, 0, 40)
 TextLabel_2.Font = Enum.Font.FredokaOne
 TextLabel_2.Text = "Keyless"
@@ -133,12 +137,72 @@ TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.229729727, 0, 0.290540546, 0)
+TextLabel_3.Position = UDim2.new(0.288553238, 0, 0.406702131, 0)
 TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_3.Font = Enum.Font.FredokaOne
 TextLabel_3.Text = "Key Status:"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 20.000
+
+TextLabel_4.Parent = Home_tab
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.776014507, 0, 0.0582172908, 0)
+TextLabel_4.Size = UDim2.new(0, 98, 0, 50)
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "Features:"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 20.000
+
+TextLabel_5.Parent = Home_tab
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.77827698, 0, 0.24508597, 0)
+TextLabel_5.Size = UDim2.new(0, 98, 0, 50)
+TextLabel_5.Font = Enum.Font.FredokaOne
+TextLabel_5.Text = "- 93% UNC"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 20.000
+
+TextLabel_6.Parent = Home_tab
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.776014507, 0, 0.431954652, 0)
+TextLabel_6.Size = UDim2.new(0, 98, 0, 50)
+TextLabel_6.Font = Enum.Font.FredokaOne
+TextLabel_6.Text = "- Keyless"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 20.000
+
+TextLabel_7.Parent = Home_tab
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.00678374013, 0, 0.0582172908, 0)
+TextLabel_7.Size = UDim2.new(0, 98, 0, 50)
+TextLabel_7.Font = Enum.Font.FredokaOne
+TextLabel_7.Text = "New:"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 20.000
+
+TextLabel_8.Parent = Home_tab
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.00678374013, 0, 0.24508597, 0)
+TextLabel_8.Size = UDim2.new(0, 98, 0, 50)
+TextLabel_8.Font = Enum.Font.FredokaOne
+TextLabel_8.Text = "- New UI"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 20.000
 
 Exec_Tab.Name = "Exec_Tab"
 Exec_Tab.Parent = Main
@@ -215,6 +279,7 @@ ScriptSearch_tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptSearch_tab.BorderSizePixel = 0
 ScriptSearch_tab.Position = UDim2.new(0.0233026911, 0, 0.164014831, 0)
 ScriptSearch_tab.Size = UDim2.new(0, 442, 0, 198)
+ScriptSearch_tab.Visible = false
 
 UICorner_10.Parent = ScriptSearch_tab
 
@@ -245,7 +310,7 @@ ScrollingFrame.Size = UDim2.new(0, 423, 0, 139)
 UICorner_12.Parent = ScrollingFrame
 
 Show_button.Name = "Show_button"
-Show_button.Parent = OKAYOKAYIMNOTGAY
+Show_button.Parent = SigmaSploit
 Show_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Show_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Show_button.BorderSizePixel = 0
@@ -261,7 +326,7 @@ UICorner_13.Parent = Show_button
 
 -- Scripts:
 
-local function GUXUH_fake_script() -- Home.LocalScript 
+local function ZPTGT_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	local TweenService = game:GetService("TweenService")
@@ -312,8 +377,8 @@ local function GUXUH_fake_script() -- Home.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GUXUH_fake_script)()
-local function SZNWRO_fake_script() -- Exec.LocalScript 
+coroutine.wrap(ZPTGT_fake_script)()
+local function JSXSF_fake_script() -- Exec.LocalScript 
 	local script = Instance.new('LocalScript', Exec)
 
 	local TweenService = game:GetService("TweenService")
@@ -364,8 +429,8 @@ local function SZNWRO_fake_script() -- Exec.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SZNWRO_fake_script)()
-local function KXSXHVV_fake_script() -- ScriptSearch.LocalScript 
+coroutine.wrap(JSXSF_fake_script)()
+local function DRCZXDP_fake_script() -- ScriptSearch.LocalScript 
 	local script = Instance.new('LocalScript', ScriptSearch)
 
 	local TweenService = game:GetService("TweenService")
@@ -416,8 +481,8 @@ local function KXSXHVV_fake_script() -- ScriptSearch.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KXSXHVV_fake_script)()
-local function MNOCFQ_fake_script() -- Execute_button.LocalScript 
+coroutine.wrap(DRCZXDP_fake_script)()
+local function NLNA_fake_script() -- Execute_button.LocalScript 
 	local script = Instance.new('LocalScript', Execute_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
@@ -435,8 +500,8 @@ local function MNOCFQ_fake_script() -- Execute_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(MNOCFQ_fake_script)()
-local function XVXUR_fake_script() -- Clear_button.LocalScript 
+coroutine.wrap(NLNA_fake_script)()
+local function TYIKKE_fake_script() -- Clear_button.LocalScript 
 	local script = Instance.new('LocalScript', Clear_button)
 
 	local TextBox = script.Parent.Parent.Exec_text
@@ -446,8 +511,8 @@ local function XVXUR_fake_script() -- Clear_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(XVXUR_fake_script)()
-local function WHBBI_fake_script() -- Paste_button.LocalScript 
+coroutine.wrap(TYIKKE_fake_script)()
+local function RVYZQI_fake_script() -- Paste_button.LocalScript 
 	local script = Instance.new('LocalScript', Paste_button)
 
 	TextBox = script.Parent.Parent.Exec_text
@@ -455,8 +520,8 @@ local function WHBBI_fake_script() -- Paste_button.LocalScript
 		TextBox.Text = getclipboard()
 	end)
 end
-coroutine.wrap(WHBBI_fake_script)()
-local function LVYRCRG_fake_script() -- Search.LocalScript 
+coroutine.wrap(RVYZQI_fake_script)()
+local function LCATB_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local textBox = script.Parent
@@ -600,8 +665,8 @@ local function LVYRCRG_fake_script() -- Search.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LVYRCRG_fake_script)()
-local function GGTY_fake_script() -- Main.LocalScript 
+coroutine.wrap(LCATB_fake_script)()
+local function LACGEO_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -668,8 +733,8 @@ local function GGTY_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GGTY_fake_script)()
-local function VKRYHIO_fake_script() -- Show_button.LocalScript 
+coroutine.wrap(LACGEO_fake_script)()
+local function GJGWWY_fake_script() -- Show_button.LocalScript 
 	local script = Instance.new('LocalScript', Show_button)
 
 	local UIS = game:GetService("UserInputService")
@@ -677,9 +742,11 @@ local function VKRYHIO_fake_script() -- Show_button.LocalScript
 	local dragging, dragInput, dragStart, startPos
 	local function AlreadyVisible()
 		if button.Parent.Main.Visible == true then
+			button.Text = "Show"
 			button.Parent.Main.Visible = false
 		else
 			button.Parent.Main.Visible = true
+			button.Text = "Hide"
 		end
 	end
 	button.MouseButton1Click:Connect(function()
@@ -713,4 +780,4 @@ local function VKRYHIO_fake_script() -- Show_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(VKRYHIO_fake_script)()
+coroutine.wrap(GJGWWY_fake_script)()
