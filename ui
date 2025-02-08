@@ -1,0 +1,519 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local OKAYOKAYIMNOTGAY = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Top = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local Home = Instance.new("ImageButton")
+local Exec = Instance.new("ImageButton")
+local Settings = Instance.new("ImageButton")
+local Home_tab = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Exec_Tab = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Exec_text = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local Execute_button = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Clear_button = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Paste_button = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Settings_tab = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Show_button = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+
+--Properties:
+
+OKAYOKAYIMNOTGAY.Name = "OKAYOKAYIMNOTGAY"
+OKAYOKAYIMNOTGAY.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+OKAYOKAYIMNOTGAY.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = OKAYOKAYIMNOTGAY
+Main.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.194053203, 0, 0.208002463, 0)
+Main.Size = UDim2.new(0, 390, 0, 208)
+
+UICorner.Parent = Main
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(0, 390, 0, 32)
+
+UICorner_2.Parent = Top
+
+Close.Name = "Close"
+Close.Parent = Top
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.93589741, 0, 0.21875, 0)
+Close.Size = UDim2.new(0, 25, 0, 18)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 17.000
+Close.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Home.Name = "Home"
+Home.Parent = Top
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.0721440241, 0, 0.1875, 0)
+Home.Size = UDim2.new(0, 20, 0, 19)
+Home.Image = "http://www.roblox.com/asset/?id=109306454828475"
+
+Exec.Name = "Exec"
+Exec.Parent = Top
+Exec.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exec.BackgroundTransparency = 1.000
+Exec.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exec.BorderSizePixel = 0
+Exec.Position = UDim2.new(0.47470814, 0, 0.1875, 0)
+Exec.Size = UDim2.new(0, 20, 0, 19)
+Exec.Image = "http://www.roblox.com/asset/?id=11570895459"
+
+Settings.Name = "Settings"
+Settings.Parent = Top
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.882400453, 0, 0.1875, 0)
+Settings.Size = UDim2.new(0, 20, 0, 19)
+Settings.Image = "http://www.roblox.com/asset/?id=7963356958"
+
+Home_tab.Name = "Home_tab"
+Home_tab.Parent = Main
+Home_tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Home_tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home_tab.BorderSizePixel = 0
+Home_tab.Position = UDim2.new(0.0233027525, 0, 0.213322863, 0)
+Home_tab.Size = UDim2.new(0, 370, 0, 148)
+Home_tab.Visible = false
+
+UICorner_3.Parent = Home_tab
+
+TextLabel.Parent = Home_tab
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.229729727, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Welcome To SigmaSploit"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 30.000
+
+Exec_Tab.Name = "Exec_Tab"
+Exec_Tab.Parent = Main
+Exec_Tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Exec_Tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exec_Tab.BorderSizePixel = 0
+Exec_Tab.Position = UDim2.new(0.0233027525, 0, 0.213322863, 0)
+Exec_Tab.Size = UDim2.new(0, 370, 0, 148)
+
+UICorner_4.Parent = Exec_Tab
+
+Exec_text.Name = "Exec_text"
+Exec_text.Parent = Exec_Tab
+Exec_text.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Exec_text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exec_text.BorderSizePixel = 0
+Exec_text.Position = UDim2.new(0.0270270277, 0, 0.0405405387, 0)
+Exec_text.Size = UDim2.new(0, 352, 0, 108)
+Exec_text.Font = Enum.Font.SourceSans
+Exec_text.PlaceholderText = "print(\"SigmaSploit Beta\")"
+Exec_text.Text = ""
+Exec_text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exec_text.TextSize = 14.000
+
+UICorner_5.Parent = Exec_text
+
+Execute_button.Name = "Execute_button"
+Execute_button.Parent = Exec_Tab
+Execute_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Execute_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute_button.BorderSizePixel = 0
+Execute_button.Position = UDim2.new(0.0270270277, 0, 0.844594598, 0)
+Execute_button.Size = UDim2.new(0, 110, 0, 23)
+Execute_button.Font = Enum.Font.SourceSans
+Execute_button.Text = "Execute"
+Execute_button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_button.TextSize = 14.000
+
+UICorner_6.Parent = Execute_button
+
+Clear_button.Name = "Clear_button"
+Clear_button.Parent = Exec_Tab
+Clear_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Clear_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear_button.BorderSizePixel = 0
+Clear_button.Position = UDim2.new(0.681081057, 0, 0.844594598, 0)
+Clear_button.Size = UDim2.new(0, 110, 0, 23)
+Clear_button.Font = Enum.Font.SourceSans
+Clear_button.Text = "Clear"
+Clear_button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear_button.TextSize = 14.000
+
+UICorner_7.Parent = Clear_button
+
+Paste_button.Name = "Paste_button"
+Paste_button.Parent = Exec_Tab
+Paste_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Paste_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Paste_button.BorderSizePixel = 0
+Paste_button.Position = UDim2.new(0.354054064, 0, 0.844594598, 0)
+Paste_button.Size = UDim2.new(0, 110, 0, 23)
+Paste_button.Font = Enum.Font.SourceSans
+Paste_button.Text = "Paste"
+Paste_button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Paste_button.TextSize = 14.000
+
+UICorner_8.Parent = Paste_button
+
+Settings_tab.Name = "Settings_tab"
+Settings_tab.Parent = Main
+Settings_tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Settings_tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings_tab.BorderSizePixel = 0
+Settings_tab.Position = UDim2.new(0.0233027525, 0, 0.213322863, 0)
+Settings_tab.Size = UDim2.new(0, 370, 0, 148)
+Settings_tab.Visible = false
+
+UICorner_9.Parent = Settings_tab
+
+TextLabel_2.Parent = Settings_tab
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.229729727, 0, 0.331081092, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "COMING SOON"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 30.000
+
+Show_button.Name = "Show_button"
+Show_button.Parent = OKAYOKAYIMNOTGAY
+Show_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Show_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Show_button.BorderSizePixel = 0
+Show_button.Position = UDim2.new(0.545569599, 0, 0.590452254, 0)
+Show_button.Size = UDim2.new(0, 52, 0, 50)
+Show_button.Font = Enum.Font.SourceSans
+Show_button.Text = "Show"
+Show_button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Show_button.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(1, 0)
+UICorner_10.Parent = Show_button
+
+-- Scripts:
+
+local function QRMKFV_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	-- do not modify
+	
+	local function printed()
+		print("Skibidi?")
+	end
+	local function Closed()
+		script.Parent.Visible = true
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.Parent["Show_button"].Name == "Show_button" then
+			Closed()
+		else
+			printed()
+		end
+	end)
+end
+coroutine.wrap(QRMKFV_fake_script)()
+local function QCNUIC_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local Tab = script.Parent.Parent.Parent.Home_tab
+	
+	local OpenTab = script.Parent
+	
+	local function TabOpen()
+		script.Parent.Parent.Parent.Exec_Tab.Visible = false
+		script.Parent.Parent.Parent.Settings_tab.Visible = false
+		Tab.Visible = true
+		Tab.Transparency = 1
+		Tab.Transparency = 0.9
+		wait(0.1)
+		Tab.Transparency = 0.8
+		wait(0.1)
+		Tab.Transparency = 0.7
+		wait(0.1)
+		Tab.Transparency = 0.6
+		wait(0.1)
+		Tab.Transparency = 0.5
+		wait(0.1)
+		Tab.Transparency = 0.4
+		wait(0.1)
+		Tab.Transparency = 0.3
+		wait(0.1)
+		Tab.Transparency = 0.2
+		wait(0.1)
+		Tab.Transparency = 0.1
+		wait(0.1)
+		Tab.Transparency = 0
+	end
+	
+	
+	local function OpenedTab()
+		-- game:GetService("StarterGui"):SetCore("SendNotification",{
+			-- Title = "Tab Already Opened",
+			-- Text = "Diet Coke is not gay!",
+		-- })
+	end
+	
+	OpenTab.MouseButton1Click:Connect(function()
+		if Tab.Visible == true then
+			OpenedTab()
+		else
+			TabOpen()
+		end
+	end)
+end
+coroutine.wrap(QCNUIC_fake_script)()
+local function LLCRBTA_fake_script() -- Exec.LocalScript 
+	local script = Instance.new('LocalScript', Exec)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local Tab = script.Parent.Parent.Parent.Exec_Tab
+	
+	local OpenTab = script.Parent
+	
+	local function TabOpen()
+		script.Parent.Parent.Parent.Home_tab.Visible = false
+		script.Parent.Parent.Parent.Settings_tab.Visible = false
+		Tab.Visible = true
+		Tab.Transparency = 1
+		Tab.Transparency = 0.9
+		wait(0.1)
+		Tab.Transparency = 0.8
+		wait(0.1)
+		Tab.Transparency = 0.7
+		wait(0.1)
+		Tab.Transparency = 0.6
+		wait(0.1)
+		Tab.Transparency = 0.5
+		wait(0.1)
+		Tab.Transparency = 0.4
+		wait(0.1)
+		Tab.Transparency = 0.3
+		wait(0.1)
+		Tab.Transparency = 0.2
+		wait(0.1)
+		Tab.Transparency = 0.1
+		wait(0.1)
+		Tab.Transparency = 0
+	end
+	
+	
+	local function OpenedTab()
+		-- game:GetService("StarterGui"):SetCore("SendNotification",{
+		-- Title = "Tab Already Opened",
+		-- Text = "Diet Coke is not gay!",
+		-- })
+	end
+	
+	OpenTab.MouseButton1Click:Connect(function()
+		if Tab.Visible == true then
+			OpenedTab()
+		else
+			TabOpen()
+		end
+	end)
+end
+coroutine.wrap(LLCRBTA_fake_script)()
+local function ZSPP_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local Tab = script.Parent.Parent.Parent.Settings_tab
+	
+	local OpenTab = script.Parent
+	
+	local function TabOpen()
+		script.Parent.Parent.Parent.Exec_Tab.Visible = false
+		script.Parent.Parent.Parent.Home_tab.Visible = false
+		Tab.Visible = true
+		Tab.Transparency = 1
+		Tab.Transparency = 0.9
+		wait(0.1)
+		Tab.Transparency = 0.8
+		wait(0.1)
+		Tab.Transparency = 0.7
+		wait(0.1)
+		Tab.Transparency = 0.6
+		wait(0.1)
+		Tab.Transparency = 0.5
+		wait(0.1)
+		Tab.Transparency = 0.4
+		wait(0.1)
+		Tab.Transparency = 0.3
+		wait(0.1)
+		Tab.Transparency = 0.2
+		wait(0.1)
+		Tab.Transparency = 0.1
+		wait(0.1)
+		Tab.Transparency = 0
+	end
+	
+	
+	local function OpenedTab()
+		-- game:GetService("StarterGui"):SetCore("SendNotification",{
+		-- Title = "Tab Already Opened",
+		-- Text = "Diet Coke is not gay!",
+		-- })
+	end
+	
+	OpenTab.MouseButton1Click:Connect(function()
+		if Tab.Visible == true then
+			OpenedTab()
+		else
+			TabOpen()
+		end
+	end)
+end
+coroutine.wrap(ZSPP_fake_script)()
+local function QTFMUQ_fake_script() -- Execute_button.LocalScript 
+	local script = Instance.new('LocalScript', Execute_button)
+
+	local TextBox = script.Parent.Parent.Exec_text
+	
+	local ExecuteButton = script.Parent
+	ExecuteButton.MouseButton1Click:Connect(function()
+		local luaCode = TextBox.Text
+		local success, err = pcall(function()
+			loadstring(luaCode)()
+		end)
+	
+		if not success then
+			warn("Script failed to execute error: .. err")
+		end
+	end)
+	
+end
+coroutine.wrap(QTFMUQ_fake_script)()
+local function UGVFMQK_fake_script() -- Clear_button.LocalScript 
+	local script = Instance.new('LocalScript', Clear_button)
+
+	local TextBox = script.Parent.Parent
+	local ClearButton = script.Parent
+	ClearButton.MouseButton1Click:Connect(function()
+		TextBox.Text = ""
+	end)
+	
+end
+coroutine.wrap(UGVFMQK_fake_script)()
+local function EWFNBD_fake_script() -- Paste_button.LocalScript 
+	local script = Instance.new('LocalScript', Paste_button)
+
+	TextBox = script.Parent.Parent.Exec_text
+	TextBox.Text = getclipboard()
+end
+coroutine.wrap(EWFNBD_fake_script)()
+local function NKAKJ_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService("UserInputService")
+	local button = script.Parent
+	local dragging, dragInput, dragStart, startPos
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = button.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	button.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - dragStart
+			button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	end)
+	
+end
+coroutine.wrap(NKAKJ_fake_script)()
+local function IGOZBAC_fake_script() -- Show_button.LocalScript 
+	local script = Instance.new('LocalScript', Show_button)
+
+	local UIS = game:GetService("UserInputService")
+	local button = script.Parent
+	local dragging, dragInput, dragStart, startPos
+	
+	button.MouseButton1Click:Connect(function()
+		button.Parent.Main.Visible = true
+	end)
+	
+	button.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = button.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	button.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - dragStart
+			button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	end)
+	
+end
+coroutine.wrap(IGOZBAC_fake_script)()
