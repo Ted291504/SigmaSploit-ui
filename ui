@@ -317,7 +317,7 @@ Show_button.BorderSizePixel = 0
 Show_button.Position = UDim2.new(0.867948413, 0, 0.452541262, 0)
 Show_button.Size = UDim2.new(0, 63, 0, 60)
 Show_button.Font = Enum.Font.SourceSans
-Show_button.Text = "Show/Hide"
+Show_button.Text = "Hide"
 Show_button.TextColor3 = Color3.fromRGB(255, 255, 255)
 Show_button.TextSize = 14.000
 
