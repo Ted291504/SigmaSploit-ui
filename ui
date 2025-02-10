@@ -1,8 +1,9 @@
--- Gui to Lua
--- Version: 3.2
+-- [[ Initialization ]] --
+setreadonly(client, false);
+client.enableautoexec()
+setreadonly(client, true);
 
--- Instances:
-
+-- [[ Scripts ]] --
 local SigmaSploit = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -44,8 +45,9 @@ local UICorner_13 = Instance.new("UICorner")
 --Properties:
 
 SigmaSploit.Name = "SigmaSploit"
-SigmaSploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SigmaSploit.Parent = game:GetService("CoreGui")
 SigmaSploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SigmaSploit.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = SigmaSploit
