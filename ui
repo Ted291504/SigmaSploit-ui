@@ -45,7 +45,7 @@ local UICorner_13 = Instance.new("UICorner")
 --Properties:
 
 SigmaSploit.Name = "SigmaSploit"
-SigmaSploit.Parent = game:GetService("CoreGui")
+SigmaSploit.Parent = gethui()
 SigmaSploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 SigmaSploit.ResetOnSpawn = false
 
