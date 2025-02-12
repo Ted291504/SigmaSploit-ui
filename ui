@@ -3,6 +3,22 @@ setreadonly(client, false);
 client.enableautoexec()
 setreadonly(client, true);
 
+-- [[ Init Script ]] --
+getgenv().require = function(module)
+	local identity = getidentity()
+	setidentity(2)
+
+	local data = { pcall(getrenv().require, module) }
+	setidentity(identity)
+
+	if (data[1] == false) then 
+		error(data[2], 0)
+		return nil;
+	end
+	
+	return data[2]
+end
+
 -- [[ Scripts ]] --
 local SigmaSploit = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
