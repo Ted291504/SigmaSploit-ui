@@ -4,394 +4,323 @@ client.enableautoexec()
 setreadonly(client, true);
 
 -- [[ Scripts ]] --
-local SigmaSploit = Instance.new("ScreenGui")
+
+local Sigma_Sploit_UI_V2 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Top = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local Home = Instance.new("ImageButton")
-local Exec = Instance.new("ImageButton")
-local ScriptSearch = Instance.new("ImageButton")
-local Home_tab = Instance.new("Frame")
+local Home_Button = Instance.new("ImageButton")
+local Exec_Button = Instance.new("ImageButton")
+local Script_Searcher_Button = Instance.new("ImageButton")
+local Scripts_Button = Instance.new("ImageButton")
+local Home_Page = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local TextLabel_6 = Instance.new("TextLabel")
-local TextLabel_7 = Instance.new("TextLabel")
-local TextLabel_8 = Instance.new("TextLabel")
-local Exec_Tab = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
 local UICorner_5 = Instance.new("UICorner")
-local Exec_text = Instance.new("TextBox")
+local TextLabel_2 = Instance.new("TextLabel")
+local Logo = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
-local Execute_button = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Script_Search_Page = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
-local Clear_button = Instance.new("TextButton")
+local Exec_Text = Instance.new("TextBox")
 local UICorner_8 = Instance.new("UICorner")
-local Paste_button = Instance.new("TextButton")
+local Results = Instance.new("ScrollingFrame")
+local Exec_Page = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
-local ScriptSearch_tab = Instance.new("Frame")
+local Exec_Text_2 = Instance.new("TextBox")
 local UICorner_10 = Instance.new("UICorner")
-local Search = Instance.new("TextBox")
+local Execute = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local ScrollingFrame = Instance.new("ScrollingFrame")
+local Paste = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local Show_button = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
+local Showhide = Instance.new("ImageButton")
+local UICorner_14 = Instance.new("UICorner")
 
 --Properties:
 
-SigmaSploit.Name = "SigmaSploit"
-SigmaSploit.Parent = gethui()
-SigmaSploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-SigmaSploit.ResetOnSpawn = false
+Sigma_Sploit_UI_V2.Name = "Sigma_Sploit_UI_V2"
+Sigma_Sploit_UI_V2.Parent = gethui()
+Sigma_Sploit_UI_V2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Sigma_Sploit_UI_V2.ResetOnSpawn = false
 
 Main.Name = "Main"
-Main.Parent = SigmaSploit
-Main.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Main.Parent = Sigma_Sploit_UI_V2
+Main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Main.BackgroundTransparency = 0.060
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.0841810405, 0, 0.0913306326, 0)
-Main.Size = UDim2.new(0, 460, 0, 249)
+Main.Position = UDim2.new(0.111111112, 0, 0.122562677, 0)
+Main.Size = UDim2.new(0, 442, 0, 249)
 
 UICorner.Parent = Main
 
 Top.Name = "Top"
 Top.Parent = Main
-Top.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Top.BorderSizePixel = 0
-Top.Position = UDim2.new(3.31712791e-08, 0, 0, 0)
-Top.Size = UDim2.new(0, 459, 0, 32)
+Top.Position = UDim2.new(0.0180995483, 0, 0.036144577, 0)
+Top.Size = UDim2.new(0, 424, 0, 22)
 
 UICorner_2.Parent = Top
 
-Home.Name = "Home"
-Home.Parent = Top
-Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Home.BackgroundTransparency = 1.000
-Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Home.BorderSizePixel = 0
-Home.Position = UDim2.new(0.046503, 0, 0.1875, 0)
-Home.Size = UDim2.new(0, 20, 0, 19)
-Home.Image = "http://www.roblox.com/asset/?id=109306454828475"
+Home_Button.Name = "Home_Button"
+Home_Button.Parent = Top
+Home_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_Button.BackgroundTransparency = 1.000
+Home_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home_Button.BorderSizePixel = 0
+Home_Button.Position = UDim2.new(0.0366666652, 0, 0.0454545468, 0)
+Home_Button.Size = UDim2.new(0, 19, 0, 18)
+Home_Button.Image = "http://www.roblox.com/asset/?id=109306454828475"
 
-Exec.Name = "Exec"
-Exec.Parent = Top
-Exec.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Exec.BackgroundTransparency = 1.000
-Exec.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exec.BorderSizePixel = 0
-Exec.Position = UDim2.new(0.47470814, 0, 0.1875, 0)
-Exec.Size = UDim2.new(0, 20, 0, 19)
-Exec.Image = "http://www.roblox.com/asset/?id=11570895459"
+Exec_Button.Name = "Exec_Button"
+Exec_Button.Parent = Top
+Exec_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exec_Button.BackgroundTransparency = 1.000
+Exec_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exec_Button.BorderSizePixel = 0
+Exec_Button.Position = UDim2.new(0.353333324, 0, 0.0454545468, 0)
+Exec_Button.Size = UDim2.new(0, 21, 0, 21)
+Exec_Button.Image = "http://www.roblox.com/asset/?id=11570895459"
 
-ScriptSearch.Name = "ScriptSearch"
-ScriptSearch.Parent = Top
-ScriptSearch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScriptSearch.BackgroundTransparency = 1.000
-ScriptSearch.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScriptSearch.BorderSizePixel = 0
-ScriptSearch.Position = UDim2.new(0.931621134, 0, 0.1875, 0)
-ScriptSearch.Size = UDim2.new(0, 25, 0, 22)
-ScriptSearch.Image = "rbxassetid://97239278789958"
+Script_Searcher_Button.Name = "Script_Searcher_Button"
+Script_Searcher_Button.Parent = Top
+Script_Searcher_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Script_Searcher_Button.BackgroundTransparency = 1.000
+Script_Searcher_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Script_Searcher_Button.BorderSizePixel = 0
+Script_Searcher_Button.Position = UDim2.new(0.626666665, 0, 0, 0)
+Script_Searcher_Button.Size = UDim2.new(0, 24, 0, 22)
+Script_Searcher_Button.Image = "rbxassetid://97239278789958"
 
-Home_tab.Name = "Home_tab"
-Home_tab.Parent = Main
-Home_tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-Home_tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Home_tab.BorderSizePixel = 0
-Home_tab.Position = UDim2.new(0.0233026911, 0, 0.164014831, 0)
-Home_tab.Size = UDim2.new(0, 442, 0, 198)
+Scripts_Button.Name = "Scripts_Button"
+Scripts_Button.Parent = Top
+Scripts_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_Button.BackgroundTransparency = 1.000
+Scripts_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scripts_Button.BorderSizePixel = 0
+Scripts_Button.Position = UDim2.new(0.903333306, 0, 0.0454545468, 0)
+Scripts_Button.Size = UDim2.new(0, 19, 0, 18)
+Scripts_Button.Image = "http://www.roblox.com/asset/?id=9940330045"
 
-UICorner_3.Parent = Home_tab
+Home_Page.Name = "Home_Page"
+Home_Page.Parent = Main
+Home_Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Home_Page.BackgroundTransparency = 0.030
+Home_Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home_Page.BorderSizePixel = 0
+Home_Page.Position = UDim2.new(0.0180995483, 0, 0.153913513, 0)
+Home_Page.Size = UDim2.new(0, 424, 0, 201)
 
-TextLabel.Parent = Home_tab
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
+UICorner_3.Parent = Home_Page
+
+TextLabel.Parent = Home_Page
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 148, 0)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.229729727, 0, -0.0472972989, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "Welcome To SigmaSploit"
+TextLabel.Position = UDim2.new(0.31839624, 0, 0.246464521, 0)
+TextLabel.Size = UDim2.new(0, 154, 0, 32)
+TextLabel.Font = Enum.Font.Merriweather
+TextLabel.Text = "KeyLess"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 25.000
+TextLabel.TextSize = 18.000
 
-TextLabel_2.Parent = Home_tab
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 181, 0)
+UICorner_4.Parent = TextLabel
+
+ImageLabel.Parent = Home_Page
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.851415098, 0, 0.0298507456, 0)
+ImageLabel.Size = UDim2.new(0, 53, 0, 50)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = ImageLabel
+
+TextLabel_2.Parent = Home_Page
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.319163471, 0, 0.695945919, 0)
-TextLabel_2.Size = UDim2.new(0, 174, 0, 40)
-TextLabel_2.Font = Enum.Font.FredokaOne
-TextLabel_2.Text = "Keyless"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 14.000
+TextLabel_2.Position = UDim2.new(0.264321655, 0, 0.00239767949, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Merriweather
+TextLabel_2.Text = "Key Status  🔑"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
 
-UICorner_4.Parent = TextLabel_2
+Logo.Name = "Logo"
+Logo.Parent = Home_Page
+Logo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.0229869336, 0, 0.00131870853, 0)
+Logo.Size = UDim2.new(0, 125, 0, 33)
 
-TextLabel_3.Parent = Home_tab
+UICorner_6.Parent = Logo
+
+TextLabel_3.Parent = Logo
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.288553238, 0, 0.406702131, 0)
-TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_3.Font = Enum.Font.FredokaOne
-TextLabel_3.Text = "Key Status:"
+TextLabel_3.Position = UDim2.new(0.194075927, 0, 0.294193149, 0)
+TextLabel_3.Size = UDim2.new(0, 72, 0, 11)
+TextLabel_3.Font = Enum.Font.Merriweather
+TextLabel_3.Text = "igmaSploit"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 20.000
+TextLabel_3.TextSize = 15.000
 
-TextLabel_4.Parent = Home_tab
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.776014507, 0, 0.0582172908, 0)
-TextLabel_4.Size = UDim2.new(0, 98, 0, 50)
-TextLabel_4.Font = Enum.Font.FredokaOne
-TextLabel_4.Text = "Features:"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 20.000
+ImageLabel_2.Parent = Logo
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(-0.0480000004, 0, 0.0151515156, 0)
+ImageLabel_2.Size = UDim2.new(0, 30, 0, 31)
+ImageLabel_2.Image = "rbxassetid://123530736784263"
 
-TextLabel_5.Parent = Home_tab
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(0.77827698, 0, 0.24508597, 0)
-TextLabel_5.Size = UDim2.new(0, 98, 0, 50)
-TextLabel_5.Font = Enum.Font.FredokaOne
-TextLabel_5.Text = "- 93% UNC"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 20.000
+Script_Search_Page.Name = "Script_Search_Page"
+Script_Search_Page.Parent = Main
+Script_Search_Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script_Search_Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Script_Search_Page.BorderSizePixel = 0
+Script_Search_Page.Position = UDim2.new(0.0225248728, 0, 0.154000029, 0)
+Script_Search_Page.Size = UDim2.new(0, 424, 0, 201)
+Script_Search_Page.Visible = false
 
-TextLabel_6.Parent = Home_tab
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0.776014507, 0, 0.431954652, 0)
-TextLabel_6.Size = UDim2.new(0, 98, 0, 50)
-TextLabel_6.Font = Enum.Font.FredokaOne
-TextLabel_6.Text = "- Keyless"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextSize = 20.000
+UICorner_7.Parent = Script_Search_Page
 
-TextLabel_7.Parent = Home_tab
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0.00678374013, 0, 0.0582172908, 0)
-TextLabel_7.Size = UDim2.new(0, 98, 0, 50)
-TextLabel_7.Font = Enum.Font.FredokaOne
-TextLabel_7.Text = "New:"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextSize = 20.000
+Exec_Text.Name = "Exec_Text"
+Exec_Text.Parent = Script_Search_Page
+Exec_Text.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Exec_Text.BackgroundTransparency = 0.060
+Exec_Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exec_Text.BorderSizePixel = 0
+Exec_Text.Position = UDim2.new(0.0212264154, 0, 0.0298507456, 0)
+Exec_Text.Size = UDim2.new(0, 407, 0, 37)
+Exec_Text.Font = Enum.Font.SourceSans
+Exec_Text.PlaceholderText = "Powerd By ScriptBlox.com"
+Exec_Text.Text = ""
+Exec_Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exec_Text.TextSize = 14.000
 
-TextLabel_8.Parent = Home_tab
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Position = UDim2.new(0.00678374013, 0, 0.24508597, 0)
-TextLabel_8.Size = UDim2.new(0, 98, 0, 50)
-TextLabel_8.Font = Enum.Font.FredokaOne
-TextLabel_8.Text = "- New UI"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 20.000
+UICorner_8.Parent = Exec_Text
 
-Exec_Tab.Name = "Exec_Tab"
-Exec_Tab.Parent = Main
-Exec_Tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-Exec_Tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exec_Tab.BorderSizePixel = 0
-Exec_Tab.Position = UDim2.new(0.0229999367, 0, 0.16399996, 0)
-Exec_Tab.Size = UDim2.new(0, 442, 0, 198)
-Exec_Tab.Visible = false
+Results.Name = "Results"
+Results.Parent = Script_Search_Page
+Results.Active = true
+Results.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Results.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Results.BorderSizePixel = 0
+Results.Position = UDim2.new(0.0283018872, 0, 0.248756215, 0)
+Results.Size = UDim2.new(0, 404, 0, 143)
 
-UICorner_5.Parent = Exec_Tab
+Exec_Page.Name = "Exec_Page"
+Exec_Page.Parent = Main
+Exec_Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Exec_Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exec_Page.BorderSizePixel = 0
+Exec_Page.Position = UDim2.new(0.0179999992, 0, 0.153999999, 0)
+Exec_Page.Size = UDim2.new(0, 424, 0, 201)
+Exec_Page.Visible = false
 
-Exec_text.Name = "Exec_text"
-Exec_text.Parent = Exec_Tab
-Exec_text.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Exec_text.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exec_text.BorderSizePixel = 0
-Exec_text.Position = UDim2.new(0.0270271134, 0, 0.0405405983, 0)
-Exec_text.Size = UDim2.new(0, 423, 0, 140)
-Exec_text.Font = Enum.Font.SourceSans
-Exec_text.PlaceholderText = "print(\"SigmaSploit Beta\")"
-Exec_text.Text = ""
-Exec_text.TextColor3 = Color3.fromRGB(255, 255, 255)
-Exec_text.TextSize = 14.000
+UICorner_9.Parent = Exec_Page
 
-UICorner_6.Parent = Exec_text
+Exec_Text_2.Name = "Exec_Text"
+Exec_Text_2.Parent = Exec_Page
+Exec_Text_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Exec_Text_2.BackgroundTransparency = 0.060
+Exec_Text_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exec_Text_2.BorderSizePixel = 0
+Exec_Text_2.Position = UDim2.new(0.0212264154, 0, 0.0298507847, 0)
+Exec_Text_2.Size = UDim2.new(0, 407, 0, 141)
+Exec_Text_2.Font = Enum.Font.SourceSans
+Exec_Text_2.PlaceholderText = "print(\"SigmaSploit Beta\")"
+Exec_Text_2.Text = ""
+Exec_Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exec_Text_2.TextSize = 14.000
 
-Execute_button.Name = "Execute_button"
-Execute_button.Parent = Exec_Tab
-Execute_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Execute_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Execute_button.BorderSizePixel = 0
-Execute_button.Position = UDim2.new(0.0270270444, 0, 0.804190576, 0)
-Execute_button.Size = UDim2.new(0, 110, 0, 30)
-Execute_button.Font = Enum.Font.SourceSans
-Execute_button.Text = "Execute"
-Execute_button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Execute_button.TextSize = 14.000
+UICorner_10.Parent = Exec_Text_2
 
-UICorner_7.Parent = Execute_button
+Execute.Name = "Execute"
+Execute.Parent = Exec_Page
+Execute.BackgroundColor3 = Color3.fromRGB(0, 0, 161)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0283018872, 0, 0.803811133, 0)
+Execute.Size = UDim2.new(0, 104, 0, 30)
+Execute.Font = Enum.Font.Merriweather
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 14.000
 
-Clear_button.Name = "Clear_button"
-Clear_button.Parent = Exec_Tab
-Clear_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Clear_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Clear_button.BorderSizePixel = 0
-Clear_button.Position = UDim2.new(0.733117282, 0, 0.804406345, 0)
-Clear_button.Size = UDim2.new(0, 110, 0, 30)
-Clear_button.Font = Enum.Font.SourceSans
-Clear_button.Text = "Clear"
-Clear_button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Clear_button.TextSize = 14.000
+UICorner_11.Parent = Execute
 
-UICorner_8.Parent = Clear_button
+Paste.Name = "Paste"
+Paste.Parent = Exec_Page
+Paste.BackgroundColor3 = Color3.fromRGB(0, 0, 161)
+Paste.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Paste.BorderSizePixel = 0
+Paste.Position = UDim2.new(0.389150947, 0, 0.803811133, 0)
+Paste.Size = UDim2.new(0, 104, 0, 30)
+Paste.Font = Enum.Font.Merriweather
+Paste.Text = "Paste"
+Paste.TextColor3 = Color3.fromRGB(255, 255, 255)
+Paste.TextSize = 14.000
 
-Paste_button.Name = "Paste_button"
-Paste_button.Parent = Exec_Tab
-Paste_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Paste_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Paste_button.BorderSizePixel = 0
-Paste_button.Position = UDim2.new(0.35857892, 0, 0.804190576, 0)
-Paste_button.Size = UDim2.new(0, 110, 0, 30)
-Paste_button.Font = Enum.Font.SourceSans
-Paste_button.Text = "Paste"
-Paste_button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Paste_button.TextSize = 14.000
+UICorner_12.Parent = Paste
 
-UICorner_9.Parent = Paste_button
+Clear.Name = "Clear"
+Clear.Parent = Exec_Page
+Clear.BackgroundColor3 = Color3.fromRGB(0, 0, 161)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.735849082, 0, 0.798835993, 0)
+Clear.Size = UDim2.new(0, 104, 0, 30)
+Clear.Font = Enum.Font.Merriweather
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextSize = 14.000
 
-ScriptSearch_tab.Name = "ScriptSearch_tab"
-ScriptSearch_tab.Parent = Main
-ScriptSearch_tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-ScriptSearch_tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScriptSearch_tab.BorderSizePixel = 0
-ScriptSearch_tab.Position = UDim2.new(0.0233026911, 0, 0.164014831, 0)
-ScriptSearch_tab.Size = UDim2.new(0, 442, 0, 198)
-ScriptSearch_tab.Visible = false
+UICorner_13.Parent = Clear
 
-UICorner_10.Parent = ScriptSearch_tab
+Showhide.Name = "Show/hide"
+Showhide.Parent = Sigma_Sploit_UI_V2
+Showhide.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Showhide.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Showhide.BorderSizePixel = 0
+Showhide.Position = UDim2.new(0.0159655642, 0, 0.43541503, 0)
+Showhide.Size = UDim2.new(0, 48, 0, 50)
+Showhide.Image = "rbxassetid://123530736784263"
 
-Search.Name = "Search"
-Search.Parent = ScriptSearch_tab
-Search.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Search.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Search.BorderSizePixel = 0
-Search.Position = UDim2.new(0.0243243016, 0, 0.0675675794, 0)
-Search.Size = UDim2.new(0, 423, 0, 33)
-Search.Font = Enum.Font.SourceSans
-Search.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
-Search.PlaceholderText = "Powered by ScriptBlox.com"
-Search.Text = ""
-Search.TextColor3 = Color3.fromRGB(255, 255, 255)
-Search.TextSize = 14.000
-
-UICorner_11.Parent = Search
-
-ScrollingFrame.Parent = ScriptSearch_tab
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0.0243243016, 0, 0.289362222, 0)
-ScrollingFrame.Size = UDim2.new(0, 423, 0, 139)
-
-UICorner_12.Parent = ScrollingFrame
-
-Show_button.Name = "Show_button"
-Show_button.Parent = SigmaSploit
-Show_button.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Show_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Show_button.BorderSizePixel = 0
-Show_button.Position = UDim2.new(0.867948413, 0, 0.452541262, 0)
-Show_button.Size = UDim2.new(0, 63, 0, 60)
-Show_button.Font = Enum.Font.SourceSans
-Show_button.Text = "Hide"
-Show_button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Show_button.TextSize = 14.000
-
-UICorner_13.CornerRadius = UDim.new(1, 0)
-UICorner_13.Parent = Show_button
+UICorner_14.CornerRadius = UDim.new(1, 0)
+UICorner_14.Parent = Showhide
 
 -- Scripts:
 
-local function ZPTGT_fake_script() -- Home.LocalScript 
-	local script = Instance.new('LocalScript', Home)
+local function ORAFIM_fake_script() -- Home_Button.LocalScript 
+	local script = Instance.new('LocalScript', Home_Button)
 
 	local TweenService = game:GetService("TweenService")
 	
-	local Tab = script.Parent.Parent.Parent.Home_tab
+	local Tab = script.Parent.Parent.Parent.Home_Page
 	
 	local OpenTab = script.Parent
 	
 	local function TabOpen()
-		script.Parent.Parent.Parent.Exec_Tab.Visible = false
-		script.Parent.Parent.Parent.ScriptSearch_tab.Visible = false
-		Tab.Visible = true
-		Tab.Transparency = 1
-		Tab.Transparency = 0.9
-		wait(0.1)
-		Tab.Transparency = 0.8
-		wait(0.1)
-		Tab.Transparency = 0.7
-		wait(0.1)
-		Tab.Transparency = 0.6
-		wait(0.1)
-		Tab.Transparency = 0.5
-		wait(0.1)
-		Tab.Transparency = 0.4
-		wait(0.1)
-		Tab.Transparency = 0.3
-		wait(0.1)
-		Tab.Transparency = 0.2
-		wait(0.1)
-		Tab.Transparency = 0.1
-		wait(0.1)
-		Tab.Transparency = 0
-	end
-	
-	
-	local function OpenedTab()
-		-- game:GetService("StarterGui"):SetCore("SendNotification",{
-			-- Title = "Tab Already Opened",
-			-- Text = "Diet Coke is not gay!",
-		-- })
-	end
-	
-	OpenTab.MouseButton1Click:Connect(function()
-		if Tab.Visible == true then
-			OpenedTab()
-		else
-			TabOpen()
-		end
-	end)
-end
-coroutine.wrap(ZPTGT_fake_script)()
-local function JSXSF_fake_script() -- Exec.LocalScript 
-	local script = Instance.new('LocalScript', Exec)
-
-	local TweenService = game:GetService("TweenService")
-	
-	local Tab = script.Parent.Parent.Parent.Exec_Tab
-	
-	local OpenTab = script.Parent
-	
-	local function TabOpen()
-		script.Parent.Parent.Parent.Home_tab.Visible = false
-		script.Parent.Parent.Parent.ScriptSearch_tab.Visible = false
+		script.Parent.Parent.Parent.Script_Search_Page.Visible = false
+		script.Parent.Parent.Parent.Exec_Page.Visible = false
 		Tab.Visible = true
 		Tab.Transparency = 1
 		Tab.Transparency = 0.9
@@ -431,19 +360,19 @@ local function JSXSF_fake_script() -- Exec.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JSXSF_fake_script)()
-local function DRCZXDP_fake_script() -- ScriptSearch.LocalScript 
-	local script = Instance.new('LocalScript', ScriptSearch)
+coroutine.wrap(ORAFIM_fake_script)()
+local function LZNEL_fake_script() -- Exec_Button.LocalScript 
+	local script = Instance.new('LocalScript', Exec_Button)
 
 	local TweenService = game:GetService("TweenService")
 	
-	local Tab = script.Parent.Parent.Parent.ScriptSearch_tab
+	local Tab = script.Parent.Parent.Parent.Exec_Page
 	
 	local OpenTab = script.Parent
 	
 	local function TabOpen()
-		script.Parent.Parent.Parent.Exec_Tab.Visible = false
-		script.Parent.Parent.Parent.Home_tab.Visible = false
+		script.Parent.Parent.Parent.Script_Search_Page.Visible = false
+		script.Parent.Parent.Parent.Home_Page.Visible = false
 		Tab.Visible = true
 		Tab.Transparency = 1
 		Tab.Transparency = 0.9
@@ -483,51 +412,86 @@ local function DRCZXDP_fake_script() -- ScriptSearch.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DRCZXDP_fake_script)()
-local function NLNA_fake_script() -- Execute_button.LocalScript 
-	local script = Instance.new('LocalScript', Execute_button)
+coroutine.wrap(LZNEL_fake_script)()
+local function HIJYNQT_fake_script() -- Script_Searcher_Button.LocalScript 
+	local script = Instance.new('LocalScript', Script_Searcher_Button)
 
-	local TextBox = script.Parent.Parent.Exec_text
+	local TweenService = game:GetService("TweenService")
 	
-	local ExecuteButton = script.Parent
-	ExecuteButton.MouseButton1Click:Connect(function()
-		local luaCode = TextBox.Text
-		local success, err = pcall(function()
-			loadstring(luaCode)()
-		end)
+	local Tab = script.Parent.Parent.Parent.Script_Search_Page
 	
-		if not success then
-			warn("Script failed to execute error: .. err")
+	local OpenTab = script.Parent
+	
+	local function TabOpen()
+		script.Parent.Parent.Parent.Exec_Page.Visible = false
+		script.Parent.Parent.Parent.Home_Page.Visible = false
+		Tab.Visible = true
+		Tab.Transparency = 1
+		Tab.Transparency = 0.9
+		wait(0.1)
+		Tab.Transparency = 0.8
+		wait(0.1)
+		Tab.Transparency = 0.7
+		wait(0.1)
+		Tab.Transparency = 0.6
+		wait(0.1)
+		Tab.Transparency = 0.5
+		wait(0.1)
+		Tab.Transparency = 0.4
+		wait(0.1)
+		Tab.Transparency = 0.3
+		wait(0.1)
+		Tab.Transparency = 0.2
+		wait(0.1)
+		Tab.Transparency = 0.1
+		wait(0.1)
+		Tab.Transparency = 0
+	end
+	
+	
+	local function OpenedTab()
+		-- game:GetService("StarterGui"):SetCore("SendNotification",{
+		-- Title = "Tab Already Opened",
+		-- Text = "Diet Coke is not gay!",
+		-- })
+	end
+	
+	OpenTab.MouseButton1Click:Connect(function()
+		if Tab.Visible == true then
+			OpenedTab()
+		else
+			TabOpen()
 		end
 	end)
+end
+coroutine.wrap(HIJYNQT_fake_script)()
+local function TUWSLWM_fake_script() -- Scripts_Button.LocalScript 
+	local script = Instance.new('LocalScript', Scripts_Button)
+
 	
 end
-coroutine.wrap(NLNA_fake_script)()
-local function TYIKKE_fake_script() -- Clear_button.LocalScript 
-	local script = Instance.new('LocalScript', Clear_button)
+coroutine.wrap(TUWSLWM_fake_script)()
+local function IHQH_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
 
-	local TextBox = script.Parent.Parent.Exec_text
-	local ClearButton = script.Parent
-	ClearButton.MouseButton1Click:Connect(function()
-		TextBox.Text = ""
-	end)
+	local Players = game:GetService("Players")
 	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	script.Parent.Image = content
 end
-coroutine.wrap(TYIKKE_fake_script)()
-local function RVYZQI_fake_script() -- Paste_button.LocalScript 
-	local script = Instance.new('LocalScript', Paste_button)
+coroutine.wrap(IHQH_fake_script)()
+local function IPOAJA_fake_script() -- Results.LocalScript 
+	local script = Instance.new('LocalScript', Results)
 
-	TextBox = script.Parent.Parent.Exec_text
-	script.Parent.MouseButton1Click:Connect(function()
-		TextBox.Text = getclipboard()
-	end)
-end
-coroutine.wrap(RVYZQI_fake_script)()
-local function LCATB_fake_script() -- Search.LocalScript 
-	local script = Instance.new('LocalScript', Search)
-
-	local textBox = script.Parent
-	local scrollingFrame = script.Parent.Parent.ScrollingFrame
+	local textBox = script.Parent.Parent.Exec_Text
+	local scrollingFrame = script.Parent
 	local httpService = game:GetService("HttpService")
 	
 	if not scrollingFrame:FindFirstChild("UIListLayout") then
@@ -667,8 +631,47 @@ local function LCATB_fake_script() -- Search.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LCATB_fake_script)()
-local function LACGEO_fake_script() -- Main.LocalScript 
+coroutine.wrap(IPOAJA_fake_script)()
+local function EFQXRXE_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local TextBox = script.Parent.Parent.Exec_Text
+	
+	local ExecuteButton = script.Parent
+	ExecuteButton.MouseButton1Click:Connect(function()
+		local luaCode = TextBox.Text
+		local success, err = pcall(function()
+			loadstring(luaCode)()
+		end)
+	
+		if not success then
+			warn("Script failed to execute error: .. err")
+		end
+	end)
+	
+end
+coroutine.wrap(EFQXRXE_fake_script)()
+local function DXHZ_fake_script() -- Paste.LocalScript 
+	local script = Instance.new('LocalScript', Paste)
+
+	local txt = script.Parent.Parent.Exec_Text
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		txt.Text = getclipboard()
+	end)
+end
+coroutine.wrap(DXHZ_fake_script)()
+local function BFPAA_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local txt = script.Parent.Parent.Exec_Text
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		txt.Text = ""
+	end)
+end
+coroutine.wrap(BFPAA_fake_script)()
+local function PQOBZP_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService("UserInputService")
@@ -735,20 +738,18 @@ local function LACGEO_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LACGEO_fake_script)()
-local function GJGWWY_fake_script() -- Show_button.LocalScript 
-	local script = Instance.new('LocalScript', Show_button)
+coroutine.wrap(PQOBZP_fake_script)()
+local function PSWY_fake_script() -- Showhide.LocalScript 
+	local script = Instance.new('LocalScript', Showhide)
 
 	local UIS = game:GetService("UserInputService")
 	local button = script.Parent
 	local dragging, dragInput, dragStart, startPos
 	local function AlreadyVisible()
 		if button.Parent.Main.Visible == true then
-			button.Text = "Show"
 			button.Parent.Main.Visible = false
 		else
 			button.Parent.Main.Visible = true
-			button.Text = "Hide"
 		end
 	end
 	button.MouseButton1Click:Connect(function()
@@ -782,4 +783,4 @@ local function GJGWWY_fake_script() -- Show_button.LocalScript
 	end)
 	
 end
-coroutine.wrap(GJGWWY_fake_script)()
+coroutine.wrap(PSWY_fake_script)()
