@@ -1,7 +1,7 @@
 -- [[ Initialization ]] --
 setreadonly(client, false);
--- client.enableautoexec()
-client.enableautoexec = nil;
+client.enableautoexec()
+-- client.enableautoexec = nil;
 setreadonly(client, true);
 
 -- [[ Scripts ]] --
