@@ -1,7 +1,8 @@
 -- [[ Initialization ]] --
 setreadonly(client, false);
-client.enableautoexec()
+-- client.enableautoexec()
 setreadonly(client, true);
+client.enableautoexec = nil;
 
 -- [[ Scripts ]] --
 local Sigma_Sploit_UI_V2 = Instance.new("ScreenGui")
