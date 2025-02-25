@@ -1,738 +1,853 @@
--- [[ Initialization ]] --
+if _G.hybridloaded then
+    warn("The GUI is already running!")
+    return
+end
+
 setreadonly(client, false);
 client.enableautoexec()
 setreadonly(client, true);
 
--- [[ Scripts ]] --
-local Sigma_Sploit_UI_V2 = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
+local Hybrid = Instance.new("ScreenGui")
+local BackgroundFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Top = Instance.new("Frame")
+local UIStroke = Instance.new("UIStroke")
+local TabsFrame = Instance.new("Folder")
+local EditorFrame = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local Home_Button = Instance.new("ImageButton")
-local Exec_Button = Instance.new("ImageButton")
-local Script_Searcher_Button = Instance.new("ImageButton")
-local Home_Page = Instance.new("Frame")
+local UIStroke_2 = Instance.new("UIStroke")
+local ExecuteFrame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local UIStroke_3 = Instance.new("UIStroke")
+local Execute = Instance.new("ImageButton")
+local ClearFrame = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local Logo = Instance.new("Frame")
+local UIStroke_4 = Instance.new("UIStroke")
+local Clear = Instance.new("ImageButton")
+local CopyFrame = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
-local Script_Search_Page = Instance.new("Frame")
+local UIStroke_5 = Instance.new("UIStroke")
+local Copy = Instance.new("ImageButton")
+local PasteFrame = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
-local Exec_Text = Instance.new("TextBox")
+local UIStroke_6 = Instance.new("UIStroke")
+local Paste = Instance.new("ImageButton")
+local TextBox = Instance.new("TextBox")
+local HomeFrame = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
-local Results = Instance.new("ScrollingFrame")
-local Exec_Page = Instance.new("Frame")
+local UIStroke_7 = Instance.new("UIStroke")
+local ChangelogsFrame = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
-local Exec_Text_2 = Instance.new("TextBox")
+local UIStroke_8 = Instance.new("UIStroke")
+local Line = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
-local Execute = Instance.new("TextButton")
+local ChangelogsTitle = Instance.new("TextLabel")
+local ChangelogsContent = Instance.new("TextLabel")
+local FPSFrame = Instance.new("Frame")
 local UICorner_10 = Instance.new("UICorner")
-local Paste = Instance.new("TextButton")
+local UIStroke_9 = Instance.new("UIStroke")
+local FPSTitle = Instance.new("TextLabel")
+local QuickScriptsFrame = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
-local Clear = Instance.new("TextButton")
+local UIStroke_10 = Instance.new("UIStroke")
+local Line_2 = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
-local Showhide = Instance.new("ImageButton")
+local QuickScriptTitle = Instance.new("TextLabel")
+local InfiniteYield = Instance.new("Frame")
 local UICorner_13 = Instance.new("UICorner")
+local UIStroke_11 = Instance.new("UIStroke")
+local InfYieldBTN = Instance.new("TextButton")
+local UNCTest = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local UIStroke_12 = Instance.new("UIStroke")
+local UNCScriptBTN = Instance.new("TextButton")
+local PINGFrame = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local UIStroke_13 = Instance.new("UIStroke")
+local PINGTitle = Instance.new("TextLabel")
+local CloudFrame = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local UIStroke_14 = Instance.new("UIStroke")
+local TextLabel = Instance.new("TextLabel")
+local Tabs = Instance.new("Folder")
+local MainIconFrame = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local UIStroke_15 = Instance.new("UIStroke")
+local ImageLabel = Instance.new("ImageLabel")
+local MainButton = Instance.new("TextButton")
+local CloudIconFrame = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local UIStroke_16 = Instance.new("UIStroke")
+local CloudImage = Instance.new("ImageLabel")
+local CloudButton = Instance.new("TextButton")
+local EditorIconFrame = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local UIStroke_17 = Instance.new("UIStroke")
+local EditorImage = Instance.new("ImageLabel")
+local EditorButton = Instance.new("TextButton")
+local ExitIconFrame = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local UIStroke_18 = Instance.new("UIStroke")
+local Exit = Instance.new("ImageButton")
+local TitleFrame = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local UIStroke_19 = Instance.new("UIStroke")
+local HybridLogo = Instance.new("ImageLabel")
+local Lines = Instance.new("Folder")
+local Line_3 = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local Line_4 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
 
 --Properties:
 
-Sigma_Sploit_UI_V2.Name = "Sigma_Sploit_UI_V2"
-Sigma_Sploit_UI_V2.Parent = gethui()
-Sigma_Sploit_UI_V2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Sigma_Sploit_UI_V2.ResetOnSpawn = false
+Hybrid.Name = "Hybrid"
+Hybrid.Parent = game:GetService("CoreGui")
+Hybrid.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Hybrid.ResetOnSpawn = false
+_G.hybridloaded = true
 
-Main.Name = "Main"
-Main.Parent = Sigma_Sploit_UI_V2
-Main.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-Main.BackgroundTransparency = 0.060
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.111111112, 0, 0.122562677, 0)
-Main.Size = UDim2.new(0, 442, 0, 249)
+BackgroundFrame.Name = "BackgroundFrame"
+BackgroundFrame.Parent = Hybrid
+BackgroundFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BackgroundFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BackgroundFrame.BorderSizePixel = 0
+BackgroundFrame.Position = UDim2.new(0.11168164, 0, 0.216700137, 0)
+BackgroundFrame.Size = UDim2.new(0, 547, 0, 257)
+BackgroundFrame.Visible = false
 
-UICorner.Parent = Main
+UICorner.Parent = BackgroundFrame
 
-Top.Name = "Top"
-Top.Parent = Main
-Top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Top.BorderSizePixel = 0
-Top.Position = UDim2.new(0.0180995483, 0, 0.036144577, 0)
-Top.Size = UDim2.new(0, 424, 0, 22)
+UIStroke.Parent = BackgroundFrame
+UIStroke.Color = Color3.fromRGB(86, 86, 86)
+UIStroke.Thickness = 2.000
 
-UICorner_2.Parent = Top
+TabsFrame.Name = "TabsFrame"
+TabsFrame.Parent = BackgroundFrame
 
-Home_Button.Name = "Home_Button"
-Home_Button.Parent = Top
-Home_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Home_Button.BackgroundTransparency = 1.000
-Home_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Home_Button.BorderSizePixel = 0
-Home_Button.Position = UDim2.new(0.0366666652, 0, 0.0454545468, 0)
-Home_Button.Size = UDim2.new(0, 19, 0, 18)
-Home_Button.Image = "http://www.roblox.com/asset/?id=109306454828475"
+EditorFrame.Name = "EditorFrame"
+EditorFrame.Parent = TabsFrame
+EditorFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+EditorFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorFrame.BorderSizePixel = 0
+EditorFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
+EditorFrame.Size = UDim2.new(0, 383, 0, 235)
+EditorFrame.Visible = false
 
-Exec_Button.Name = "Exec_Button"
-Exec_Button.Parent = Top
-Exec_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Exec_Button.BackgroundTransparency = 1.000
-Exec_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exec_Button.BorderSizePixel = 0
-Exec_Button.Position = UDim2.new(0.475974828, 0, 0, 0)
-Exec_Button.Size = UDim2.new(0, 21, 0, 21)
-Exec_Button.Image = "http://www.roblox.com/asset/?id=11570895459"
+UICorner_2.Parent = EditorFrame
 
-Script_Searcher_Button.Name = "Script_Searcher_Button"
-Script_Searcher_Button.Parent = Top
-Script_Searcher_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Script_Searcher_Button.BackgroundTransparency = 1.000
-Script_Searcher_Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Script_Searcher_Button.BorderSizePixel = 0
-Script_Searcher_Button.Position = UDim2.new(0.919119477, 0, 0.0454545468, 0)
-Script_Searcher_Button.Size = UDim2.new(0, 24, 0, 22)
-Script_Searcher_Button.Image = "rbxassetid://97239278789958"
+UIStroke_2.Parent = EditorFrame
+UIStroke_2.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_2.Thickness = 2.000
 
-Home_Page.Name = "Home_Page"
-Home_Page.Parent = Main
-Home_Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Home_Page.BackgroundTransparency = 0.030
-Home_Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Home_Page.BorderSizePixel = 0
-Home_Page.Position = UDim2.new(0.0180995483, 0, 0.153913513, 0)
-Home_Page.Size = UDim2.new(0, 424, 0, 201)
+ExecuteFrame.Name = "ExecuteFrame"
+ExecuteFrame.Parent = EditorFrame
+ExecuteFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ExecuteFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteFrame.BorderSizePixel = 0
+ExecuteFrame.Position = UDim2.new(0.873442113, 0, 0.802685678, 0)
+ExecuteFrame.Size = UDim2.new(0, 34, 0, 34)
 
-UICorner_3.Parent = Home_Page
+UICorner_3.Parent = ExecuteFrame
 
-TextLabel.Parent = Home_Page
-TextLabel.BackgroundColor3 = Color3.fromRGB(0, 148, 0)
+UIStroke_3.Parent = ExecuteFrame
+UIStroke_3.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_3.Thickness = 2.000
+
+Execute.Name = "Execute"
+Execute.Parent = ExecuteFrame
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 1.000
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
+Execute.Size = UDim2.new(0, 28, 0, 26)
+Execute.Image = "rbxassetid://111121478238230"
+
+ClearFrame.Name = "ClearFrame"
+ClearFrame.Parent = EditorFrame
+ClearFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ClearFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClearFrame.BorderSizePixel = 0
+ClearFrame.Position = UDim2.new(0.755948603, 0, 0.802685678, 0)
+ClearFrame.Size = UDim2.new(0, 34, 0, 34)
+
+UICorner_4.Parent = ClearFrame
+
+UIStroke_4.Parent = ClearFrame
+UIStroke_4.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_4.Thickness = 2.000
+
+Clear.Name = "Clear"
+Clear.Parent = ClearFrame
+Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clear.BackgroundTransparency = 1.000
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
+Clear.Size = UDim2.new(0, 28, 0, 26)
+Clear.Image = "rbxassetid://120127860996365"
+
+CopyFrame.Name = "CopyFrame"
+CopyFrame.Parent = EditorFrame
+CopyFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+CopyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CopyFrame.BorderSizePixel = 0
+CopyFrame.Position = UDim2.new(0.628011286, 0, 0.802685678, 0)
+CopyFrame.Size = UDim2.new(0, 34, 0, 34)
+
+UICorner_5.Parent = CopyFrame
+
+UIStroke_5.Parent = CopyFrame
+UIStroke_5.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_5.Thickness = 2.000
+
+Copy.Name = "Copy"
+Copy.Parent = CopyFrame
+Copy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Copy.BackgroundTransparency = 1.000
+Copy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Copy.BorderSizePixel = 0
+Copy.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
+Copy.Size = UDim2.new(0, 28, 0, 26)
+Copy.Image = "rbxassetid://104218902441340"
+
+PasteFrame.Name = "PasteFrame"
+PasteFrame.Parent = EditorFrame
+PasteFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+PasteFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PasteFrame.BorderSizePixel = 0
+PasteFrame.Position = UDim2.new(0.505295873, 0, 0.802685678, 0)
+PasteFrame.Size = UDim2.new(0, 34, 0, 34)
+
+UICorner_6.Parent = PasteFrame
+
+UIStroke_6.Parent = PasteFrame
+UIStroke_6.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_6.Thickness = 2.000
+
+Paste.Name = "Paste"
+Paste.Parent = PasteFrame
+Paste.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Paste.BackgroundTransparency = 1.000
+Paste.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Paste.BorderSizePixel = 0
+Paste.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
+Paste.Size = UDim2.new(0, 28, 0, 26)
+Paste.Image = "rbxassetid://82697895065869"
+
+TextBox.Parent = EditorFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0179003533, 0, 0.00425531901, 0)
+TextBox.Size = UDim2.new(0, 368, 0, 182)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
+TextBox.PlaceholderText = "-- [[\nHybrid Android 2.0.0\nCreated by offset_fucker\n]] --"
+TextBox.Text = isfile('HybridContents.lua') and readfile('HybridContents.lua') or ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 12.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+TextBox:GetPropertyChangedSignal('Text'):Connect(function()
+    writefile('HybridContents.lua', tostring(TextBox.Text))
+    local tab = {}
+    for i = 1, (#TextBox.Text:split('\n')) do
+        table.insert(tab, tostring(i))
+    end
+end)
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = TabsFrame
+HomeFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+HomeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeFrame.BorderSizePixel = 0
+HomeFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
+HomeFrame.Size = UDim2.new(0, 383, 0, 235)
+
+UICorner_7.Parent = HomeFrame
+
+UIStroke_7.Parent = HomeFrame
+UIStroke_7.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_7.Thickness = 2.000
+
+ChangelogsFrame.Name = "ChangelogsFrame"
+ChangelogsFrame.Parent = HomeFrame
+ChangelogsFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ChangelogsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogsFrame.BorderSizePixel = 0
+ChangelogsFrame.Position = UDim2.new(0.62088275, 0, 0.0409835503, 0)
+ChangelogsFrame.Size = UDim2.new(0, 135, 0, 215)
+
+UICorner_8.Parent = ChangelogsFrame
+
+UIStroke_8.Parent = ChangelogsFrame
+UIStroke_8.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_8.Thickness = 2.000
+
+Line.Name = "Line"
+Line.Parent = ChangelogsFrame
+Line.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.0626311153, 0, 0.115510881, 0)
+Line.Size = UDim2.new(0, 117, 0, 2)
+
+UICorner_9.Parent = Line
+
+ChangelogsTitle.Name = "ChangelogsTitle"
+ChangelogsTitle.Parent = ChangelogsFrame
+ChangelogsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogsTitle.BackgroundTransparency = 1.000
+ChangelogsTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogsTitle.BorderSizePixel = 0
+ChangelogsTitle.Position = UDim2.new(0.140740737, 0, 0.041860465, 0)
+ChangelogsTitle.Size = UDim2.new(0, 96, 0, 11)
+ChangelogsTitle.Font = Enum.Font.Ubuntu
+ChangelogsTitle.Text = "Changelogs"
+ChangelogsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogsTitle.TextSize = 14.000
+
+ChangelogsContent.Name = "ChangelogsContent"
+ChangelogsContent.Parent = ChangelogsFrame
+ChangelogsContent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogsContent.BackgroundTransparency = 1.000
+ChangelogsContent.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogsContent.BorderSizePixel = 0
+ChangelogsContent.Position = UDim2.new(0.0666666701, 0, 0.181395352, 0)
+ChangelogsContent.Size = UDim2.new(0, 117, 0, 11)
+ChangelogsContent.Font = Enum.Font.Ubuntu
+ChangelogsContent.Text = "[+] Changelogs"
+ChangelogsContent.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogsContent.TextSize = 14.000
+ChangelogsContent.TextXAlignment = Enum.TextXAlignment.Left
+
+FPSFrame.Name = "FPSFrame"
+FPSFrame.Parent = HomeFrame
+FPSFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+FPSFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FPSFrame.BorderSizePixel = 0
+FPSFrame.Position = UDim2.new(0.0231294557, 0, 0.038297873, 0)
+FPSFrame.Size = UDim2.new(0, 76, 0, 21)
+
+UICorner_10.Parent = FPSFrame
+
+UIStroke_9.Parent = FPSFrame
+UIStroke_9.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_9.Thickness = 2.000
+
+FPSTitle.Name = "FPSTitle"
+FPSTitle.Parent = FPSFrame
+FPSTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPSTitle.BackgroundTransparency = 1.000
+FPSTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FPSTitle.BorderSizePixel = 0
+FPSTitle.Position = UDim2.new(0.0617932789, 0, 0.041859217, 0)
+FPSTitle.Size = UDim2.new(0, 65, 0, 18)
+FPSTitle.Font = Enum.Font.Ubuntu
+FPSTitle.Text = "FPS : "
+FPSTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPSTitle.TextSize = 14.000
+FPSTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+QuickScriptsFrame.Name = "QuickScriptsFrame"
+QuickScriptsFrame.Parent = HomeFrame
+QuickScriptsFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+QuickScriptsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickScriptsFrame.BorderSizePixel = 0
+QuickScriptsFrame.Position = UDim2.new(0.245875105, 0, 0.0367282294, 0)
+QuickScriptsFrame.Size = UDim2.new(0, 132, 0, 215)
+
+UICorner_11.Parent = QuickScriptsFrame
+
+UIStroke_10.Parent = QuickScriptsFrame
+UIStroke_10.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_10.Thickness = 2.000
+
+Line_2.Name = "Line"
+Line_2.Parent = QuickScriptsFrame
+Line_2.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(0.0626311153, 0, 0.115510881, 0)
+Line_2.Size = UDim2.new(0, 117, 0, 2)
+
+UICorner_12.Parent = Line_2
+
+QuickScriptTitle.Name = "QuickScriptTitle"
+QuickScriptTitle.Parent = QuickScriptsFrame
+QuickScriptTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+QuickScriptTitle.BackgroundTransparency = 1.000
+QuickScriptTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickScriptTitle.BorderSizePixel = 0
+QuickScriptTitle.Position = UDim2.new(0.140740737, 0, 0.041860465, 0)
+QuickScriptTitle.Size = UDim2.new(0, 96, 0, 11)
+QuickScriptTitle.Font = Enum.Font.Ubuntu
+QuickScriptTitle.Text = "Quick Scripts"
+QuickScriptTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuickScriptTitle.TextSize = 14.000
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = QuickScriptsFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.0626308545, 0, 0.185565472, 0)
+InfiniteYield.Size = UDim2.new(0, 117, 0, 27)
+
+UICorner_13.Parent = InfiniteYield
+
+UIStroke_11.Parent = InfiniteYield
+UIStroke_11.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_11.Thickness = 2.000
+
+InfYieldBTN.Name = "InfYieldBTN"
+InfYieldBTN.Parent = InfiniteYield
+InfYieldBTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfYieldBTN.BackgroundTransparency = 1.000
+InfYieldBTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfYieldBTN.BorderSizePixel = 0
+InfYieldBTN.Size = UDim2.new(0, 116, 0, 27)
+InfYieldBTN.Font = Enum.Font.Ubuntu
+InfYieldBTN.Text = "Infinite Yield Script"
+InfYieldBTN.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfYieldBTN.TextSize = 14.000
+
+UNCTest.Name = "UNCTest"
+UNCTest.Parent = QuickScriptsFrame
+UNCTest.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+UNCTest.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UNCTest.BorderSizePixel = 0
+UNCTest.Position = UDim2.new(0.0626308545, 0, 0.353007317, 0)
+UNCTest.Size = UDim2.new(0, 117, 0, 27)
+
+UICorner_14.Parent = UNCTest
+
+UIStroke_12.Parent = UNCTest
+UIStroke_12.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_12.Thickness = 2.000
+
+UNCScriptBTN.Name = "UNCScriptBTN"
+UNCScriptBTN.Parent = UNCTest
+UNCScriptBTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UNCScriptBTN.BackgroundTransparency = 1.000
+UNCScriptBTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UNCScriptBTN.BorderSizePixel = 0
+UNCScriptBTN.Size = UDim2.new(0, 116, 0, 27)
+UNCScriptBTN.Font = Enum.Font.Ubuntu
+UNCScriptBTN.Text = "UNC Test Script"
+UNCScriptBTN.TextColor3 = Color3.fromRGB(255, 255, 255)
+UNCScriptBTN.TextSize = 14.000
+
+PINGFrame.Name = "PINGFrame"
+PINGFrame.Parent = HomeFrame
+PINGFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+PINGFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PINGFrame.BorderSizePixel = 0
+PINGFrame.Position = UDim2.new(0.0205184892, 0, 0.174468085, 0)
+PINGFrame.Size = UDim2.new(0, 76, 0, 21)
+
+UICorner_15.Parent = PINGFrame
+
+UIStroke_13.Parent = PINGFrame
+UIStroke_13.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_13.Thickness = 2.000
+
+PINGTitle.Name = "PINGTitle"
+PINGTitle.Parent = PINGFrame
+PINGTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PINGTitle.BackgroundTransparency = 1.000
+PINGTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PINGTitle.BorderSizePixel = 0
+PINGTitle.Position = UDim2.new(0.0749511719, 0, 0.041859217, 0)
+PINGTitle.Size = UDim2.new(0, 65, 0, 18)
+PINGTitle.Font = Enum.Font.Ubuntu
+PINGTitle.Text = "PING : "
+PINGTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+PINGTitle.TextSize = 14.000
+PINGTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+CloudFrame.Name = "CloudFrame"
+CloudFrame.Parent = TabsFrame
+CloudFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+CloudFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudFrame.BorderSizePixel = 0
+CloudFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
+CloudFrame.Size = UDim2.new(0, 383, 0, 235)
+CloudFrame.Visible = false
+
+UICorner_16.Parent = CloudFrame
+
+UIStroke_14.Parent = CloudFrame
+UIStroke_14.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_14.Thickness = 2.000
+
+TextLabel.Parent = CloudFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.31839624, 0, 0.246464521, 0)
-TextLabel.Size = UDim2.new(0, 154, 0, 32)
-TextLabel.Font = Enum.Font.Merriweather
-TextLabel.Text = "KeyLess"
+TextLabel.Position = UDim2.new(0.151436031, 0, 0.174468085, 0)
+TextLabel.Size = UDim2.new(0, 266, 0, 38)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Tab is currently in development."
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 18.000
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
-UICorner_4.Parent = TextLabel
+Tabs.Name = "Tabs"
+Tabs.Parent = BackgroundFrame
 
-TextLabel_2.Parent = Home_Page
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.264321655, 0, 0.00239767949, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_2.Font = Enum.Font.Merriweather
-TextLabel_2.Text = "Key Status  🔑"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 20.000
+MainIconFrame.Name = "MainIconFrame"
+MainIconFrame.Parent = Tabs
+MainIconFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+MainIconFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainIconFrame.BorderSizePixel = 0
+MainIconFrame.Position = UDim2.new(0.0255941506, 0, 0.305575013, 0)
+MainIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
-Logo.Name = "Logo"
-Logo.Parent = Home_Page
-Logo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Logo.BorderSizePixel = 0
-Logo.Position = UDim2.new(0.0229869336, 0, 0.00131870853, 0)
-Logo.Size = UDim2.new(0, 125, 0, 33)
+UICorner_17.Parent = MainIconFrame
 
-UICorner_5.Parent = Logo
+UIStroke_15.Parent = MainIconFrame
+UIStroke_15.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_15.Thickness = 2.000
 
-TextLabel_3.Parent = Logo
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.194075927, 0, 0.294193149, 0)
-TextLabel_3.Size = UDim2.new(0, 72, 0, 11)
-TextLabel_3.Font = Enum.Font.Merriweather
-TextLabel_3.Text = "igmaSploit"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 15.000
-
-ImageLabel.Parent = Logo
+ImageLabel.Parent = MainIconFrame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(-0.0480000004, 0, 0.0151515156, 0)
-ImageLabel.Size = UDim2.new(0, 30, 0, 31)
-ImageLabel.Image = "rbxassetid://123530736784263"
+ImageLabel.Position = UDim2.new(0.05982906, 0, 0.15625, 0)
+ImageLabel.Size = UDim2.new(0, 20, 0, 21)
+ImageLabel.Image = "rbxassetid://123370313025714"
 
-Script_Search_Page.Name = "Script_Search_Page"
-Script_Search_Page.Parent = Main
-Script_Search_Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Script_Search_Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Script_Search_Page.BorderSizePixel = 0
-Script_Search_Page.Position = UDim2.new(0.0225248728, 0, 0.154000029, 0)
-Script_Search_Page.Size = UDim2.new(0, 424, 0, 201)
-Script_Search_Page.Visible = false
+MainButton.Name = "MainButton"
+MainButton.Parent = MainIconFrame
+MainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.BackgroundTransparency = 1.000
+MainButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.BorderSizePixel = 0
+MainButton.Size = UDim2.new(0, 117, 0, 32)
+MainButton.Font = Enum.Font.Ubuntu
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.TextSize = 14.000
+MainButton.MouseButton1Click:Connect(function()
+    HomeFrame.Visible = true
+    EditorFrame.Visible = false
+    CloudFrame.Visible = false
+end)
 
-UICorner_6.Parent = Script_Search_Page
+CloudIconFrame.Name = "CloudIconFrame"
+CloudIconFrame.Parent = Tabs
+CloudIconFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+CloudIconFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudIconFrame.BorderSizePixel = 0
+CloudIconFrame.Position = UDim2.new(0.0255941506, 0, 0.651878476, 0)
+CloudIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
-Exec_Text.Name = "Exec_Text"
-Exec_Text.Parent = Script_Search_Page
-Exec_Text.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-Exec_Text.BackgroundTransparency = 0.060
-Exec_Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exec_Text.BorderSizePixel = 0
-Exec_Text.Position = UDim2.new(0.0212264154, 0, 0.0298507456, 0)
-Exec_Text.Size = UDim2.new(0, 407, 0, 37)
-Exec_Text.Font = Enum.Font.SourceSans
-Exec_Text.PlaceholderText = "Powerd By ScriptBlox.com"
-Exec_Text.Text = ""
-Exec_Text.TextColor3 = Color3.fromRGB(255, 255, 255)
-Exec_Text.TextSize = 14.000
+UICorner_18.Parent = CloudIconFrame
 
-UICorner_7.Parent = Exec_Text
+UIStroke_16.Parent = CloudIconFrame
+UIStroke_16.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_16.Thickness = 2.000
 
-Results.Name = "Results"
-Results.Parent = Script_Search_Page
-Results.Active = true
-Results.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-Results.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Results.BorderSizePixel = 0
-Results.Position = UDim2.new(0.0283018872, 0, 0.248756215, 0)
-Results.Size = UDim2.new(0, 404, 0, 143)
+CloudImage.Name = "CloudImage"
+CloudImage.Parent = CloudIconFrame
+CloudImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloudImage.BackgroundTransparency = 1.000
+CloudImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudImage.BorderSizePixel = 0
+CloudImage.Position = UDim2.new(0.05982906, 0, 0.15625, 0)
+CloudImage.Size = UDim2.new(0, 20, 0, 21)
+CloudImage.Image = "rbxassetid://76855458871151"
 
-Exec_Page.Name = "Exec_Page"
-Exec_Page.Parent = Main
-Exec_Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Exec_Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exec_Page.BorderSizePixel = 0
-Exec_Page.Position = UDim2.new(0.0179999992, 0, 0.153999999, 0)
-Exec_Page.Size = UDim2.new(0, 424, 0, 201)
-Exec_Page.Visible = false
+CloudButton.Name = "CloudButton"
+CloudButton.Parent = CloudIconFrame
+CloudButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloudButton.BackgroundTransparency = 1.000
+CloudButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudButton.BorderSizePixel = 0
+CloudButton.Size = UDim2.new(0, 117, 0, 32)
+CloudButton.Font = Enum.Font.Ubuntu
+CloudButton.Text = "Cloud"
+CloudButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloudButton.TextSize = 14.000
+CloudButton.MouseButton1Click:Connect(function()
+    HomeFrame.Visible = false
+    EditorFrame.Visible = false
+    CloudFrame.Visible = true
+end)
 
-UICorner_8.Parent = Exec_Page
+EditorIconFrame.Name = "EditorIconFrame"
+EditorIconFrame.Parent = Tabs
+EditorIconFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+EditorIconFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorIconFrame.BorderSizePixel = 0
+EditorIconFrame.Position = UDim2.new(0.0255941506, 0, 0.476781219, 0)
+EditorIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
-Exec_Text_2.Name = "Exec_Text"
-Exec_Text_2.Parent = Exec_Page
-Exec_Text_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-Exec_Text_2.BackgroundTransparency = 0.060
-Exec_Text_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exec_Text_2.BorderSizePixel = 0
-Exec_Text_2.Position = UDim2.new(0.0212264154, 0, 0.0298507847, 0)
-Exec_Text_2.Size = UDim2.new(0, 407, 0, 141)
-Exec_Text_2.Font = Enum.Font.SourceSans
-Exec_Text_2.PlaceholderText = "print(\"SigmaSploit Beta\")"
-Exec_Text_2.Text = ""
-Exec_Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Exec_Text_2.TextSize = 14.000
+UICorner_19.Parent = EditorIconFrame
 
-UICorner_9.Parent = Exec_Text_2
+UIStroke_17.Parent = EditorIconFrame
+UIStroke_17.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_17.Thickness = 2.000
 
-Execute.Name = "Execute"
-Execute.Parent = Exec_Page
-Execute.BackgroundColor3 = Color3.fromRGB(0, 0, 161)
-Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Execute.BorderSizePixel = 0
-Execute.Position = UDim2.new(0.0283018872, 0, 0.803811133, 0)
-Execute.Size = UDim2.new(0, 104, 0, 30)
-Execute.Font = Enum.Font.Merriweather
-Execute.Text = "Execute"
-Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
-Execute.TextSize = 14.000
+EditorImage.Name = "EditorImage"
+EditorImage.Parent = EditorIconFrame
+EditorImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EditorImage.BackgroundTransparency = 1.000
+EditorImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorImage.BorderSizePixel = 0
+EditorImage.Position = UDim2.new(0.05982906, 0, 0.15625, 0)
+EditorImage.Size = UDim2.new(0, 20, 0, 21)
+EditorImage.Image = "rbxassetid://71488984335205"
 
-UICorner_10.Parent = Execute
+EditorButton.Name = "EditorButton"
+EditorButton.Parent = EditorIconFrame
+EditorButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EditorButton.BackgroundTransparency = 1.000
+EditorButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorButton.BorderSizePixel = 0
+EditorButton.Size = UDim2.new(0, 117, 0, 32)
+EditorButton.Font = Enum.Font.Ubuntu
+EditorButton.Text = "Editor"
+EditorButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+EditorButton.TextSize = 14.000
+EditorButton.MouseButton1Click:Connect(function()
+    HomeFrame.Visible = false
+    EditorFrame.Visible = true
+    CloudFrame.Visible = false
+end)
 
-Paste.Name = "Paste"
-Paste.Parent = Exec_Page
-Paste.BackgroundColor3 = Color3.fromRGB(0, 0, 161)
-Paste.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Paste.BorderSizePixel = 0
-Paste.Position = UDim2.new(0.389150947, 0, 0.803811133, 0)
-Paste.Size = UDim2.new(0, 104, 0, 30)
-Paste.Font = Enum.Font.Merriweather
-Paste.Text = "Paste"
-Paste.TextColor3 = Color3.fromRGB(255, 255, 255)
-Paste.TextSize = 14.000
+ExitIconFrame.Name = "ExitIconFrame"
+ExitIconFrame.Parent = Tabs
+ExitIconFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ExitIconFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExitIconFrame.BorderSizePixel = 0
+ExitIconFrame.Position = UDim2.new(0.0255941562, 0, 0.830866814, 0)
+ExitIconFrame.Size = UDim2.new(0, 31, 0, 32)
 
-UICorner_11.Parent = Paste
+UICorner_20.Parent = ExitIconFrame
 
-Clear.Name = "Clear"
-Clear.Parent = Exec_Page
-Clear.BackgroundColor3 = Color3.fromRGB(0, 0, 161)
-Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Clear.BorderSizePixel = 0
-Clear.Position = UDim2.new(0.735849082, 0, 0.798835993, 0)
-Clear.Size = UDim2.new(0, 104, 0, 30)
-Clear.Font = Enum.Font.Merriweather
-Clear.Text = "Clear"
-Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
-Clear.TextSize = 14.000
+UIStroke_18.Parent = ExitIconFrame
+UIStroke_18.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_18.Thickness = 2.000
 
-UICorner_12.Parent = Clear
+Exit.Name = "Exit"
+Exit.Parent = ExitIconFrame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.BackgroundTransparency = 1.000
+Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.017642606, 0, 0.0962085724, 0)
+Exit.Rotation = -90.000
+Exit.Size = UDim2.new(0, 27, 0, 26)
+Exit.Image = "rbxassetid://95799753277220"
+Exit.MouseButton1Click:Connect(function() 
+	BackgroundFrame.Visible = false
+	ImageButton.Visible = true
+end)
 
-Showhide.Name = "Show/hide"
-Showhide.Parent = Sigma_Sploit_UI_V2
-Showhide.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Showhide.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Showhide.BorderSizePixel = 0
-Showhide.Position = UDim2.new(0.0159655642, 0, 0.43541503, 0)
-Showhide.Size = UDim2.new(0, 48, 0, 50)
-Showhide.Image = "rbxassetid://123530736784263"
+TitleFrame.Name = "TitleFrame"
+TitleFrame.Parent = Tabs
+TitleFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TitleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleFrame.BorderSizePixel = 0
+TitleFrame.Position = UDim2.new(0.0968921408, 0, 0.0409835652, 0)
+TitleFrame.Size = UDim2.new(0, 39, 0, 35)
 
-UICorner_13.CornerRadius = UDim.new(1, 0)
-UICorner_13.Parent = Showhide
+UICorner_21.Parent = TitleFrame
+
+UIStroke_19.Parent = TitleFrame
+UIStroke_19.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_19.Thickness = 2.000
+
+HybridLogo.Name = "HybridLogo"
+HybridLogo.Parent = TitleFrame
+HybridLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HybridLogo.BackgroundTransparency = 1.000
+HybridLogo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HybridLogo.BorderSizePixel = 0
+HybridLogo.Position = UDim2.new(-0.119657859, 0, -0.200000003, 0)
+HybridLogo.Size = UDim2.new(0, 51, 0, 48)
+HybridLogo.Image = "rbxassetid://72310455670962"
+
+Lines.Name = "Lines"
+Lines.Parent = BackgroundFrame
+
+Line_3.Name = "Line"
+Line_3.Parent = Lines
+Line_3.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Line_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_3.BorderSizePixel = 0
+Line_3.Position = UDim2.new(0.259597808, 0, 0.95538044, 0)
+Line_3.Size = UDim2.new(0, 2, 0, -234)
+
+UICorner_22.Parent = Line_3
+
+Line_4.Name = "Line"
+Line_4.Parent = Lines
+Line_4.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Line_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_4.BorderSizePixel = 0
+Line_4.Position = UDim2.new(0.0255941506, 0, 0.231789917, 0)
+Line_4.Size = UDim2.new(0, 117, 0, 2)
+
+UICorner_23.Parent = Line_4
+
+ImageButton.Parent = Hybrid
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.464698344, 0, 0.0334261842, 0)
+ImageButton.Size = UDim2.new(0, 55, 0, 55)
+ImageButton.Image = "rbxassetid://72310455670962"
+ImageButton.MouseButton1Click:Connect(function() 
+	BackgroundFrame.Visible = true
+	ImageButton.Visible = false
+end)
 
 -- Scripts:
 
-local function ZJTA_fake_script() -- Home_Button.LocalScript 
-	local script = Instance.new('LocalScript', Home_Button)
-
-	local TweenService = game:GetService("TweenService")
-	
-	local Tab = script.Parent.Parent.Parent.Home_Page
-	
-	local OpenTab = script.Parent
-	
-	local function TabOpen()
-		script.Parent.Parent.Parent.Script_Search_Page.Visible = false
-		script.Parent.Parent.Parent.Exec_Page.Visible = false
-		Tab.Visible = true
-		Tab.Transparency = 1
-		Tab.Transparency = 0.9
-		wait(0.1)
-		Tab.Transparency = 0.8
-		wait(0.1)
-		Tab.Transparency = 0.7
-		wait(0.1)
-		Tab.Transparency = 0.6
-		wait(0.1)
-		Tab.Transparency = 0.5
-		wait(0.1)
-		Tab.Transparency = 0.4
-		wait(0.1)
-		Tab.Transparency = 0.3
-		wait(0.1)
-		Tab.Transparency = 0.2
-		wait(0.1)
-		Tab.Transparency = 0.1
-		wait(0.1)
-		Tab.Transparency = 0
-	end
-	
-	
-	local function OpenedTab()
-		-- game:GetService("StarterGui"):SetCore("SendNotification",{
-		-- Title = "Tab Already Opened",
-		-- Text = "Diet Coke is not gay!",
-		-- })
-	end
-	
-	OpenTab.MouseButton1Click:Connect(function()
-		if Tab.Visible == true then
-			OpenedTab()
-		else
-			TabOpen()
-		end
-	end)
-end
-coroutine.wrap(ZJTA_fake_script)()
-local function UBXJZIS_fake_script() -- Exec_Button.LocalScript 
-	local script = Instance.new('LocalScript', Exec_Button)
-
-	local TweenService = game:GetService("TweenService")
-	
-	local Tab = script.Parent.Parent.Parent.Exec_Page
-	
-	local OpenTab = script.Parent
-	
-	local function TabOpen()
-		script.Parent.Parent.Parent.Script_Search_Page.Visible = false
-		script.Parent.Parent.Parent.Home_Page.Visible = false
-		Tab.Visible = true
-		Tab.Transparency = 1
-		Tab.Transparency = 0.9
-		wait(0.1)
-		Tab.Transparency = 0.8
-		wait(0.1)
-		Tab.Transparency = 0.7
-		wait(0.1)
-		Tab.Transparency = 0.6
-		wait(0.1)
-		Tab.Transparency = 0.5
-		wait(0.1)
-		Tab.Transparency = 0.4
-		wait(0.1)
-		Tab.Transparency = 0.3
-		wait(0.1)
-		Tab.Transparency = 0.2
-		wait(0.1)
-		Tab.Transparency = 0.1
-		wait(0.1)
-		Tab.Transparency = 0
-	end
-	
-	
-	local function OpenedTab()
-		-- game:GetService("StarterGui"):SetCore("SendNotification",{
-		-- Title = "Tab Already Opened",
-		-- Text = "Diet Coke is not gay!",
-		-- })
-	end
-	
-	OpenTab.MouseButton1Click:Connect(function()
-		if Tab.Visible == true then
-			OpenedTab()
-		else
-			TabOpen()
-		end
-	end)
-end
-coroutine.wrap(UBXJZIS_fake_script)()
-local function HBNW_fake_script() -- Script_Searcher_Button.LocalScript 
-	local script = Instance.new('LocalScript', Script_Searcher_Button)
-
-	local TweenService = game:GetService("TweenService")
-	
-	local Tab = script.Parent.Parent.Parent.Script_Search_Page
-	
-	local OpenTab = script.Parent
-	
-	local function TabOpen()
-		script.Parent.Parent.Parent.Exec_Page.Visible = false
-		script.Parent.Parent.Parent.Home_Page.Visible = false
-		Tab.Visible = true
-		Tab.Transparency = 1
-		Tab.Transparency = 0.9
-		wait(0.1)
-		Tab.Transparency = 0.8
-		wait(0.1)
-		Tab.Transparency = 0.7
-		wait(0.1)
-		Tab.Transparency = 0.6
-		wait(0.1)
-		Tab.Transparency = 0.5
-		wait(0.1)
-		Tab.Transparency = 0.4
-		wait(0.1)
-		Tab.Transparency = 0.3
-		wait(0.1)
-		Tab.Transparency = 0.2
-		wait(0.1)
-		Tab.Transparency = 0.1
-		wait(0.1)
-		Tab.Transparency = 0
-	end
-	
-	
-	local function OpenedTab()
-		-- game:GetService("StarterGui"):SetCore("SendNotification",{
-		-- Title = "Tab Already Opened",
-		-- Text = "Diet Coke is not gay!",
-		-- })
-	end
-	
-	OpenTab.MouseButton1Click:Connect(function()
-		if Tab.Visible == true then
-			OpenedTab()
-		else
-			TabOpen()
-		end
-	end)
-end
-coroutine.wrap(HBNW_fake_script)()
-local function NTXRIQ_fake_script() -- Results.LocalScript 
-	local script = Instance.new('LocalScript', Results)
-
-	local textBox = script.Parent.Parent.Exec_Text
-	local scrollingFrame = script.Parent
-	local httpService = game:GetService("HttpService")
-	
-	if not scrollingFrame:FindFirstChild("UIListLayout") then
-		local listLayout = Instance.new("UIListLayout")
-		listLayout.Parent = scrollingFrame
-		listLayout.SortOrder = Enum.SortOrder.LayoutOrder
-		listLayout.Padding = UDim.new(0, 5)
-	end
-	
-	local function clearResults()
-		for _, child in ipairs(scrollingFrame:GetChildren()) do
-			if child:IsA("Frame") then
-				child:Destroy()
-			end
-		end
-		scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
-	end
-	
-	local function createRoundedFrame(parent, size, position)
-		local frame = Instance.new("Frame")
-		frame.Size = size
-		frame.Position = position
-		frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-		frame.BorderSizePixel = 0
-		frame.Parent = parent
-	
-		local corner = Instance.new("UICorner")
-		corner.CornerRadius = UDim.new(0, 8)
-		corner.Parent = frame
-	
-		return frame
-	end
-	
-	local function searchScripts(query)
-		clearResults()
-	
-		local url = "https://scriptblox.com/api/script/search?q=" .. query
-		local success, response = pcall(function()
-			return game:HttpGet(url)
-		end)
-	
-		if success then
-			local data = httpService:JSONDecode(response)
-	
-			if data and data.result and data.result.scripts then
-				for _, scriptData in ipairs(data.result.scripts) do
-					local scriptName = scriptData.title or "Unknown"
-					local scriptContent = scriptData.script or ""
-					local isVerified = scriptData.verified or false
-					local hasKey = scriptData.key or false
-					local gameName = scriptData.game and scriptData.game.name or "Unknown Game"
-					local views = scriptData.views or 0
-	
-					local resultFrame = createRoundedFrame(scrollingFrame, UDim2.new(1, -10, 0, 80), UDim2.new(0, 5, 0, 0))
-					resultFrame.LayoutOrder = #scrollingFrame:GetChildren()
-	
-					local verifiedLabel = Instance.new("TextLabel")
-					verifiedLabel.Size = UDim2.new(0, 20, 0, 20)
-					verifiedLabel.Position = UDim2.new(0, 5, 0, 5)
-					verifiedLabel.Text = isVerified and "✅" or "❌"
-					verifiedLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
-					verifiedLabel.BackgroundTransparency = 1
-					verifiedLabel.Parent = resultFrame
-	
-					local viewsLabel = Instance.new("TextLabel")
-					viewsLabel.Size = UDim2.new(0, 60, 0, 20)
-					viewsLabel.Position = UDim2.new(1, -65, 0, 5)
-					viewsLabel.Text = "👀 " .. views
-					viewsLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
-					viewsLabel.TextXAlignment = Enum.TextXAlignment.Right
-					viewsLabel.BackgroundTransparency = 1
-					viewsLabel.Parent = resultFrame
-	
-					local detailsFrame = Instance.new("Frame")
-					detailsFrame.Size = UDim2.new(0.7, -10, 1, -10)
-					detailsFrame.Position = UDim2.new(0, 30, 0.5, -30)
-					detailsFrame.BackgroundTransparency = 1
-					detailsFrame.Parent = resultFrame
-	
-					local scriptNameLabel = Instance.new("TextLabel")
-					scriptNameLabel.Size = UDim2.new(1, 0, 0.4, 0)
-					scriptNameLabel.Text = scriptName
-					scriptNameLabel.TextScaled = true
-					scriptNameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-					scriptNameLabel.BackgroundTransparency = 1
-					scriptNameLabel.Parent = detailsFrame
-	
-					local gameNameLabel = Instance.new("TextLabel")
-					gameNameLabel.Size = UDim2.new(1, 0, 0.3, 0)
-					gameNameLabel.Position = UDim2.new(0, 0, 0.4, 0)
-					gameNameLabel.Text = "Game: " .. gameName
-					gameNameLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
-					gameNameLabel.BackgroundTransparency = 1
-					gameNameLabel.Parent = detailsFrame
-	
-					local keyLabel = Instance.new("TextLabel")
-					keyLabel.Size = UDim2.new(1, 0, 0.3, 0)
-					keyLabel.Position = UDim2.new(0, 0, 0.7, 0)
-					keyLabel.Text = "Key: " .. (hasKey and "🔑" or "❌")
-					keyLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
-					keyLabel.BackgroundTransparency = 1
-					keyLabel.Parent = detailsFrame
-	
-					local executeButton = Instance.new("TextButton")
-					executeButton.Size = UDim2.new(0.1, 0, 0.5, 0)
-					executeButton.Position = UDim2.new(0.88, 0, 0.25, 0)
-					executeButton.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
-					executeButton.Text = "Execute"
-					executeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-					executeButton.Parent = resultFrame
-	
-					local buttonCorner = Instance.new("UICorner")
-					buttonCorner.CornerRadius = UDim.new(0, 8)
-					buttonCorner.Parent = executeButton
-	
-					executeButton.MouseButton1Click:Connect(function()
-						local success, err = pcall(function()
-							loadstring(scriptContent)()
-						end)
-						if not success then
-							warn("Error executing script:", err)
-						end
-					end)
-				end
-	
-				task.wait()
-				scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, scrollingFrame.UIListLayout.AbsoluteContentSize.Y)
-			end
-		end
-	end
-	
-	textBox:GetPropertyChangedSignal("Text"):Connect(function()
-		if #textBox.Text > 0 then
-			searchScripts(textBox.Text)
-		else
-			clearResults()
-		end
-	end)
-end
-coroutine.wrap(NTXRIQ_fake_script)()
-local function OYYI_fake_script() -- Execute.LocalScript 
+local function GWZS_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
-	local TextBox = script.Parent.Parent.Exec_Text
+	local button = script.Parent
+	local textbox = script.Parent.Parent.Parent.TextBox
 	
-	local ExecuteButton = script.Parent
-	ExecuteButton.MouseButton1Click:Connect(function()
-		local luaCode = TextBox.Text
-		local success, err = pcall(function()
-			loadstring(luaCode)()
-		end)
-	
-		if not success then
-			warn("Script failed to execute error: .. err")
-		end
-	end)
-	
-end
-coroutine.wrap(OYYI_fake_script)()
-local function JODWZ_fake_script() -- Paste.LocalScript 
-	local script = Instance.new('LocalScript', Paste)
-
-	local txt = script.Parent.Parent.Exec_Text
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		txt.Text = getclipboard()
+	button.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(JODWZ_fake_script)()
-local function YQOKZP_fake_script() -- Clear.LocalScript 
+coroutine.wrap(GWZS_script)()
+local function QJHPYMT_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
-	local txt = script.Parent.Parent.Exec_Text
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		txt.Text = ""
-	end)
-end
-coroutine.wrap(YQOKZP_fake_script)()
-local function MKPZP_fake_script() -- Main.LocalScript 
-	local script = Instance.new('LocalScript', Main)
-
-	local UIS = game:GetService("UserInputService")
 	local button = script.Parent
-	local dragging, dragInput, dragStart, startPos
+	local textbox = script.Parent.Parent.Parent.TextBox
 	
-	button.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging = true
-			dragStart = input.Position
-			startPos = button.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	button.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement then
-			dragInput = input
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			local delta = input.Position - dragStart
-			button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		end
-	end)
-	local UserInputService = game:GetService("UserInputService")
-	
-	
-	local MainFrame = script.Parent
-	local TopBar = script.Parent
-	
-	local Camera = workspace:WaitForChild("Camera")
-	
-	local DragMousePosition
-	local FramePosition
-	
-	
-	local Draggable = false
-	
-	TopBar.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			Draggable = true
-			DragMousePosition = Vector2.new(input.Position.X, input.Position.Y)
-			FramePosition= Vector2.new(MainFrame.Position.X.Scale, MainFrame.Position.Y.Scale)
-		end
-	end)
-	
-	TopBar.InputEnded:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			Draggable = false
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if Draggable == true then
-			local NewPosition = FramePosition + ( (Vector2.new(input.Position.X, input.Position.Y) - DragMousePosition) / Camera.ViewportSize)
-			MainFrame.Position = UDim2.new(NewPosition.X, 0, NewPosition.Y, 0)
-		end
-	end)
-end
-coroutine.wrap(MKPZP_fake_script)()
-local function BQZDTG_fake_script() -- Showhide.LocalScript 
-	local script = Instance.new('LocalScript', Showhide)
-
-	local UIS = game:GetService("UserInputService")
-	local button = script.Parent
-	local dragging, dragInput, dragStart, startPos
-	local function AlreadyVisible()
-		if button.Parent.Main.Visible == true then
-			button.Parent.Main.Visible = false
-		else
-			button.Parent.Main.Visible = true
-		end
-	end
 	button.MouseButton1Click:Connect(function()
-		AlreadyVisible()
+		textbox.Text = ""
+	end)
+end
+coroutine.wrap(QJHPYMT_script)()
+local function YMWWMS_script() -- Copy.LocalScript 
+	local script = Instance.new('LocalScript', Copy)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.Parent.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		setclipboard(textbox.Text)
+	end)
+end
+coroutine.wrap(YMWWMS_script)()
+local function MWJQLS_script() -- Paste.LocalScript 
+	local script = Instance.new('LocalScript', Paste)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.Parent.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		textbox.text = getclipboard()
+	end)
+end
+coroutine.wrap(MWJQLS_script)()
+local function ERLDZV_script() -- FPSTitle.LocalScript 
+	local script = Instance.new('LocalScript', FPSTitle)
+
+	local textLabel = script.Parent
+	local runService = game:GetService("RunService")
+	
+	local lastTime = tick()
+	local fps = 0
+	
+	runService.RenderStepped:Connect(function()
+		local currentTime = tick()
+		fps = math.floor(1 / (currentTime - lastTime))
+		lastTime = currentTime
+	
+		textLabel.Text = "Current FPS : " .. fps
 	end)
 	
-	button.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging = true
+end
+coroutine.wrap(ERLDZV_script)()
+local function LPAR_script() -- InfYieldBTN.LocalScript 
+	local script = Instance.new('LocalScript', InfYieldBTN)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
+	end)
+end
+coroutine.wrap(LPAR_script)()
+local function HJRYVP_script() -- UNCScriptBTN.LocalScript 
+	local script = Instance.new('LocalScript', UNCScriptBTN)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/refs/heads/main/UNCCheckEnv.lua"))()
+	end)
+end
+coroutine.wrap(HJRYVP_script)()
+local function YJBUF_script() -- PINGTitle.LocalScript 
+	local script = Instance.new('LocalScript', PINGTitle)
+
+	local textLabel = script.Parent
+	local statsService = game:GetService("Stats")
+	local runService = game:GetService("RunService")
+	
+	runService.RenderStepped:Connect(function()
+		local ping = statsService.Network.ServerStatsItem["Data Ping"]:GetValue()
+		textLabel.Text = "Current PING : " .. math.floor(ping) .. " ms"
+	end)
+end
+coroutine.wrap(YJBUF_script)()
+local function MHVD_script() -- BackgroundFrame.LocalScript 
+	local script = Instance.new('LocalScript', BackgroundFrame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragToggle = true
 			dragStart = input.Position
-			startPos = button.Position
+			startPos = frame.Position
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
+					dragToggle = false
 				end
 			end)
 		end
 	end)
 	
-	button.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement then
-			dragInput = input
-		end
-	end)
-	
 	UIS.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			local delta = input.Position - dragStart
-			button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
 		end
 	end)
-	
 end
-coroutine.wrap(BQZDTG_fake_script)()
+coroutine.wrap(MHVD_script)()
