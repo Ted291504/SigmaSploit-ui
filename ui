@@ -756,7 +756,7 @@ local function MWJQLS_script() -- Paste.LocalScript
 	local textbox = script.Parent.Parent.Parent.TextBox
 	
 	button.MouseButton1Click:Connect(function()
-		textbox.text = getclipboard()
+		textbox.Text = getclipboard()
 	end)
 end
 coroutine.wrap(MWJQLS_script)()
