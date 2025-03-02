@@ -1,7 +1,3 @@
-setreadonly(client, false);
-client.enableautoexec()
-setreadonly(client, true);
-
 local KeyGuardLibrary = loadstring(game:HttpGet("https://cdn.keyguardian.org/library/v1.0.0.lua"))()
 local trueData = "6fcea905dc224035a098cc29bd559cea"
 local falseData = "fc86e7ae09cc41578337a76d8585b0f5"
