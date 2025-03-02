@@ -1,3 +1,5 @@
+print("Main ui starting...")
+
 if _G.hybridloaded then
     warn("The GUI is already running!")
     return
