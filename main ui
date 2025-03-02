@@ -1,7 +1,3 @@
-setreadonly(client, false);
-client.enableautoexec = nil
-setreadonly(client, true);
-
 print("Main ui starting...")
 
 if _G.hybridloaded then
