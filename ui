@@ -1,8 +1,3 @@
-if _G.hybridloaded then
-    warn("The GUI is already running!")
-    return
-end
-
 setreadonly(client, false);
 client.enableautoexec()
 setreadonly(client, true);
