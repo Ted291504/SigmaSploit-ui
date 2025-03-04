@@ -4,7 +4,6 @@ if _G.hybridloaded then
     warn("The GUI is already running!")
     return
 end
-
 -- Monstrum's Gui to Lua\n-- Version: 3.2
 
 -- Instances:
@@ -23,103 +22,92 @@ local UIStroke_3 = Instance.new("UIStroke")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local UIStroke_4 = Instance.new("UIStroke")
 local UICorner_4 = Instance.new("UICorner")
-local Results = Instance.new("Frame")
-local UIStroke_5 = Instance.new("UIStroke")
+local EditorFrame = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local Game = Instance.new("TextLabel")
+local UIStroke_5 = Instance.new("UIStroke")
 local ExecuteFrame = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
 local UIStroke_6 = Instance.new("UIStroke")
 local Execute = Instance.new("ImageButton")
-local Script = Instance.new("TextLabel")
-local Verified = Instance.new("TextLabel")
-local Key = Instance.new("TextLabel")
-local EditorFrame = Instance.new("Frame")
+local ClearFrame = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
 local UIStroke_7 = Instance.new("UIStroke")
-local ExecuteFrame_2 = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
-local UIStroke_8 = Instance.new("UIStroke")
-local Execute_2 = Instance.new("ImageButton")
-local ClearFrame = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
-local UIStroke_9 = Instance.new("UIStroke")
 local Clear = Instance.new("ImageButton")
 local CopyFrame = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
-local UIStroke_10 = Instance.new("UIStroke")
+local UICorner_8 = Instance.new("UICorner")
+local UIStroke_8 = Instance.new("UIStroke")
 local Copy = Instance.new("ImageButton")
 local PasteFrame = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
-local UIStroke_11 = Instance.new("UIStroke")
+local UICorner_9 = Instance.new("UICorner")
+local UIStroke_9 = Instance.new("UIStroke")
 local Paste = Instance.new("ImageButton")
 local TextBox_2 = Instance.new("TextBox")
 local HomeFrame = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
-local UIStroke_12 = Instance.new("UIStroke")
+local UICorner_10 = Instance.new("UICorner")
+local UIStroke_10 = Instance.new("UIStroke")
 local ChangelogsFrame = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
-local UIStroke_13 = Instance.new("UIStroke")
+local UICorner_11 = Instance.new("UICorner")
+local UIStroke_11 = Instance.new("UIStroke")
 local Line = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local ChangelogsTitle = Instance.new("TextLabel")
 local ChangelogsContent = Instance.new("TextLabel")
 local ChangelogsContent_2 = Instance.new("TextLabel")
 local ChangelogsContent_3 = Instance.new("TextLabel")
 local FPSFrame = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
-local UIStroke_14 = Instance.new("UIStroke")
+local UICorner_13 = Instance.new("UICorner")
+local UIStroke_12 = Instance.new("UIStroke")
 local FPSTitle = Instance.new("TextLabel")
 local QuickScriptsFrame = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
-local UIStroke_15 = Instance.new("UIStroke")
+local UICorner_14 = Instance.new("UICorner")
+local UIStroke_13 = Instance.new("UIStroke")
 local Line_2 = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local QuickScriptTitle = Instance.new("TextLabel")
 local InfiniteYield = Instance.new("Frame")
-local UICorner_18 = Instance.new("UICorner")
-local UIStroke_16 = Instance.new("UIStroke")
+local UICorner_16 = Instance.new("UICorner")
+local UIStroke_14 = Instance.new("UIStroke")
 local InfYieldBTN = Instance.new("TextButton")
 local UNCTest = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
-local UIStroke_17 = Instance.new("UIStroke")
+local UICorner_17 = Instance.new("UICorner")
+local UIStroke_15 = Instance.new("UIStroke")
 local UNCScriptBTN = Instance.new("TextButton")
 local Dex = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
-local UIStroke_18 = Instance.new("UIStroke")
+local UICorner_18 = Instance.new("UICorner")
+local UIStroke_16 = Instance.new("UIStroke")
 local DexBTN = Instance.new("TextButton")
 local PINGFrame = Instance.new("Frame")
-local UICorner_21 = Instance.new("UICorner")
-local UIStroke_19 = Instance.new("UIStroke")
+local UICorner_19 = Instance.new("UICorner")
+local UIStroke_17 = Instance.new("UIStroke")
 local PINGTitle = Instance.new("TextLabel")
 local Lines = Instance.new("Folder")
 local Line_3 = Instance.new("Frame")
-local UICorner_22 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local Line_4 = Instance.new("Frame")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local Tabs = Instance.new("Folder")
 local MainIconFrame = Instance.new("Frame")
-local UICorner_24 = Instance.new("UICorner")
-local UIStroke_20 = Instance.new("UIStroke")
+local UICorner_22 = Instance.new("UICorner")
+local UIStroke_18 = Instance.new("UIStroke")
 local ImageLabel = Instance.new("ImageLabel")
 local MainButton = Instance.new("TextButton")
 local CloudIconFrame = Instance.new("Frame")
-local UICorner_25 = Instance.new("UICorner")
-local UIStroke_21 = Instance.new("UIStroke")
+local UICorner_23 = Instance.new("UICorner")
+local UIStroke_19 = Instance.new("UIStroke")
 local CloudImage = Instance.new("ImageLabel")
 local CloudButton = Instance.new("TextButton")
 local EditorIconFrame = Instance.new("Frame")
-local UICorner_26 = Instance.new("UICorner")
-local UIStroke_22 = Instance.new("UIStroke")
+local UICorner_24 = Instance.new("UICorner")
+local UIStroke_20 = Instance.new("UIStroke")
 local EditorImage = Instance.new("ImageLabel")
 local EditorButton = Instance.new("TextButton")
 local ExitIconFrame = Instance.new("Frame")
-local UICorner_27 = Instance.new("UICorner")
-local UIStroke_23 = Instance.new("UIStroke")
+local UICorner_25 = Instance.new("UICorner")
+local UIStroke_21 = Instance.new("UIStroke")
 local Exit = Instance.new("ImageButton")
 local TitleFrame = Instance.new("Frame")
-local UICorner_28 = Instance.new("UICorner")
-local UIStroke_24 = Instance.new("UIStroke")
+local UICorner_26 = Instance.new("UICorner")
+local UIStroke_22 = Instance.new("UIStroke")
 local HybridLogo = Instance.new("ImageLabel")
 local ImageButton = Instance.new("ImageButton")
 
@@ -196,40 +184,27 @@ UIStroke_4.Thickness = 2.000
 
 UICorner_4.Parent = ScrollingFrame
 
-Results.Name = "Results"
-Results.Parent = ScrollingFrame
-Results.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-Results.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Results.BorderSizePixel = 0
-Results.Position = UDim2.new(0.0344734304, 0, 0.0200803839, 0)
-Results.Size = UDim2.new(0, 337, 0, 51)
+EditorFrame.Name = "EditorFrame"
+EditorFrame.Parent = TabsFrame
+EditorFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+EditorFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorFrame.BorderSizePixel = 0
+EditorFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
+EditorFrame.Size = UDim2.new(0, 383, 0, 235)
+EditorFrame.Visible = false
 
-UIStroke_5.Parent = Results
+UICorner_5.Parent = EditorFrame
+
+UIStroke_5.Parent = EditorFrame
 UIStroke_5.Color = Color3.fromRGB(86, 86, 86)
 UIStroke_5.Thickness = 2.000
 
-UICorner_5.Parent = Results
-
-Game.Name = "Game"
-Game.Parent = Results
-Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Game.BackgroundTransparency = 1.000
-Game.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Game.BorderSizePixel = 0
-Game.Position = UDim2.new(0.326409489, 0, 0.0196078438, 0)
-Game.Size = UDim2.new(0, 117, 0, 21)
-Game.Font = Enum.Font.Ubuntu
-Game.Text = "Game Name:"
-Game.TextColor3 = Color3.fromRGB(255, 255, 255)
-Game.TextSize = 14.000
-Game.TextWrapped = true
-
 ExecuteFrame.Name = "ExecuteFrame"
-ExecuteFrame.Parent = Results
+ExecuteFrame.Parent = EditorFrame
 ExecuteFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 ExecuteFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ExecuteFrame.BorderSizePixel = 0
-ExecuteFrame.Position = UDim2.new(0.873442233, 0, 0.155626789, 0)
+ExecuteFrame.Position = UDim2.new(0.873442113, 0, 0.802685678, 0)
 ExecuteFrame.Size = UDim2.new(0, 34, 0, 34)
 
 UICorner_6.Parent = ExecuteFrame
@@ -244,90 +219,9 @@ Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Execute.BackgroundTransparency = 1.000
 Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Execute.BorderSizePixel = 0
-Execute.Position = UDim2.new(0.0788825527, 0, 0.126588255, 0)
+Execute.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
 Execute.Size = UDim2.new(0, 28, 0, 26)
 Execute.Image = "rbxassetid://111121478238230"
-
-Script.Name = "Script"
-Script.Parent = Results
-Script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Script.BackgroundTransparency = 1.000
-Script.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Script.BorderSizePixel = 0
-Script.Position = UDim2.new(0.326409489, 0, 0.431372553, 0)
-Script.Size = UDim2.new(0, 117, 0, 21)
-Script.Font = Enum.Font.Ubuntu
-Script.Text = "Script Name"
-Script.TextColor3 = Color3.fromRGB(255, 255, 255)
-Script.TextSize = 12.000
-Script.TextWrapped = true
-
-Verified.Name = "Verified"
-Verified.Parent = Results
-Verified.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Verified.BackgroundTransparency = 1.000
-Verified.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Verified.BorderSizePixel = 0
-Verified.Position = UDim2.new(0.0207715128, 0, 0.117647059, 0)
-Verified.Size = UDim2.new(0, 52, 0, 21)
-Verified.Font = Enum.Font.Ubuntu
-Verified.Text = "Verified?"
-Verified.TextColor3 = Color3.fromRGB(255, 255, 255)
-Verified.TextSize = 12.000
-Verified.TextWrapped = true
-
-Key.Name = "Key"
-Key.Parent = Results
-Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Key.BackgroundTransparency = 1.000
-Key.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Key.BorderSizePixel = 0
-Key.Position = UDim2.new(0.0207715128, 0, 0.431372553, 0)
-Key.Size = UDim2.new(0, 52, 0, 21)
-Key.Font = Enum.Font.Ubuntu
-Key.Text = "Key?"
-Key.TextColor3 = Color3.fromRGB(255, 255, 255)
-Key.TextSize = 12.000
-Key.TextWrapped = true
-
-EditorFrame.Name = "EditorFrame"
-EditorFrame.Parent = TabsFrame
-EditorFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-EditorFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EditorFrame.BorderSizePixel = 0
-EditorFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
-EditorFrame.Size = UDim2.new(0, 383, 0, 235)
-EditorFrame.Visible = false
-
-UICorner_7.Parent = EditorFrame
-
-UIStroke_7.Parent = EditorFrame
-UIStroke_7.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_7.Thickness = 2.000
-
-ExecuteFrame_2.Name = "ExecuteFrame"
-ExecuteFrame_2.Parent = EditorFrame
-ExecuteFrame_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-ExecuteFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ExecuteFrame_2.BorderSizePixel = 0
-ExecuteFrame_2.Position = UDim2.new(0.873442113, 0, 0.802685678, 0)
-ExecuteFrame_2.Size = UDim2.new(0, 34, 0, 34)
-
-UICorner_8.Parent = ExecuteFrame_2
-
-UIStroke_8.Parent = ExecuteFrame_2
-UIStroke_8.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_8.Thickness = 2.000
-
-Execute_2.Name = "Execute"
-Execute_2.Parent = ExecuteFrame_2
-Execute_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Execute_2.BackgroundTransparency = 1.000
-Execute_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Execute_2.BorderSizePixel = 0
-Execute_2.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
-Execute_2.Size = UDim2.new(0, 28, 0, 26)
-Execute_2.Image = "rbxassetid://111121478238230"
 
 ClearFrame.Name = "ClearFrame"
 ClearFrame.Parent = EditorFrame
@@ -337,11 +231,11 @@ ClearFrame.BorderSizePixel = 0
 ClearFrame.Position = UDim2.new(0.755948603, 0, 0.802685678, 0)
 ClearFrame.Size = UDim2.new(0, 34, 0, 34)
 
-UICorner_9.Parent = ClearFrame
+UICorner_7.Parent = ClearFrame
 
-UIStroke_9.Parent = ClearFrame
-UIStroke_9.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_9.Thickness = 2.000
+UIStroke_7.Parent = ClearFrame
+UIStroke_7.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_7.Thickness = 2.000
 
 Clear.Name = "Clear"
 Clear.Parent = ClearFrame
@@ -361,11 +255,11 @@ CopyFrame.BorderSizePixel = 0
 CopyFrame.Position = UDim2.new(0.628011286, 0, 0.802685678, 0)
 CopyFrame.Size = UDim2.new(0, 34, 0, 34)
 
-UICorner_10.Parent = CopyFrame
+UICorner_8.Parent = CopyFrame
 
-UIStroke_10.Parent = CopyFrame
-UIStroke_10.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_10.Thickness = 2.000
+UIStroke_8.Parent = CopyFrame
+UIStroke_8.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_8.Thickness = 2.000
 
 Copy.Name = "Copy"
 Copy.Parent = CopyFrame
@@ -385,11 +279,11 @@ PasteFrame.BorderSizePixel = 0
 PasteFrame.Position = UDim2.new(0.505295873, 0, 0.802685678, 0)
 PasteFrame.Size = UDim2.new(0, 34, 0, 34)
 
-UICorner_11.Parent = PasteFrame
+UICorner_9.Parent = PasteFrame
 
-UIStroke_11.Parent = PasteFrame
-UIStroke_11.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_11.Thickness = 2.000
+UIStroke_9.Parent = PasteFrame
+UIStroke_9.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_9.Thickness = 2.000
 
 Paste.Name = "Paste"
 Paste.Parent = PasteFrame
@@ -428,11 +322,11 @@ HomeFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
 HomeFrame.Size = UDim2.new(0, 383, 0, 235)
 HomeFrame.Visible = false
 
-UICorner_12.Parent = HomeFrame
+UICorner_10.Parent = HomeFrame
 
-UIStroke_12.Parent = HomeFrame
-UIStroke_12.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_12.Thickness = 2.000
+UIStroke_10.Parent = HomeFrame
+UIStroke_10.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_10.Thickness = 2.000
 
 ChangelogsFrame.Name = "ChangelogsFrame"
 ChangelogsFrame.Parent = HomeFrame
@@ -442,11 +336,11 @@ ChangelogsFrame.BorderSizePixel = 0
 ChangelogsFrame.Position = UDim2.new(0.62088275, 0, 0.0409835503, 0)
 ChangelogsFrame.Size = UDim2.new(0, 135, 0, 215)
 
-UICorner_13.Parent = ChangelogsFrame
+UICorner_11.Parent = ChangelogsFrame
 
-UIStroke_13.Parent = ChangelogsFrame
-UIStroke_13.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_13.Thickness = 2.000
+UIStroke_11.Parent = ChangelogsFrame
+UIStroke_11.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_11.Thickness = 2.000
 
 Line.Name = "Line"
 Line.Parent = ChangelogsFrame
@@ -456,7 +350,7 @@ Line.BorderSizePixel = 0
 Line.Position = UDim2.new(0.0626311153, 0, 0.115510881, 0)
 Line.Size = UDim2.new(0, 117, 0, 2)
 
-UICorner_14.Parent = Line
+UICorner_12.Parent = Line
 
 ChangelogsTitle.Name = "ChangelogsTitle"
 ChangelogsTitle.Parent = ChangelogsFrame
@@ -521,11 +415,11 @@ FPSFrame.BorderSizePixel = 0
 FPSFrame.Position = UDim2.new(0.0231294557, 0, 0.038297873, 0)
 FPSFrame.Size = UDim2.new(0, 76, 0, 21)
 
-UICorner_15.Parent = FPSFrame
+UICorner_13.Parent = FPSFrame
 
-UIStroke_14.Parent = FPSFrame
-UIStroke_14.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_14.Thickness = 2.000
+UIStroke_12.Parent = FPSFrame
+UIStroke_12.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_12.Thickness = 2.000
 
 FPSTitle.Name = "FPSTitle"
 FPSTitle.Parent = FPSFrame
@@ -549,11 +443,11 @@ QuickScriptsFrame.BorderSizePixel = 0
 QuickScriptsFrame.Position = UDim2.new(0.245875105, 0, 0.0367282294, 0)
 QuickScriptsFrame.Size = UDim2.new(0, 132, 0, 215)
 
-UICorner_16.Parent = QuickScriptsFrame
+UICorner_14.Parent = QuickScriptsFrame
 
-UIStroke_15.Parent = QuickScriptsFrame
-UIStroke_15.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_15.Thickness = 2.000
+UIStroke_13.Parent = QuickScriptsFrame
+UIStroke_13.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_13.Thickness = 2.000
 
 Line_2.Name = "Line"
 Line_2.Parent = QuickScriptsFrame
@@ -563,7 +457,7 @@ Line_2.BorderSizePixel = 0
 Line_2.Position = UDim2.new(0.0626311153, 0, 0.115510881, 0)
 Line_2.Size = UDim2.new(0, 117, 0, 2)
 
-UICorner_17.Parent = Line_2
+UICorner_15.Parent = Line_2
 
 QuickScriptTitle.Name = "QuickScriptTitle"
 QuickScriptTitle.Parent = QuickScriptsFrame
@@ -586,11 +480,11 @@ InfiniteYield.BorderSizePixel = 0
 InfiniteYield.Position = UDim2.new(0.0626308545, 0, 0.185565472, 0)
 InfiniteYield.Size = UDim2.new(0, 117, 0, 27)
 
-UICorner_18.Parent = InfiniteYield
+UICorner_16.Parent = InfiniteYield
 
-UIStroke_16.Parent = InfiniteYield
-UIStroke_16.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_16.Thickness = 2.000
+UIStroke_14.Parent = InfiniteYield
+UIStroke_14.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_14.Thickness = 2.000
 
 InfYieldBTN.Name = "InfYieldBTN"
 InfYieldBTN.Parent = InfiniteYield
@@ -612,11 +506,11 @@ UNCTest.BorderSizePixel = 0
 UNCTest.Position = UDim2.new(0.0626308545, 0, 0.353007317, 0)
 UNCTest.Size = UDim2.new(0, 117, 0, 27)
 
-UICorner_19.Parent = UNCTest
+UICorner_17.Parent = UNCTest
 
-UIStroke_17.Parent = UNCTest
-UIStroke_17.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_17.Thickness = 2.000
+UIStroke_15.Parent = UNCTest
+UIStroke_15.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_15.Thickness = 2.000
 
 UNCScriptBTN.Name = "UNCScriptBTN"
 UNCScriptBTN.Parent = UNCTest
@@ -638,11 +532,11 @@ Dex.BorderSizePixel = 0
 Dex.Position = UDim2.new(0.0626308545, 0, 0.529751539, 0)
 Dex.Size = UDim2.new(0, 117, 0, 27)
 
-UICorner_20.Parent = Dex
+UICorner_18.Parent = Dex
 
-UIStroke_18.Parent = Dex
-UIStroke_18.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_18.Thickness = 2.000
+UIStroke_16.Parent = Dex
+UIStroke_16.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_16.Thickness = 2.000
 
 DexBTN.Name = "DexBTN"
 DexBTN.Parent = Dex
@@ -665,11 +559,11 @@ PINGFrame.BorderSizePixel = 0
 PINGFrame.Position = UDim2.new(0.0205184892, 0, 0.174468085, 0)
 PINGFrame.Size = UDim2.new(0, 76, 0, 21)
 
-UICorner_21.Parent = PINGFrame
+UICorner_19.Parent = PINGFrame
 
-UIStroke_19.Parent = PINGFrame
-UIStroke_19.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_19.Thickness = 2.000
+UIStroke_17.Parent = PINGFrame
+UIStroke_17.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_17.Thickness = 2.000
 
 PINGTitle.Name = "PINGTitle"
 PINGTitle.Parent = PINGFrame
@@ -697,7 +591,7 @@ Line_3.BorderSizePixel = 0
 Line_3.Position = UDim2.new(0.259597808, 0, 0.95538044, 0)
 Line_3.Size = UDim2.new(0, 2, 0, -234)
 
-UICorner_22.Parent = Line_3
+UICorner_20.Parent = Line_3
 
 Line_4.Name = "Line"
 Line_4.Parent = Lines
@@ -707,7 +601,7 @@ Line_4.BorderSizePixel = 0
 Line_4.Position = UDim2.new(0.0255941506, 0, 0.231789917, 0)
 Line_4.Size = UDim2.new(0, 117, 0, 2)
 
-UICorner_23.Parent = Line_4
+UICorner_21.Parent = Line_4
 
 Tabs.Name = "Tabs"
 Tabs.Parent = BackgroundFrame
@@ -720,11 +614,11 @@ MainIconFrame.BorderSizePixel = 0
 MainIconFrame.Position = UDim2.new(0.0255941506, 0, 0.305575013, 0)
 MainIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
-UICorner_24.Parent = MainIconFrame
+UICorner_22.Parent = MainIconFrame
 
-UIStroke_20.Parent = MainIconFrame
-UIStroke_20.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_20.Thickness = 2.000
+UIStroke_18.Parent = MainIconFrame
+UIStroke_18.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_18.Thickness = 2.000
 
 ImageLabel.Parent = MainIconFrame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -755,11 +649,11 @@ CloudIconFrame.BorderSizePixel = 0
 CloudIconFrame.Position = UDim2.new(0.0255941506, 0, 0.651878476, 0)
 CloudIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
-UICorner_25.Parent = CloudIconFrame
+UICorner_23.Parent = CloudIconFrame
 
-UIStroke_21.Parent = CloudIconFrame
-UIStroke_21.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_21.Thickness = 2.000
+UIStroke_19.Parent = CloudIconFrame
+UIStroke_19.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_19.Thickness = 2.000
 
 CloudImage.Name = "CloudImage"
 CloudImage.Parent = CloudIconFrame
@@ -791,11 +685,11 @@ EditorIconFrame.BorderSizePixel = 0
 EditorIconFrame.Position = UDim2.new(0.0255941506, 0, 0.476781219, 0)
 EditorIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
-UICorner_26.Parent = EditorIconFrame
+UICorner_24.Parent = EditorIconFrame
 
-UIStroke_22.Parent = EditorIconFrame
-UIStroke_22.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_22.Thickness = 2.000
+UIStroke_20.Parent = EditorIconFrame
+UIStroke_20.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_20.Thickness = 2.000
 
 EditorImage.Name = "EditorImage"
 EditorImage.Parent = EditorIconFrame
@@ -827,11 +721,11 @@ ExitIconFrame.BorderSizePixel = 0
 ExitIconFrame.Position = UDim2.new(0.0255941562, 0, 0.830866814, 0)
 ExitIconFrame.Size = UDim2.new(0, 31, 0, 32)
 
-UICorner_27.Parent = ExitIconFrame
+UICorner_25.Parent = ExitIconFrame
 
-UIStroke_23.Parent = ExitIconFrame
-UIStroke_23.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_23.Thickness = 2.000
+UIStroke_21.Parent = ExitIconFrame
+UIStroke_21.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_21.Thickness = 2.000
 
 Exit.Name = "Exit"
 Exit.Parent = ExitIconFrame
@@ -852,11 +746,11 @@ TitleFrame.BorderSizePixel = 0
 TitleFrame.Position = UDim2.new(0.0968921408, 0, 0.0409835652, 0)
 TitleFrame.Size = UDim2.new(0, 39, 0, 35)
 
-UICorner_28.Parent = TitleFrame
+UICorner_26.Parent = TitleFrame
 
-UIStroke_24.Parent = TitleFrame
-UIStroke_24.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_24.Thickness = 2.000
+UIStroke_22.Parent = TitleFrame
+UIStroke_22.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_22.Thickness = 2.000
 
 HybridLogo.Name = "HybridLogo"
 HybridLogo.Parent = TitleFrame
@@ -879,7 +773,7 @@ ImageButton.Image = "rbxassetid://72310455670962"
 
 -- Scripts:
 
-local function IJEWVN_script() -- TextBox.LocalScript 
+local function JTHNTVM_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -930,6 +824,13 @@ local function IJEWVN_script() -- TextBox.LocalScript
 	
 			if data and data.result and data.result.scripts then
 				for _, scriptData in ipairs(data.result.scripts) do
+					local scriptName = scriptData.title or "Unknown"
+					local scriptContent = scriptData.script or ""
+					local isVerified = scriptData.verified or false
+					local hasKey = scriptData.key or false
+					local gameName = scriptData.game and scriptData.game.name or "Unknown Game"
+					local views = scriptData.views or 0
+	
 					-- Monstrum's Gui to Lua\n-- Version: 3.2
 	
 					-- Instances:
@@ -1058,7 +959,7 @@ local function IJEWVN_script() -- TextBox.LocalScript
 						local textbox = script.Parent.Parent.Parent.TextBox
 	
 						button.MouseButton1Click:Connect(function()
-							loadstring(textbox.Text)()
+							loadstring(scriptContent)()
 						end)
 					end
 					coroutine.wrap(STASN_script)()
@@ -1078,8 +979,8 @@ local function IJEWVN_script() -- TextBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IJEWVN_script)()
-local function DCOP_script() -- Execute.LocalScript 
+coroutine.wrap(JTHNTVM_script)()
+local function WFDMFL_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local button = script.Parent
@@ -1089,19 +990,8 @@ local function DCOP_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(DCOP_script)()
-local function NGCCZ_script() -- Execute_2.LocalScript 
-	local script = Instance.new('LocalScript', Execute_2)
-
-	local button = script.Parent
-	local textbox = script.Parent.Parent.Parent.TextBox
-	
-	button.MouseButton1Click:Connect(function()
-		loadstring(textbox.Text)()
-	end)
-end
-coroutine.wrap(NGCCZ_script)()
-local function HUALCWP_script() -- Clear.LocalScript 
+coroutine.wrap(WFDMFL_script)()
+local function GJAXDKE_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local button = script.Parent
@@ -1111,8 +1001,8 @@ local function HUALCWP_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(HUALCWP_script)()
-local function NKUOJH_script() -- Copy.LocalScript 
+coroutine.wrap(GJAXDKE_script)()
+local function QUDJUE_script() -- Copy.LocalScript 
 	local script = Instance.new('LocalScript', Copy)
 
 	local button = script.Parent
@@ -1122,8 +1012,8 @@ local function NKUOJH_script() -- Copy.LocalScript
 		setclipboard(textbox.Text)
 	end)
 end
-coroutine.wrap(NKUOJH_script)()
-local function QPIL_script() -- Paste.LocalScript 
+coroutine.wrap(QUDJUE_script)()
+local function SKJX_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	local button = script.Parent
@@ -1133,8 +1023,8 @@ local function QPIL_script() -- Paste.LocalScript
 		textbox.Textext = getclipboard()
 	end)
 end
-coroutine.wrap(QPIL_script)()
-local function TXPJ_script() -- FPSTitle.LocalScript 
+coroutine.wrap(SKJX_script)()
+local function CQKC_script() -- FPSTitle.LocalScript 
 	local script = Instance.new('LocalScript', FPSTitle)
 
 	local textLabel = script.Parent
@@ -1152,8 +1042,8 @@ local function TXPJ_script() -- FPSTitle.LocalScript
 	end)
 	
 end
-coroutine.wrap(TXPJ_script)()
-local function ZAUYQU_script() -- InfYieldBTN.LocalScript 
+coroutine.wrap(CQKC_script)()
+local function FIFDODN_script() -- InfYieldBTN.LocalScript 
 	local script = Instance.new('LocalScript', InfYieldBTN)
 
 	local button = script.Parent
@@ -1162,8 +1052,8 @@ local function ZAUYQU_script() -- InfYieldBTN.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(ZAUYQU_script)()
-local function ZYFR_script() -- UNCScriptBTN.LocalScript 
+coroutine.wrap(FIFDODN_script)()
+local function DSDQAN_script() -- UNCScriptBTN.LocalScript 
 	local script = Instance.new('LocalScript', UNCScriptBTN)
 
 	local button = script.Parent
@@ -1172,8 +1062,8 @@ local function ZYFR_script() -- UNCScriptBTN.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/refs/heads/main/UNCCheckEnv.lua"))()
 	end)
 end
-coroutine.wrap(ZYFR_script)()
-local function PQNIMGQ_script() -- DexBTN.LocalScript 
+coroutine.wrap(DSDQAN_script)()
+local function JPAYZX_script() -- DexBTN.LocalScript 
 	local script = Instance.new('LocalScript', DexBTN)
 
 	local button = script.Parent
@@ -1181,8 +1071,8 @@ local function PQNIMGQ_script() -- DexBTN.LocalScript
 		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 	end)
 end
-coroutine.wrap(PQNIMGQ_script)()
-local function CNSRV_script() -- PINGTitle.LocalScript 
+coroutine.wrap(JPAYZX_script)()
+local function JWAQ_script() -- PINGTitle.LocalScript 
 	local script = Instance.new('LocalScript', PINGTitle)
 
 	local textLabel = script.Parent
@@ -1194,8 +1084,8 @@ local function CNSRV_script() -- PINGTitle.LocalScript
 		textLabel.Text = "Current PING : " .. math.floor(ping) .. " ms"
 	end)
 end
-coroutine.wrap(CNSRV_script)()
-local function YBDVDM_script() -- BackgroundFrame.LocalScript 
+coroutine.wrap(JWAQ_script)()
+local function GJBHKBI_script() -- BackgroundFrame.LocalScript 
 	local script = Instance.new('LocalScript', BackgroundFrame)
 
 	local UIS = game:GetService('UserInputService')
@@ -1233,5 +1123,4 @@ local function YBDVDM_script() -- BackgroundFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YBDVDM_script)()
-
+coroutine.wrap(GJBHKBI_script)()
