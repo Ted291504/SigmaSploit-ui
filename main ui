@@ -4,50 +4,40 @@ if _G.hybridloaded then
     warn("The GUI is already running!")
     return
 end
--- Monstrum's Gui to Lua\n-- Version: 3.2
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
 local Hybrid = Instance.new("ScreenGui")
 local BackgroundFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local UIStroke = Instance.new("UIStroke")
 local TabsFrame = Instance.new("Folder")
 local CloudFrame = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local UIStroke_2 = Instance.new("UIStroke")
 local TextBox = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
-local UIStroke_3 = Instance.new("UIStroke")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local UIStroke_4 = Instance.new("UIStroke")
 local UICorner_4 = Instance.new("UICorner")
 local EditorFrame = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local UIStroke_5 = Instance.new("UIStroke")
 local ExecuteFrame = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
-local UIStroke_6 = Instance.new("UIStroke")
 local Execute = Instance.new("ImageButton")
 local ClearFrame = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
-local UIStroke_7 = Instance.new("UIStroke")
 local Clear = Instance.new("ImageButton")
 local CopyFrame = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
-local UIStroke_8 = Instance.new("UIStroke")
 local Copy = Instance.new("ImageButton")
 local PasteFrame = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
-local UIStroke_9 = Instance.new("UIStroke")
 local Paste = Instance.new("ImageButton")
 local TextBox_2 = Instance.new("TextBox")
 local HomeFrame = Instance.new("Frame")
 local UICorner_10 = Instance.new("UICorner")
-local UIStroke_10 = Instance.new("UIStroke")
 local ChangelogsFrame = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
-local UIStroke_11 = Instance.new("UIStroke")
 local Line = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
 local ChangelogsTitle = Instance.new("TextLabel")
@@ -56,29 +46,23 @@ local ChangelogsContent_2 = Instance.new("TextLabel")
 local ChangelogsContent_3 = Instance.new("TextLabel")
 local FPSFrame = Instance.new("Frame")
 local UICorner_13 = Instance.new("UICorner")
-local UIStroke_12 = Instance.new("UIStroke")
 local FPSTitle = Instance.new("TextLabel")
 local QuickScriptsFrame = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
-local UIStroke_13 = Instance.new("UIStroke")
 local Line_2 = Instance.new("Frame")
 local UICorner_15 = Instance.new("UICorner")
 local QuickScriptTitle = Instance.new("TextLabel")
 local InfiniteYield = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local UIStroke_14 = Instance.new("UIStroke")
 local InfYieldBTN = Instance.new("TextButton")
 local UNCTest = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
-local UIStroke_15 = Instance.new("UIStroke")
 local UNCScriptBTN = Instance.new("TextButton")
 local Dex = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
-local UIStroke_16 = Instance.new("UIStroke")
 local DexBTN = Instance.new("TextButton")
 local PINGFrame = Instance.new("Frame")
 local UICorner_19 = Instance.new("UICorner")
-local UIStroke_17 = Instance.new("UIStroke")
 local PINGTitle = Instance.new("TextLabel")
 local Lines = Instance.new("Folder")
 local Line_3 = Instance.new("Frame")
@@ -88,33 +72,28 @@ local UICorner_21 = Instance.new("UICorner")
 local Tabs = Instance.new("Folder")
 local MainIconFrame = Instance.new("Frame")
 local UICorner_22 = Instance.new("UICorner")
-local UIStroke_18 = Instance.new("UIStroke")
 local ImageLabel = Instance.new("ImageLabel")
 local MainButton = Instance.new("TextButton")
 local CloudIconFrame = Instance.new("Frame")
 local UICorner_23 = Instance.new("UICorner")
-local UIStroke_19 = Instance.new("UIStroke")
 local CloudImage = Instance.new("ImageLabel")
 local CloudButton = Instance.new("TextButton")
 local EditorIconFrame = Instance.new("Frame")
 local UICorner_24 = Instance.new("UICorner")
-local UIStroke_20 = Instance.new("UIStroke")
 local EditorImage = Instance.new("ImageLabel")
 local EditorButton = Instance.new("TextButton")
 local ExitIconFrame = Instance.new("Frame")
 local UICorner_25 = Instance.new("UICorner")
-local UIStroke_21 = Instance.new("UIStroke")
 local Exit = Instance.new("ImageButton")
 local TitleFrame = Instance.new("Frame")
 local UICorner_26 = Instance.new("UICorner")
-local UIStroke_22 = Instance.new("UIStroke")
 local HybridLogo = Instance.new("ImageLabel")
 local ImageButton = Instance.new("ImageButton")
 
 --Properties:
 
 Hybrid.Name = "Hybrid"
-Hybrid.Parent = game:GetService("CoreGui")
+Hybrid.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Hybrid.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Hybrid.ResetOnSpawn = false
 
@@ -128,10 +107,6 @@ BackgroundFrame.Size = UDim2.new(0, 547, 0, 257)
 
 UICorner.Parent = BackgroundFrame
 
-UIStroke.Parent = BackgroundFrame
-UIStroke.Color = Color3.fromRGB(86, 86, 86)
-UIStroke.Thickness = 2.000
-
 TabsFrame.Name = "TabsFrame"
 TabsFrame.Parent = BackgroundFrame
 
@@ -144,10 +119,6 @@ CloudFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
 CloudFrame.Size = UDim2.new(0, 383, 0, 235)
 
 UICorner_2.Parent = CloudFrame
-
-UIStroke_2.Parent = CloudFrame
-UIStroke_2.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_2.Thickness = 2.000
 
 TextBox.Parent = CloudFrame
 TextBox.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
@@ -164,11 +135,6 @@ TextBox.TextSize = 14.000
 
 UICorner_3.Parent = TextBox
 
-UIStroke_3.Parent = TextBox
-UIStroke_3.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_3.Thickness = 2.000
-UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-
 ScrollingFrame.Parent = CloudFrame
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
@@ -176,11 +142,6 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.02610966, 0, 0.242553189, 0)
 ScrollingFrame.Size = UDim2.new(0, 363, 0, 168)
-ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-
-UIStroke_4.Parent = ScrollingFrame
-UIStroke_4.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_4.Thickness = 2.000
 
 UICorner_4.Parent = ScrollingFrame
 
@@ -195,10 +156,6 @@ EditorFrame.Visible = false
 
 UICorner_5.Parent = EditorFrame
 
-UIStroke_5.Parent = EditorFrame
-UIStroke_5.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_5.Thickness = 2.000
-
 ExecuteFrame.Name = "ExecuteFrame"
 ExecuteFrame.Parent = EditorFrame
 ExecuteFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
@@ -208,10 +165,6 @@ ExecuteFrame.Position = UDim2.new(0.873442113, 0, 0.802685678, 0)
 ExecuteFrame.Size = UDim2.new(0, 34, 0, 34)
 
 UICorner_6.Parent = ExecuteFrame
-
-UIStroke_6.Parent = ExecuteFrame
-UIStroke_6.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_6.Thickness = 2.000
 
 Execute.Name = "Execute"
 Execute.Parent = ExecuteFrame
@@ -233,10 +186,6 @@ ClearFrame.Size = UDim2.new(0, 34, 0, 34)
 
 UICorner_7.Parent = ClearFrame
 
-UIStroke_7.Parent = ClearFrame
-UIStroke_7.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_7.Thickness = 2.000
-
 Clear.Name = "Clear"
 Clear.Parent = ClearFrame
 Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -257,10 +206,6 @@ CopyFrame.Size = UDim2.new(0, 34, 0, 34)
 
 UICorner_8.Parent = CopyFrame
 
-UIStroke_8.Parent = CopyFrame
-UIStroke_8.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_8.Thickness = 2.000
-
 Copy.Name = "Copy"
 Copy.Parent = CopyFrame
 Copy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -280,10 +225,6 @@ PasteFrame.Position = UDim2.new(0.505295873, 0, 0.802685678, 0)
 PasteFrame.Size = UDim2.new(0, 34, 0, 34)
 
 UICorner_9.Parent = PasteFrame
-
-UIStroke_9.Parent = PasteFrame
-UIStroke_9.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_9.Thickness = 2.000
 
 Paste.Name = "Paste"
 Paste.Parent = PasteFrame
@@ -324,10 +265,6 @@ HomeFrame.Visible = false
 
 UICorner_10.Parent = HomeFrame
 
-UIStroke_10.Parent = HomeFrame
-UIStroke_10.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_10.Thickness = 2.000
-
 ChangelogsFrame.Name = "ChangelogsFrame"
 ChangelogsFrame.Parent = HomeFrame
 ChangelogsFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
@@ -337,10 +274,6 @@ ChangelogsFrame.Position = UDim2.new(0.62088275, 0, 0.0409835503, 0)
 ChangelogsFrame.Size = UDim2.new(0, 135, 0, 215)
 
 UICorner_11.Parent = ChangelogsFrame
-
-UIStroke_11.Parent = ChangelogsFrame
-UIStroke_11.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_11.Thickness = 2.000
 
 Line.Name = "Line"
 Line.Parent = ChangelogsFrame
@@ -417,10 +350,6 @@ FPSFrame.Size = UDim2.new(0, 76, 0, 21)
 
 UICorner_13.Parent = FPSFrame
 
-UIStroke_12.Parent = FPSFrame
-UIStroke_12.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_12.Thickness = 2.000
-
 FPSTitle.Name = "FPSTitle"
 FPSTitle.Parent = FPSFrame
 FPSTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -444,10 +373,6 @@ QuickScriptsFrame.Position = UDim2.new(0.245875105, 0, 0.0367282294, 0)
 QuickScriptsFrame.Size = UDim2.new(0, 132, 0, 215)
 
 UICorner_14.Parent = QuickScriptsFrame
-
-UIStroke_13.Parent = QuickScriptsFrame
-UIStroke_13.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_13.Thickness = 2.000
 
 Line_2.Name = "Line"
 Line_2.Parent = QuickScriptsFrame
@@ -482,10 +407,6 @@ InfiniteYield.Size = UDim2.new(0, 117, 0, 27)
 
 UICorner_16.Parent = InfiniteYield
 
-UIStroke_14.Parent = InfiniteYield
-UIStroke_14.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_14.Thickness = 2.000
-
 InfYieldBTN.Name = "InfYieldBTN"
 InfYieldBTN.Parent = InfiniteYield
 InfYieldBTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -507,10 +428,6 @@ UNCTest.Position = UDim2.new(0.0626308545, 0, 0.353007317, 0)
 UNCTest.Size = UDim2.new(0, 117, 0, 27)
 
 UICorner_17.Parent = UNCTest
-
-UIStroke_15.Parent = UNCTest
-UIStroke_15.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_15.Thickness = 2.000
 
 UNCScriptBTN.Name = "UNCScriptBTN"
 UNCScriptBTN.Parent = UNCTest
@@ -534,10 +451,6 @@ Dex.Size = UDim2.new(0, 117, 0, 27)
 
 UICorner_18.Parent = Dex
 
-UIStroke_16.Parent = Dex
-UIStroke_16.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_16.Thickness = 2.000
-
 DexBTN.Name = "DexBTN"
 DexBTN.Parent = Dex
 DexBTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -560,10 +473,6 @@ PINGFrame.Position = UDim2.new(0.0205184892, 0, 0.174468085, 0)
 PINGFrame.Size = UDim2.new(0, 76, 0, 21)
 
 UICorner_19.Parent = PINGFrame
-
-UIStroke_17.Parent = PINGFrame
-UIStroke_17.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_17.Thickness = 2.000
 
 PINGTitle.Name = "PINGTitle"
 PINGTitle.Parent = PINGFrame
@@ -616,10 +525,6 @@ MainIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
 UICorner_22.Parent = MainIconFrame
 
-UIStroke_18.Parent = MainIconFrame
-UIStroke_18.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_18.Thickness = 2.000
-
 ImageLabel.Parent = MainIconFrame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
@@ -650,10 +555,6 @@ CloudIconFrame.Position = UDim2.new(0.0255941506, 0, 0.651878476, 0)
 CloudIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
 UICorner_23.Parent = CloudIconFrame
-
-UIStroke_19.Parent = CloudIconFrame
-UIStroke_19.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_19.Thickness = 2.000
 
 CloudImage.Name = "CloudImage"
 CloudImage.Parent = CloudIconFrame
@@ -687,10 +588,6 @@ EditorIconFrame.Size = UDim2.new(0, 117, 0, 32)
 
 UICorner_24.Parent = EditorIconFrame
 
-UIStroke_20.Parent = EditorIconFrame
-UIStroke_20.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_20.Thickness = 2.000
-
 EditorImage.Name = "EditorImage"
 EditorImage.Parent = EditorIconFrame
 EditorImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -723,10 +620,6 @@ ExitIconFrame.Size = UDim2.new(0, 31, 0, 32)
 
 UICorner_25.Parent = ExitIconFrame
 
-UIStroke_21.Parent = ExitIconFrame
-UIStroke_21.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_21.Thickness = 2.000
-
 Exit.Name = "Exit"
 Exit.Parent = ExitIconFrame
 Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -747,10 +640,6 @@ TitleFrame.Position = UDim2.new(0.0968921408, 0, 0.0409835652, 0)
 TitleFrame.Size = UDim2.new(0, 39, 0, 35)
 
 UICorner_26.Parent = TitleFrame
-
-UIStroke_22.Parent = TitleFrame
-UIStroke_22.Color = Color3.fromRGB(86, 86, 86)
-UIStroke_22.Thickness = 2.000
 
 HybridLogo.Name = "HybridLogo"
 HybridLogo.Parent = TitleFrame
@@ -773,7 +662,7 @@ ImageButton.Image = "rbxassetid://72310455670962"
 
 -- Scripts:
 
-local function JTHNTVM_script() -- TextBox.LocalScript 
+local function MMYST_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -979,8 +868,8 @@ local function JTHNTVM_script() -- TextBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JTHNTVM_script)()
-local function WFDMFL_script() -- Execute.LocalScript 
+coroutine.wrap(MMYST_fake_script)()
+local function WUDP_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local button = script.Parent
@@ -990,8 +879,8 @@ local function WFDMFL_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(WFDMFL_script)()
-local function GJAXDKE_script() -- Clear.LocalScript 
+coroutine.wrap(WUDP_fake_script)()
+local function YSJXJJF_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local button = script.Parent
@@ -1001,8 +890,8 @@ local function GJAXDKE_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(GJAXDKE_script)()
-local function QUDJUE_script() -- Copy.LocalScript 
+coroutine.wrap(YSJXJJF_fake_script)()
+local function PFHUT_fake_script() -- Copy.LocalScript 
 	local script = Instance.new('LocalScript', Copy)
 
 	local button = script.Parent
@@ -1012,8 +901,8 @@ local function QUDJUE_script() -- Copy.LocalScript
 		setclipboard(textbox.Text)
 	end)
 end
-coroutine.wrap(QUDJUE_script)()
-local function SKJX_script() -- Paste.LocalScript 
+coroutine.wrap(PFHUT_fake_script)()
+local function JNCEJM_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	local button = script.Parent
@@ -1023,8 +912,8 @@ local function SKJX_script() -- Paste.LocalScript
 		textbox.Textext = getclipboard()
 	end)
 end
-coroutine.wrap(SKJX_script)()
-local function CQKC_script() -- FPSTitle.LocalScript 
+coroutine.wrap(JNCEJM_fake_script)()
+local function IBLKK_fake_script() -- FPSTitle.LocalScript 
 	local script = Instance.new('LocalScript', FPSTitle)
 
 	local textLabel = script.Parent
@@ -1042,8 +931,8 @@ local function CQKC_script() -- FPSTitle.LocalScript
 	end)
 	
 end
-coroutine.wrap(CQKC_script)()
-local function FIFDODN_script() -- InfYieldBTN.LocalScript 
+coroutine.wrap(IBLKK_fake_script)()
+local function WAXIN_fake_script() -- InfYieldBTN.LocalScript 
 	local script = Instance.new('LocalScript', InfYieldBTN)
 
 	local button = script.Parent
@@ -1052,8 +941,8 @@ local function FIFDODN_script() -- InfYieldBTN.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(FIFDODN_script)()
-local function DSDQAN_script() -- UNCScriptBTN.LocalScript 
+coroutine.wrap(WAXIN_fake_script)()
+local function GQUUSAN_fake_script() -- UNCScriptBTN.LocalScript 
 	local script = Instance.new('LocalScript', UNCScriptBTN)
 
 	local button = script.Parent
@@ -1062,8 +951,8 @@ local function DSDQAN_script() -- UNCScriptBTN.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/refs/heads/main/UNCCheckEnv.lua"))()
 	end)
 end
-coroutine.wrap(DSDQAN_script)()
-local function JPAYZX_script() -- DexBTN.LocalScript 
+coroutine.wrap(GQUUSAN_fake_script)()
+local function JYDSC_fake_script() -- DexBTN.LocalScript 
 	local script = Instance.new('LocalScript', DexBTN)
 
 	local button = script.Parent
@@ -1071,8 +960,8 @@ local function JPAYZX_script() -- DexBTN.LocalScript
 		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 	end)
 end
-coroutine.wrap(JPAYZX_script)()
-local function JWAQ_script() -- PINGTitle.LocalScript 
+coroutine.wrap(JYDSC_fake_script)()
+local function HEENFV_fake_script() -- PINGTitle.LocalScript 
 	local script = Instance.new('LocalScript', PINGTitle)
 
 	local textLabel = script.Parent
@@ -1084,8 +973,8 @@ local function JWAQ_script() -- PINGTitle.LocalScript
 		textLabel.Text = "Current PING : " .. math.floor(ping) .. " ms"
 	end)
 end
-coroutine.wrap(JWAQ_script)()
-local function GJBHKBI_script() -- BackgroundFrame.LocalScript 
+coroutine.wrap(HEENFV_fake_script)()
+local function TCDXYUS_fake_script() -- BackgroundFrame.LocalScript 
 	local script = Instance.new('LocalScript', BackgroundFrame)
 
 	local UIS = game:GetService('UserInputService')
@@ -1123,4 +1012,4 @@ local function GJBHKBI_script() -- BackgroundFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GJBHKBI_script)()
+coroutine.wrap(TCDXYUS_fake_script)()
