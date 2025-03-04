@@ -1,10 +1,4 @@
 print("Main ui starting...")
-
-if _G.hybridloaded then
-    warn("The GUI is already running!")
-    return
-end
-
 -- Monstrum's Gui to Lua\n-- Version: 3.2
 
 -- Instances:
