@@ -773,7 +773,7 @@ ImageButton.Image = "rbxassetid://72310455670962"
 
 -- Scripts:
 
-local function VOJX_script() -- TextBox.LocalScript 
+local function JTHNTVM_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -850,7 +850,7 @@ local function VOJX_script() -- TextBox.LocalScript
 					--Properties:
 	
 					Results.Name = "Results"
-					Results.Parent = script.Parent.Parent.ScrollingFrame
+					Results.Parent = game.StarterGui.Hybrid.BackgroundFrame.TabsFrame.CloudFrame.ScrollingFrame
 					Results.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 					Results.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Results.BorderSizePixel = 0
@@ -956,7 +956,6 @@ local function VOJX_script() -- TextBox.LocalScript
 						local script = Instance.new('LocalScript', Execute)
 	
 						local button = script.Parent
-						local textbox = script.Parent.Parent.Parent.TextBox
 	
 						button.MouseButton1Click:Connect(function()
 							loadstring(scriptContent)()
@@ -979,8 +978,8 @@ local function VOJX_script() -- TextBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VOJX_script)()
-local function HCZHOW_script() -- Execute.LocalScript 
+coroutine.wrap(JTHNTVM_script)()
+local function WFDMFL_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local button = script.Parent
@@ -990,8 +989,8 @@ local function HCZHOW_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(HCZHOW_script)()
-local function VTFQDJH_script() -- Clear.LocalScript 
+coroutine.wrap(WFDMFL_script)()
+local function GJAXDKE_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local button = script.Parent
@@ -1001,8 +1000,8 @@ local function VTFQDJH_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(VTFQDJH_script)()
-local function CUCQY_script() -- Copy.LocalScript 
+coroutine.wrap(GJAXDKE_script)()
+local function QUDJUE_script() -- Copy.LocalScript 
 	local script = Instance.new('LocalScript', Copy)
 
 	local button = script.Parent
@@ -1012,19 +1011,19 @@ local function CUCQY_script() -- Copy.LocalScript
 		setclipboard(textbox.Text)
 	end)
 end
-coroutine.wrap(CUCQY_script)()
-local function IPIF_script() -- Paste.LocalScript 
+coroutine.wrap(QUDJUE_script)()
+local function SKJX_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	local button = script.Parent
 	local textbox = script.Parent.Parent.Parent.TextBox
 	
 	button.MouseButton1Click:Connect(function()
-		textbox.Text = getclipboard()
+		textbox.Textext = getclipboard()
 	end)
 end
-coroutine.wrap(IPIF_script)()
-local function QPHB_script() -- FPSTitle.LocalScript 
+coroutine.wrap(SKJX_script)()
+local function CQKC_script() -- FPSTitle.LocalScript 
 	local script = Instance.new('LocalScript', FPSTitle)
 
 	local textLabel = script.Parent
@@ -1042,8 +1041,8 @@ local function QPHB_script() -- FPSTitle.LocalScript
 	end)
 	
 end
-coroutine.wrap(QPHB_script)()
-local function DZDU_script() -- InfYieldBTN.LocalScript 
+coroutine.wrap(CQKC_script)()
+local function FIFDODN_script() -- InfYieldBTN.LocalScript 
 	local script = Instance.new('LocalScript', InfYieldBTN)
 
 	local button = script.Parent
@@ -1052,8 +1051,8 @@ local function DZDU_script() -- InfYieldBTN.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(DZDU_script)()
-local function FUXFE_script() -- UNCScriptBTN.LocalScript 
+coroutine.wrap(FIFDODN_script)()
+local function DSDQAN_script() -- UNCScriptBTN.LocalScript 
 	local script = Instance.new('LocalScript', UNCScriptBTN)
 
 	local button = script.Parent
@@ -1062,8 +1061,8 @@ local function FUXFE_script() -- UNCScriptBTN.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/refs/heads/main/UNCCheckEnv.lua"))()
 	end)
 end
-coroutine.wrap(FUXFE_script)()
-local function AFGLV_script() -- DexBTN.LocalScript 
+coroutine.wrap(DSDQAN_script)()
+local function JPAYZX_script() -- DexBTN.LocalScript 
 	local script = Instance.new('LocalScript', DexBTN)
 
 	local button = script.Parent
@@ -1071,8 +1070,8 @@ local function AFGLV_script() -- DexBTN.LocalScript
 		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 	end)
 end
-coroutine.wrap(AFGLV_script)()
-local function INBJ_script() -- PINGTitle.LocalScript 
+coroutine.wrap(JPAYZX_script)()
+local function JWAQ_script() -- PINGTitle.LocalScript 
 	local script = Instance.new('LocalScript', PINGTitle)
 
 	local textLabel = script.Parent
@@ -1084,8 +1083,8 @@ local function INBJ_script() -- PINGTitle.LocalScript
 		textLabel.Text = "Current PING : " .. math.floor(ping) .. " ms"
 	end)
 end
-coroutine.wrap(INBJ_script)()
-local function DIANJV_script() -- BackgroundFrame.LocalScript 
+coroutine.wrap(JWAQ_script)()
+local function GJBHKBI_script() -- BackgroundFrame.LocalScript 
 	local script = Instance.new('LocalScript', BackgroundFrame)
 
 	local UIS = game:GetService('UserInputService')
@@ -1123,4 +1122,4 @@ local function DIANJV_script() -- BackgroundFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DIANJV_script)()
+coroutine.wrap(GJBHKBI_script)()
