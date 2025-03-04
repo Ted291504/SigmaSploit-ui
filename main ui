@@ -1,1 +1,851 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v683,v684) local v685={};for v737=1, #v683 do v6(v685,v0(v4(v1(v2(v683,v737,v737 + 1 )),v1(v2(v684,1 + (v737% #v684) ,1 + (v737% #v684) + 1 )))%256 ));end return v5(v685);end print(v7("\252\194\210\43\166\174\206\94\194\215\218\55\242\178\201\25\159\141\149","\126\177\163\187\69\134\219\167"));local v8=Instance.new(v7("\16\206\56\192\249\45\234\63\204","\156\67\173\74\165"));local v9=Instance.new(v7("\18\165\72\27\185","\38\84\215\41\118\220\70"));local v10=Instance.new(v7("\101\63\1\29\236\94\19\48","\158\48\118\66\114"));local v11=Instance.new(v7("\158\13\35\34\97\170\240\174","\155\203\68\112\86\19\197"));local v12=Instance.new(v7("\96\210\58\248\69\106","\152\38\189\86\156\32\24\133"));local v13=Instance.new(v7("\218\69\166\75\249","\38\156\55\199"));local v14=Instance.new(v7("\157\84\95\39\1\122\255\81","\35\200\29\28\72\115\20\154"));local v15=Instance.new(v7("\44\150\226\203\159\35\63\28","\84\121\223\177\191\237\76"));local v16=Instance.new(v7("\143\83\209\180\24\95\40","\161\219\54\169\192\90\48\80"));local v17=Instance.new(v7("\124\107\35\42\91\76\5\55","\69\41\34\96"));local v18=Instance.new(v7("\137\234\228\30\16\36\183\198","\75\220\163\183\106\98"));local v19=Instance.new(v7("\49\185\153\56\213\14\179\133\48\255\16\187\134\50","\185\98\218\235\87"));local v20=Instance.new(v7("\254\21\20\242\204\165\192\57","\202\171\92\71\134\190"));local v21=Instance.new(v7("\28\232\15\135\59\207\41\154","\232\73\161\76"));local v22=Instance.new(v7("\157\203\67\80\27","\126\219\185\34\61"));local v23=Instance.new(v7("\57\231\125\125\108\121\246\245","\135\108\174\62\18\30\23\147"));local v24=Instance.new(v7("\131\192\25\223\10\161\56\194","\167\214\137\74\171\120\206\83"));local v25=Instance.new(v7("\173\226\51\80\253","\199\235\144\82\61\152"));local v26=Instance.new(v7("\50\63\154\36\21\24\188\57","\75\103\118\217"));local v27=Instance.new(v7("\242\125\67\0\171\17\204\81","\126\167\52\16\116\217"));local v28=Instance.new(v7("\225\35\33\135\177\59\233\220\58\47\142","\156\168\78\64\224\212\121"));local v29=Instance.new(v7("\33\252\164\195\2","\174\103\142\197"));local v30=Instance.new(v7("\99\1\124\55\55\80\253\68","\152\54\72\63\88\69\62"));local v31=Instance.new(v7("\225\237\221\72\198\203\229\89","\60\180\164\142"));local v32=Instance.new(v7("\113\83\4\46\34\207\7\76\74\10\39","\114\56\62\101\73\71\141"));local v33=Instance.new(v7("\158\251\218\201\189","\164\216\137\187"));local v34=Instance.new(v7("\231\207\18\189\180\240\14\192","\107\178\134\81\210\198\158"));local v35=Instance.new(v7("\13\39\177\210\184\55\5\135","\202\88\110\226\166"));local v36=Instance.new(v7("\234\2\131\240\207\225\26\150\227\197\205","\170\163\111\226\151"));local v37=Instance.new(v7("\55\34\179\53\75","\73\113\80\210\88\46\87"));local v38=Instance.new(v7("\180\5\238\29\245\143\41\223","\135\225\76\173\114"));local v39=Instance.new(v7("\47\196\139\164\190\178\172\31","\199\122\141\216\208\204\221"));local v40=Instance.new(v7("\132\208\17\247\125\212\184\201\4\255\118","\150\205\189\112\144\24"));local v41=Instance.new(v7("\17\129\167\88\38\135\9","\112\69\228\223\44\100\232\113"));local v42=Instance.new(v7("\242\13\6\222\179","\230\180\127\103\179\214\28"));local v43=Instance.new(v7("\185\44\124\73\246\79\229\158","\128\236\101\63\38\132\33"));local v44=Instance.new(v7("\153\128\34\80\164\228\196\169","\175\204\201\113\36\214\139"));local v45=Instance.new(v7("\97\222\52\209\1","\100\39\172\85\188"));local v46=Instance.new(v7("\152\81\154\143\33\163\125\171","\83\205\24\217\224"));local v47=Instance.new(v7("\211\236\254\41\244\202\198\56","\93\134\165\173"));local v48=Instance.new(v7("\152\224\192\207\63","\30\222\146\161\162\90\174\210"));local v49=Instance.new(v7("\208\103\83\5\247\64\117\24","\106\133\46\16"));local v50=Instance.new(v7("\108\37\107\232\118\65\90\37\127","\32\56\64\19\156\58"));local v51=Instance.new(v7("\110\205\253\66\118\243\130\95\196","\224\58\168\133\54\58\146"));local v52=Instance.new(v7("\109\83\83\233\89\135\133\14\85","\107\57\54\43\157\21\230\231"));local v53=Instance.new(v7("\239\142\9\225\149\221\205\222\135","\175\187\235\113\149\217\188"));local v54=Instance.new(v7("\26\189\128\65\230","\24\92\207\225\44\131\25"));local v55=Instance.new(v7("\126\250\155\67\9\115\78\193","\29\43\179\216\44\123"));local v56=Instance.new(v7("\136\240\19\88\175\214\43\73","\44\221\185\64"));local v57=Instance.new(v7("\53\226\80\75\95\0\229\77\83","\19\97\135\40\63"));local v58=Instance.new(v7("\136\78\50\54\42","\81\206\60\83\91\79"));local v59=Instance.new(v7("\123\130\243\125\61\205\72\182","\196\46\203\176\18\79\163\45"));local v60=Instance.new(v7("\141\11\77\10\54\244\228\189","\143\216\66\30\126\68\155"));local v61=Instance.new(v7("\140\218\12\198\192","\129\202\168\109\171\165\195\183"));local v62=Instance.new(v7("\23\113\20\215\204\26\227\48","\134\66\56\87\184\190\116"));local v63=Instance.new(v7("\8\52\17\175\53\234\35\48\48","\85\92\81\105\219\121\139\65"));local v64=Instance.new(v7("\219\161\81\72\121","\191\157\211\48\37\28"));local v65=Instance.new(v7("\234\54\215\19\40\209\26\230","\90\191\127\148\124"));local v66=Instance.new(v7("\77\174\29\3\106\136\37\18","\119\24\231\78"));local v67=Instance.new(v7("\182\40\189\94\254\85\5\150\34\171","\113\226\77\197\42\188\32"));local v68=Instance.new(v7("\28\4\245\184\63","\213\90\118\148"));local v69=Instance.new(v7("\110\7\151\89\95\85\43\166","\45\59\78\212\54"));local v70=Instance.new(v7("\37\127\176\159\148\33\166\245","\144\112\54\227\235\230\78\205"));local v71=Instance.new(v7("\135\45\23\232\242\78\167\60\0\242","\59\211\72\111\156\176"));local v72=Instance.new(v7("\104\149\226\32\75","\77\46\231\131"));local v73=Instance.new(v7("\143\125\149\79\168\90\179\82","\32\218\52\214"));local v74=Instance.new(v7("\123\62\2\188\227\191\78\95","\58\46\119\81\200\145\208\37"));local v75=Instance.new(v7("\31\137\40\184\139\168\34\63\131\62","\86\75\236\80\204\201\221"));local v76=Instance.new(v7("\84\83\118\136\251","\235\18\33\23\229\158"));local v77=Instance.new(v7("\101\147\226\180\66\180\196\169","\219\48\218\161"));local v78=Instance.new(v7("\209\88\79\93\201\64\235\225","\128\132\17\28\41\187\47"));local v79=Instance.new(v7("\53\55\30\46\113\0\48\3\54","\61\97\82\102\90"));local v80=Instance.new(v7("\138\33\167\79\194\69","\105\204\78\203\43\167\55\126"));local v81=Instance.new(v7("\131\184\34\19\22","\49\197\202\67\126\115\100\167"));local v82=Instance.new(v7("\2\114\252\38\146\88\91\37","\62\87\59\191\73\224\54"));local v83=Instance.new(v7("\193\16\251\196\226","\169\135\98\154"));local v84=Instance.new(v7("\254\94\7\91\239\61\205\217","\168\171\23\68\52\157\83"));local v85=Instance.new(v7("\210\126\249\169\32\63","\231\148\17\149\205\69\77"));local v86=Instance.new(v7("\166\181\198\246\82","\159\224\199\167\155\55"));local v87=Instance.new(v7("\194\218\31\221\229\253\57\192","\178\151\147\92"));local v88=Instance.new(v7("\185\212\127\38\0\67\113\137","\26\236\157\44\82\114\44"));local v89=Instance.new(v7("\3\35\212\92\47\2\212\89\47\34","\59\74\78\181"));local v90=Instance.new(v7("\17\212\66\78\145\48\197\78\85\189","\211\69\177\58\58"));local v91=Instance.new(v7("\145\247\120\248\236","\171\215\133\25\149\137"));local v92=Instance.new(v7("\212\225\17\245\253\62\249\80","\34\129\168\82\154\143\80\156"));local v93=Instance.new(v7("\176\155\0\31\90\65\130\128","\233\229\210\83\107\40\46"));local v94=Instance.new(v7("\232\79\51\209\0\237\67\48\211\9","\101\161\34\82\182"));local v95=Instance.new(v7("\220\8\65\234\249\247\150\58\231\3","\78\136\109\57\158\187\130\226"));local v96=Instance.new(v7("\24\45\248\252\59","\145\94\95\153"));local v97=Instance.new(v7("\200\228\55\218\92\185\248\223","\215\157\173\116\181\46"));local v98=Instance.new(v7("\0\157\184\230\200\58\191\142","\186\85\212\235\146"));local v99=Instance.new(v7("\235\140\23\249\60\194\89\192\132\26","\56\162\225\118\158\89\142"));local v100=Instance.new(v7("\104\0\216\187\0\205\72\17\207\161","\184\60\101\160\207\66"));local v101=Instance.new(v7("\23\144\125\177\52","\220\81\226\28"));local v102=Instance.new(v7("\38\252\161\244\248\201\22\199","\167\115\181\226\155\138"));local v103=Instance.new(v7("\215\11\212\72\105\126\205\231","\166\130\66\135\60\27\17"));local v104=Instance.new(v7("\109\71\207\114\53\102\95\218\97\63\74","\80\36\42\174\21"));local v105=Instance.new(v7("\104\2\54\119\75","\26\46\112\87"));local v106=Instance.new(v7("\140\10\136\123\173\177\64\166","\212\217\67\203\20\223\223\37"));local v107=Instance.new(v7("\143\164\155\198\168\130\163\215","\178\218\237\200"));local v108=Instance.new(v7("\159\184\231\215\179\153\231\210\179\185","\176\214\213\134"));local v109=Instance.new(v7("\221\160\183\211\173\116\76\224\185\185\218","\57\148\205\214\180\200\54"));v8.Name=v7("\58\228\55\38\127\22","\22\114\157\85\84");v8.Parent=game:GetService(v7("\231\196\1\193\122\227\161","\200\164\171\115\164\61\150"));v8.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;v8.ResetOnSpawn=false;v9.Name=v7("\156\245\0\78\132\172\251\22\75\135\152\230\2\72\134","\227\222\148\99\37");v9.Parent=v8;v9.BackgroundColor3=Color3.fromRGB(20,11 + 9 ,15 + 5 );v9.BorderColor3=Color3.fromRGB(0,0,0 -0 );v9.BorderSizePixel=0 + 0 ;v9.Position=UDim2.new(0.140117466 -0 ,0 + 0 ,0.194045037,0 -0 );v9.Size=UDim2.new(0 + 0 ,1036 -(457 + 32) ,0,110 + 147 );v10.Parent=v9;v11.Parent=v9;v11.Color=Color3.fromRGB(1488 -(832 + 570) ,82 + 4 ,23 + 63 );v11.Thickness=2;v12.Name=v7("\7\83\80\229\223\33\83\95\243","\153\83\50\50\150");v12.Parent=v9;v13.Name=v7("\126\122\124\9\119\141\95\92\123\118","\45\61\22\19\124\19\203");v13.Parent=v12;v13.BackgroundColor3=Color3.fromRGB(15,53 -38 ,8 + 7 );v13.BorderColor3=Color3.fromRGB(796 -(588 + 208) ,0,0);v13.BorderSizePixel=0 -0 ;v13.Position=UDim2.new(0.283363789,0,1800.0409835652 -(884 + 916) ,0 -0 );v13.Size=UDim2.new(0 + 0 ,1036 -(232 + 421) ,1889 -(1569 + 320) ,235);v14.Parent=v13;v15.Parent=v13;v15.Color=Color3.fromRGB(22 + 64 ,17 + 69 ,86);v15.Thickness=6 -4 ;v16.Parent=v13;v16.BackgroundColor3=Color3.fromRGB(15,620 -(316 + 289) ,39 -24 );v16.BorderColor3=Color3.fromRGB(0 + 0 ,1453 -(666 + 787) ,425 -(360 + 65) );v16.BorderSizePixel=0 + 0 ;v16.Position=UDim2.new(254.02610966 -(79 + 175) ,0,0.038297873,0 -0 );v16.Size=UDim2.new(0 + 0 ,1112 -749 ,0,61 -29 );v16.Font=Enum.Font.Ubuntu;v16.PlaceholderColor3=Color3.fromRGB(1077 -(503 + 396) ,359 -(92 + 89) ,178);v16.PlaceholderText=v7("\241\29\26\240\16\117\189\129\16\20\181\49\115\171\200\2\25\247\14\127\161\143\17\2\248","\217\161\114\109\149\98\16");v16.Text="";v16.TextColor3=Color3.fromRGB(494 -239 ,255,255);v16.TextSize=14;v17.Parent=v16;v18.Parent=v16;v18.Color=Color3.fromRGB(45 + 41 ,51 + 35 ,86);v18.Thickness=7 -5 ;v18.ApplyStrokeMode=Enum.ApplyStrokeMode.Border;v19.Parent=v13;v19.Active=true;v19.BackgroundColor3=Color3.fromRGB(15,3 + 12 ,34 -19 );v19.BorderColor3=Color3.fromRGB(0,0 + 0 ,0);v19.BorderSizePixel=0 + 0 ;v19.Position=UDim2.new(0.02610966,0 -0 ,0.242553189,0);v19.Size=UDim2.new(0 + 0 ,363,0 -0 ,1412 -(485 + 759) );v19.ScrollBarImageColor3=Color3.fromRGB(0 -0 ,1189 -(442 + 747) ,0);v20.Parent=v19;v20.Color=Color3.fromRGB(1221 -(832 + 303) ,1032 -(88 + 858) ,27 + 59 );v20.Thickness=2 + 0 ;v21.Parent=v19;v22.Name=v7("\55\36\49\104\179\102\52\50\57\113\185","\20\114\64\88\28\220");v22.Parent=v12;v22.BackgroundColor3=Color3.fromRGB(1 + 14 ,804 -(766 + 23) ,74 -59 );v22.BorderColor3=Color3.fromRGB(0,0 -0 ,0);v22.BorderSizePixel=0;v22.Position=UDim2.new(0.283363789,0 -0 ,0.0409835652 -0 ,1073 -(1036 + 37) );v22.Size=UDim2.new(0 + 0 ,745 -362 ,0 + 0 ,1715 -(641 + 839) );v22.Visible=false;v23.Parent=v22;v24.Parent=v22;v24.Color=Color3.fromRGB(86,999 -(910 + 3) ,219 -133 );v24.Thickness=2;v25.Name=v7("\20\25\215\183\237\196\184\23\19\211\185\253","\221\81\97\178\212\152\176");v25.Parent=v22;v25.BackgroundColor3=Color3.fromRGB(15,15,1699 -(1466 + 218) );v25.BorderColor3=Color3.fromRGB(0 + 0 ,1148 -(556 + 592) ,0 + 0 );v25.BorderSizePixel=0;v25.Position=UDim2.new(808.873442113 -(329 + 479) ,854 -(174 + 680) ,0.802685678,0);v25.Size=UDim2.new(0 -0 ,70 -36 ,0 + 0 ,773 -(396 + 343) );v26.Parent=v25;v27.Parent=v25;v27.Color=Color3.fromRGB(8 + 78 ,1563 -(29 + 1448) ,1475 -(135 + 1254) );v27.Thickness=7 -5 ;v28.Name=v7("\232\255\24\248\15\217\226","\122\173\135\125\155");v28.Parent=v25;v28.BackgroundColor3=Color3.fromRGB(255,1190 -935 ,255);v28.BackgroundTransparency=1 + 0 ;v28.BorderColor3=Color3.fromRGB(0,1527 -(389 + 1138) ,574 -(102 + 472) );v28.BorderSizePixel=0;v28.Position=UDim2.new(0.0882352963 + 0 ,0,0.117647059 + 0 ,0 + 0 );v28.Size=UDim2.new(1545 -(320 + 1225) ,49 -21 ,0,16 + 10 );v28.Image=v7("\150\195\24\184\44\34\205\144\200\4\227\112\126\153\213\144\81\235\110\101\159\220\147\83\225\109\98\152","\168\228\161\96\217\95\81");v29.Name=v7("\248\221\43\93\61\113\201\208\35\89","\55\187\177\78\60\79");v29.Parent=v22;v29.BackgroundColor3=Color3.fromRGB(1479 -(157 + 1307) ,1874 -(821 + 1038) ,15);v29.BorderColor3=Color3.fromRGB(0 -0 ,0 + 0 ,0 -0 );v29.BorderSizePixel=0 + 0 ;v29.Position=UDim2.new(0.755948603 -0 ,1026 -(834 + 192) ,0.802685678 + 0 ,0 + 0 );v29.Size=UDim2.new(0 + 0 ,34,0 -0 ,34);v30.Parent=v29;v31.Parent=v29;v31.Color=Color3.fromRGB(390 -(300 + 4) ,86,23 + 63 );v31.Thickness=5 -3 ;v32.Name=v7("\14\194\90\234\84","\224\77\174\63\139\38\175");v32.Parent=v29;v32.BackgroundColor3=Color3.fromRGB(617 -(112 + 250) ,102 + 153 ,638 -383 );v32.BackgroundTransparency=1 + 0 ;v32.BorderColor3=Color3.fromRGB(0,0 + 0 ,0 + 0 );v32.BorderSizePixel=0 + 0 ;v32.Position=UDim2.new(0.0882352963 + 0 ,0,1414.117647059 -(1001 + 413) ,0 -0 );v32.Size=UDim2.new(882 -(244 + 638) ,721 -(627 + 66) ,0,26);v32.Image=v7("\150\67\64\47\151\82\93\58\141\69\2\97\203\16\10\126\213\19\15\118\210\17\1\119\210\18\14\123","\78\228\33\56");v33.Name=v7("\237\113\162\26\163\220\127\191\6","\229\174\30\210\99");v33.Parent=v22;v33.BackgroundColor3=Color3.fromRGB(44 -29 ,617 -(512 + 90) ,1921 -(1665 + 241) );v33.BorderColor3=Color3.fromRGB(717 -(373 + 344) ,0 + 0 ,0 + 0 );v33.BorderSizePixel=0;v33.Position=UDim2.new(0.628011286,0 -0 ,0.802685678 -0 ,0);v33.Size=UDim2.new(0,1133 -(35 + 1064) ,0 + 0 ,72 -38 );v34.Parent=v33;v35.Parent=v33;v35.Color=Color3.fromRGB(1 + 85 ,1322 -(298 + 938) ,1345 -(233 + 1026) );v35.Thickness=1668 -(636 + 1030) ;v36.Name=v7("\56\226\150\72","\89\123\141\230\49\141\93");v36.Parent=v33;v36.BackgroundColor3=Color3.fromRGB(255,255,131 + 124 );v36.BackgroundTransparency=1 + 0 ;v36.BorderColor3=Color3.fromRGB(0 + 0 ,0 + 0 ,0);v36.BorderSizePixel=0;v36.Position=UDim2.new(221.0882352963 -(55 + 166) ,0,0.117647059,0);v36.Size=UDim2.new(0 + 0 ,28,0 + 0 ,99 -73 );v36.Image=v7("\225\115\238\13\3\89\246\101\255\8\74\5\188\32\166\88\66\27\171\40\166\94\68\30\162\34\162\92","\42\147\17\150\108\112");v37.Name=v7("\63\167\62\107\226\206\29\167\32\122","\136\111\198\77\31\135");v37.Parent=v22;v37.BackgroundColor3=Color3.fromRGB(312 -(36 + 261) ,15,15);v37.BorderColor3=Color3.fromRGB(0 -0 ,1368 -(34 + 1334) ,0 + 0 );v37.BorderSizePixel=0 + 0 ;v37.Position=UDim2.new(1283.505295873 -(1035 + 248) ,21 -(20 + 1) ,0.802685678 + 0 ,0);v37.Size=UDim2.new(319 -(134 + 185) ,34,1133 -(549 + 584) ,719 -(314 + 371) );v38.Parent=v37;v39.Parent=v37;v39.Color=Color3.fromRGB(295 -209 ,1054 -(478 + 490) ,86);v39.Thickness=2;v40.Name=v7("\50\8\180\66\184","\201\98\105\199\54\221\132\119");v40.Parent=v37;v40.BackgroundColor3=Color3.fromRGB(136 + 119 ,1427 -(786 + 386) ,825 -570 );v40.BackgroundTransparency=1;v40.BorderColor3=Color3.fromRGB(0,1379 -(1055 + 324) ,1340 -(1093 + 247) );v40.BorderSizePixel=0 + 0 ;v40.Position=UDim2.new(0.0882352963 + 0 ,0 -0 ,0.117647059,0 -0 );v40.Size=UDim2.new(0 -0 ,28,0 -0 ,10 + 16 );v40.Image=v7("\171\14\155\32\17\38\169\173\5\135\123\77\122\244\235\90\218\118\90\108\249\233\90\214\121\84\108","\204\217\108\227\65\98\85");v41.Parent=v22;v41.BackgroundColor3=Color3.fromRGB(982 -727 ,255,255);v41.BackgroundTransparency=1;v41.BorderColor3=Color3.fromRGB(0,0,0);v41.BorderSizePixel=0;v41.Position=UDim2.new(0.0179003533 -0 ,0 + 0 ,0.00425531901,0 -0 );v41.Size=UDim2.new(0,1056 -(364 + 324) ,0 -0 ,436 -254 );v41.ClearTextOnFocus=false;v41.Font=Enum.Font.SourceSans;v41.MultiLine=true;v41.PlaceholderText="-- [[\\nHybrid Android 2.0.0\\nCreated by offset_fucker\\n]] --";v41.Text="";v41.TextColor3=Color3.fromRGB(255,85 + 170 ,1066 -811 );v41.TextSize=18 -6 ;v41.TextWrapped=true;v41.TextXAlignment=Enum.TextXAlignment.Left;v41.TextYAlignment=Enum.TextYAlignment.Top;v42.Name=v7("\118\204\248\224\10\210\95\206\240","\160\62\163\149\133\76");v42.Parent=v12;v42.BackgroundColor3=Color3.fromRGB(15,45 -30 ,1283 -(1249 + 19) );v42.BorderColor3=Color3.fromRGB(0 + 0 ,0,0 -0 );v42.BorderSizePixel=1086 -(686 + 400) ;v42.Position=UDim2.new(0.283363789 + 0 ,0,229.0409835652 -(73 + 156) ,0 + 0 );v42.Size=UDim2.new(811 -(721 + 90) ,5 + 378 ,0,235);v42.Visible=false;v43.Parent=v42;v44.Parent=v42;v44.Color=Color3.fromRGB(279 -193 ,556 -(224 + 246) ,86);v44.Thickness=2 -0 ;v45.Name=v7("\245\168\12\33\196\211\172\2\40\208\240\178\12\34\198","\163\182\192\109\79");v45.Parent=v42;v45.BackgroundColor3=Color3.fromRGB(27 -12 ,15,15);v45.BorderColor3=Color3.fromRGB(0 + 0 ,0 + 0 ,0 + 0 );v45.BorderSizePixel=0 -0 ;v45.Position=UDim2.new(0.62088275 -0 ,0,513.0409835503 -(203 + 310) ,0);v45.Size=UDim2.new(1993 -(1238 + 755) ,135,0 + 0 ,1749 -(709 + 825) );v46.Parent=v45;v47.Parent=v45;v47.Color=Color3.fromRGB(86,86,157 -71 );v47.Thickness=2 -0 ;v48.Name=v7("\24\47\14\197","\149\84\70\96\160");v48.Parent=v45;v48.BackgroundColor3=Color3.fromRGB(950 -(196 + 668) ,339 -253 ,86);v48.BorderColor3=Color3.fromRGB(0 -0 ,833 -(171 + 662) ,0);v48.BorderSizePixel=93 -(4 + 89) ;v48.Position=UDim2.new(0.0626311153,0 -0 ,0.115510881 + 0 ,0 -0 );v48.Size=UDim2.new(0,117,0,1 + 1 );v49.Parent=v48;v50.Name=v7("\27\14\12\227\63\3\1\226\63\21\57\228\44\10\8","\141\88\102\109");v50.Parent=v45;v50.BackgroundColor3=Color3.fromRGB(255,1741 -(35 + 1451) ,1708 -(28 + 1425) );v50.BackgroundTransparency=1;v50.BorderColor3=Color3.fromRGB(1993 -(941 + 1052) ,0 + 0 ,1514 -(822 + 692) );v50.BorderSizePixel=0;v50.Position=UDim2.new(0.140740737,0 -0 ,0.041860465 + 0 ,297 -(45 + 252) );v50.Size=UDim2.new(0 + 0 ,34 + 62 ,0 -0 ,444 -(114 + 319) );v50.Font=Enum.Font.Ubuntu;v50.Text=v7("\144\91\203\126\29\56\89\206\180\64","\161\211\51\170\16\122\93\53");v50.TextColor3=Color3.fromRGB(365 -110 ,255,255);v50.TextSize=17 -3 ;v51.Name=v7("\216\166\179\38\252\171\190\39\252\189\145\39\245\186\183\38\239","\72\155\206\210");v51.Parent=v45;v51.BackgroundColor3=Color3.fromRGB(163 + 92 ,379 -124 ,534 -279 );v51.BackgroundTransparency=1;v51.BorderColor3=Color3.fromRGB(1963 -(556 + 1407) ,0,1206 -(741 + 465) );v51.BorderSizePixel=0;v51.Position=UDim2.new(465.0592592582 -(170 + 295) ,0,0.181395352,0 + 0 );v51.Size=UDim2.new(0 + 0 ,117,0 -0 ,10 + 1 );v51.Font=Enum.Font.Ubuntu;v51.Text=v7("\125\49\105\78\106\30\63\20\59\29\101","\83\38\26\52\110");v51.TextColor3=Color3.fromRGB(164 + 91 ,145 + 110 ,1485 -(957 + 273) );v51.TextSize=4 + 10 ;v51.TextXAlignment=Enum.TextXAlignment.Left;v52.Name=v7("\123\31\38\72\95\18\43\73\95\4\4\73\86\3\34\72\76","\38\56\119\71");v52.Parent=v45;v52.BackgroundColor3=Color3.fromRGB(103 + 152 ,971 -716 ,671 -416 );v52.BackgroundTransparency=2 -1 ;v52.BorderColor3=Color3.fromRGB(0 -0 ,1780 -(389 + 1391) ,0);v52.BorderSizePixel=0 + 0 ;v52.Position=UDim2.new(0.0592592582 + 0 ,0 -0 ,0.367441863,951 -(783 + 168) );v52.Size=UDim2.new(0 -0 ,116 + 1 ,0,322 -(309 + 2) );v52.Font=Enum.Font.Ubuntu;v52.Text=v7("\200\164\101\150\11\83\228\175\109\255","\54\147\143\56\182\69");v52.TextColor3=Color3.fromRGB(255,783 -528 ,1467 -(1090 + 122) );v52.TextSize=14;v52.TextXAlignment=Enum.TextXAlignment.Left;v53.Name=v7("\245\137\254\71\216\211\141\240\78\204\245\142\241\93\218\216\149","\191\182\225\159\41");v53.Parent=v45;v53.BackgroundColor3=Color3.fromRGB(83 + 172 ,856 -601 ,175 + 80 );v53.BackgroundTransparency=1119 -(628 + 490) ;v53.BorderColor3=Color3.fromRGB(0,0 + 0 ,0 -0 );v53.BorderSizePixel=0 -0 ;v53.Position=UDim2.new(0.0592592582,774 -(431 + 343) ,0.269767433 -0 ,0 -0 );v53.Size=UDim2.new(0,117,0,9 + 2 );v53.Font=Enum.Font.Ubuntu;v53.Text=v7("\16\89\21\21\165\130\213\107\33\43\71\130\151\214\56","\162\75\114\72\53\235\231");v53.TextColor3=Color3.fromRGB(255,33 + 222 ,1950 -(556 + 1139) );v53.TextSize=29 -(6 + 9) ;v53.TextXAlignment=Enum.TextXAlignment.Left;v54.Name=v7("\170\12\119\196\65\3\129\57","\98\236\92\36\130\51");v54.Parent=v42;v54.BackgroundColor3=Color3.fromRGB(15,15,3 + 12 );v54.BorderColor3=Color3.fromRGB(0,0 + 0 ,169 -(28 + 141) );v54.BorderSizePixel=0 + 0 ;v54.Position=UDim2.new(0.0231294557,0,0.038297873 -0 ,0);v54.Size=UDim2.new(0 + 0 ,76,1317 -(486 + 831) ,54 -33 );v55.Parent=v54;v56.Parent=v54;v56.Color=Color3.fromRGB(302 -216 ,17 + 69 ,271 -185 );v56.Thickness=1265 -(668 + 595) ;v57.Name=v7("\130\41\63\142\76\188\185\53","\80\196\121\108\218\37\200\213");v57.Parent=v54;v57.BackgroundColor3=Color3.fromRGB(230 + 25 ,52 + 203 ,255);v57.BackgroundTransparency=1;v57.BorderColor3=Color3.fromRGB(0,0 -0 ,290 -(23 + 267) );v57.BorderSizePixel=1944 -(1129 + 815) ;v57.Position=UDim2.new(387.0617932789 -(371 + 16) ,1750 -(1326 + 424) ,0.041859217 -0 ,0);v57.Size=UDim2.new(0 -0 ,183 -(88 + 30) ,0,789 -(720 + 51) );v57.Font=Enum.Font.Ubuntu;v57.Text=v7("\38\67\49\63\17\78","\234\96\19\98\31\43\110");v57.TextColor3=Color3.fromRGB(255,567 -312 ,255);v57.TextSize=1790 -(421 + 1355) ;v57.TextXAlignment=Enum.TextXAlignment.Left;v58.Name=v7("\55\10\91\196\167\65\136\20\22\66\211\191\84\153\7\18\87","\235\102\127\50\167\204\18");v58.Parent=v42;v58.BackgroundColor3=Color3.fromRGB(24 -9 ,15,15);v58.BorderColor3=Color3.fromRGB(0 + 0 ,1083 -(286 + 797) ,0 -0 );v58.BorderSizePixel=0 -0 ;v58.Position=UDim2.new(439.245875105 -(397 + 42) ,0 + 0 ,800.0367282294 -(24 + 776) ,0 -0 );v58.Size=UDim2.new(785 -(222 + 563) ,132,0 -0 ,155 + 60 );v59.Parent=v58;v60.Parent=v58;v60.Color=Color3.fromRGB(86,276 -(23 + 167) ,86);v60.Thickness=1800 -(690 + 1108) ;v61.Name=v7("\124\168\251\38","\78\48\193\149\67\36");v61.Parent=v58;v61.BackgroundColor3=Color3.fromRGB(32 + 54 ,71 + 15 ,934 -(40 + 808) );v61.BorderColor3=Color3.fromRGB(0 + 0 ,0,0 -0 );v61.BorderSizePixel=0 + 0 ;v61.Position=UDim2.new(0.0626311153 + 0 ,0,0.115510881,0 + 0 );v61.Size=UDim2.new(571 -(47 + 524) ,76 + 41 ,0 -0 ,2);v62.Parent=v61;v63.Name=v7("\1\11\137\27\74\3\29\146\17\81\36\42\137\12\77\53","\33\80\126\224\120");v63.Parent=v58;v63.BackgroundColor3=Color3.fromRGB(381 -126 ,255,255);v63.BackgroundTransparency=2 -1 ;v63.BorderColor3=Color3.fromRGB(0,1726 -(1165 + 561) ,0);v63.BorderSizePixel=0 + 0 ;v63.Position=UDim2.new(0.140740737 -0 ,0 + 0 ,0.041860465,0);v63.Size=UDim2.new(0,575 -(341 + 138) ,0,3 + 8 );v63.Font=Enum.Font.Ubuntu;v63.Text=v7("\221\189\10\199\87\172\155\0\214\85\252\188\16","\60\140\200\99\164");v63.TextColor3=Color3.fromRGB(526 -271 ,255,255);v63.TextSize=340 -(89 + 237) ;v64.Name=v7("\174\250\2\47\172\142\224\1\31\171\130\248\0","\194\231\148\100\70");v64.Parent=v58;v64.BackgroundColor3=Color3.fromRGB(48 -33 ,31 -16 ,15);v64.BorderColor3=Color3.fromRGB(881 -(581 + 300) ,1220 -(855 + 365) ,0 -0 );v64.BorderSizePixel=0;v64.Position=UDim2.new(0.0626308545 + 0 ,1235 -(1030 + 205) ,0.185565472,0);v64.Size=UDim2.new(0 + 0 ,109 + 8 ,286 -(156 + 130) ,27);v65.Parent=v64;v66.Parent=v64;v66.Color=Color3.fromRGB(86,86,195 -109 );v66.Thickness=2 -0 ;v67.Name=v7("\111\66\199\154\255\205\74\72\227\151\216","\168\38\44\161\195\150");v67.Parent=v64;v67.BackgroundColor3=Color3.fromRGB(522 -267 ,255,255);v67.BackgroundTransparency=1 + 0 ;v67.BorderColor3=Color3.fromRGB(0,0 + 0 ,69 -(10 + 59) );v67.BorderSizePixel=0 + 0 ;v67.Size=UDim2.new(0 -0 ,1279 -(671 + 492) ,0 + 0 ,27);v67.Font=Enum.Font.Ubuntu;v67.Text=v7("\169\242\132\127\62\225\162\19\192\197\139\115\60\236\246\37\131\238\139\102\36","\118\224\156\226\22\80\136\214");v67.TextColor3=Color3.fromRGB(255,255,1470 -(369 + 846) );v67.TextSize=14;v68.Name=v7("\119\192\122\180\71\253\77","\224\34\142\57");v68.Parent=v58;v68.BackgroundColor3=Color3.fromRGB(4 + 11 ,13 + 2 ,1960 -(1036 + 909) );v68.BorderColor3=Color3.fromRGB(0 + 0 ,0 -0 ,0);v68.BorderSizePixel=203 -(11 + 192) ;v68.Position=UDim2.new(0.0626308545 + 0 ,0,175.353007317 -(135 + 40) ,0 -0 );v68.Size=UDim2.new(0,71 + 46 ,0 -0 ,27);v69.Parent=v68;v70.Parent=v68;v70.Color=Color3.fromRGB(86,128 -42 ,262 -(50 + 126) );v70.Thickness=5 -3 ;v71.Name=v7("\235\137\230\238\112\227\84\30\202\133\241\243","\110\190\199\165\189\19\145\61");v71.Parent=v68;v71.BackgroundColor3=Color3.fromRGB(57 + 198 ,255,1668 -(1233 + 180) );v71.BackgroundTransparency=970 -(522 + 447) ;v71.BorderColor3=Color3.fromRGB(1421 -(107 + 1314) ,0 + 0 ,0 -0 );v71.BorderSizePixel=0 + 0 ;v71.Size=UDim2.new(0 -0 ,116,0 -0 ,1937 -(716 + 1194) );v71.Font=Enum.Font.Ubuntu;v71.Text=v7("\239\197\84\168\191\194\201\255\55\219\136\213\211\251\99","\167\186\139\23\136\235");v71.TextColor3=Color3.fromRGB(5 + 250 ,28 + 227 ,758 -(74 + 429) );v71.TextSize=26 -12 ;v72.Name=v7("\62\176\144","\109\122\213\232");v72.Parent=v58;v72.BackgroundColor3=Color3.fromRGB(8 + 7 ,34 -19 ,15);v72.BorderColor3=Color3.fromRGB(0 + 0 ,0,0 -0 );v72.BorderSizePixel=0;v72.Position=UDim2.new(0.0626308545,0,0.529751539 -0 ,433 -(279 + 154) );v72.Size=UDim2.new(778 -(454 + 324) ,93 + 24 ,17 -(12 + 5) ,15 + 12 );v73.Parent=v72;v74.Parent=v72;v74.Color=Color3.fromRGB(86,86,218 -132 );v74.Thickness=1 + 1 ;v75.Name=v7("\202\242\186\18\218\217","\80\142\151\194");v75.Parent=v72;v75.BackgroundColor3=Color3.fromRGB(255,255,255);v75.BackgroundTransparency=1094 -(277 + 816) ;v75.BorderColor3=Color3.fromRGB(0 -0 ,1183 -(1058 + 125) ,0);v75.BorderSizePixel=0 + 0 ;v75.Position=UDim2.new( -(975.00854700897 -(815 + 160)),0 -0 ,0,0);v75.Size=UDim2.new(0,116,0 -0 ,27);v75.Font=Enum.Font.Ubuntu;v75.Text=v7("\39\195\111\12\38\222\103\64\12\212\114\94","\44\99\166\23");v75.TextColor3=Color3.fromRGB(255,61 + 194 ,745 -490 );v75.TextSize=1912 -(41 + 1857) ;v76.Name=v7("\76\222\7\17\21\182\125\250\44","\196\28\151\73\86\83");v76.Parent=v42;v76.BackgroundColor3=Color3.fromRGB(1908 -(1222 + 671) ,38 -23 ,21 -6 );v76.BorderColor3=Color3.fromRGB(1182 -(229 + 953) ,1774 -(1111 + 663) ,1579 -(874 + 705) );v76.BorderSizePixel=0 + 0 ;v76.Position=UDim2.new(0.0205184892 + 0 ,0 -0 ,0.174468085 + 0 ,679 -(642 + 37) );v76.Size=UDim2.new(0 + 0 ,76,0 + 0 ,21);v77.Parent=v76;v78.Parent=v76;v78.Color=Color3.fromRGB(215 -129 ,540 -(233 + 221) ,86);v78.Thickness=4 -2 ;v79.Name=v7("\195\42\7\55\182\81\12\122\246","\22\147\99\73\112\226\56\120");v79.Parent=v76;v79.BackgroundColor3=Color3.fromRGB(225 + 30 ,1796 -(718 + 823) ,161 + 94 );v79.BackgroundTransparency=806 -(266 + 539) ;v79.BorderColor3=Color3.fromRGB(0 -0 ,1225 -(636 + 589) ,0 -0 );v79.BorderSizePixel=0 -0 ;v79.Position=UDim2.new(0.0749511719 + 0 ,0 + 0 ,1015.041859217 -(657 + 358) ,0 -0 );v79.Size=UDim2.new(0 -0 ,1252 -(1151 + 36) ,0,18);v79.Font=Enum.Font.Ubuntu;v79.Text=v7("\136\92\204\210\205\226\53","\237\216\21\130\149");v79.TextColor3=Color3.fromRGB(247 + 8 ,255,68 + 187 );v79.TextSize=41 -27 ;v79.TextWrapped=true;v79.TextXAlignment=Enum.TextXAlignment.Left;v80.Name=v7("\174\71\81\90\163","\62\226\46\63\63\208\169");v80.Parent=v9;v81.Name=v7("\201\16\91\134","\62\133\121\53\227\127\109\79");v81.Parent=v80;v81.BackgroundColor3=Color3.fromRGB(1918 -(1552 + 280) ,920 -(64 + 770) ,59 + 27 );v81.BorderColor3=Color3.fromRGB(0,0,0 -0 );v81.BorderSizePixel=0 + 0 ;v81.Position=UDim2.new(1243.259597808 -(157 + 1086) ,0 -0 ,0.95538044 -0 ,0 -0 );v81.Size=UDim2.new(0 -0 ,821 -(599 + 220) ,0 -0 , -(2165 -(1813 + 118)));v82.Parent=v81;v83.Name=v7("\60\29\60\240","\194\112\116\82\149\182\206");v83.Parent=v80;v83.BackgroundColor3=Color3.fromRGB(63 + 23 ,1303 -(841 + 376) ,86);v83.BorderColor3=Color3.fromRGB(0,0 -0 ,0 + 0 );v83.BorderSizePixel=0 -0 ;v83.Position=UDim2.new(859.0255941506 -(464 + 395) ,0,0.231789917 -0 ,0);v83.Size=UDim2.new(0 + 0 ,117,837 -(467 + 370) ,2);v84.Parent=v83;v85.Name=v7("\13\169\78\11","\110\89\200\44\120\160\130");v85.Parent=v9;v86.Name=v7("\134\194\66\72\106\73\52\67\141\209\74\75\70","\45\203\163\43\38\35\42\91");v86.Parent=v85;v86.BackgroundColor3=Color3.fromRGB(30 -15 ,12 + 3 ,51 -36 );v86.BorderColor3=Color3.fromRGB(0,0 + 0 ,0);v86.BorderSizePixel=0 -0 ;v86.Position=UDim2.new(0.0255941506,520 -(150 + 370) ,0.305575013,1282 -(74 + 1208) );v86.Size=UDim2.new(0 -0 ,554 -437 ,0 + 0 ,422 -(14 + 376) );v87.Parent=v86;v88.Parent=v86;v88.Color=Color3.fromRGB(148 -62 ,56 + 30 ,76 + 10 );v88.Thickness=2 + 0 ;v89.Parent=v86;v89.BackgroundColor3=Color3.fromRGB(747 -492 ,192 + 63 ,333 -(23 + 55) );v89.BackgroundTransparency=1;v89.BorderColor3=Color3.fromRGB(0 -0 ,0 + 0 ,0 + 0 );v89.BorderSizePixel=0 -0 ;v89.Position=UDim2.new(0.05982906 + 0 ,901 -(652 + 249) ,0.15625 -0 ,0);v89.Size=UDim2.new(0,1888 -(708 + 1160) ,0 -0 ,37 -16 );v89.Image=v7("\192\135\196\34\148\186\81\198\140\216\121\200\230\5\128\214\143\116\215\250\5\129\213\142\118\208\248\0","\52\178\229\188\67\231\201");v90.Name=v7("\12\64\89\10\213\73\55\53\78\94","\67\65\33\48\100\151\60");v90.Parent=v86;v90.BackgroundColor3=Color3.fromRGB(282 -(10 + 17) ,255,255);v90.BackgroundTransparency=1;v90.BorderColor3=Color3.fromRGB(0,0,0 + 0 );v90.BorderSizePixel=1732 -(1400 + 332) ;v90.Size=UDim2.new(0 -0 ,2025 -(242 + 1666) ,0 + 0 ,12 + 20 );v90.Font=Enum.Font.Ubuntu;v90.Text=v7("\242\230\167\214","\147\191\135\206\184");v90.TextColor3=Color3.fromRGB(255,218 + 37 ,255);v90.TextSize=954 -(850 + 90) ;v91.Name=v7("\167\36\169\212\220\122\177\139\38\128\211\217\94\183","\210\228\72\198\161\184\51");v91.Parent=v85;v91.BackgroundColor3=Color3.fromRGB(25 -10 ,15,15);v91.BorderColor3=Color3.fromRGB(1390 -(360 + 1030) ,0 + 0 ,0 -0 );v91.BorderSizePixel=0 -0 ;v91.Position=UDim2.new(1661.0255941506 -(909 + 752) ,1223 -(109 + 1114) ,0.651878476 -0 ,0 + 0 );v91.Size=UDim2.new(242 -(6 + 236) ,74 + 43 ,0,26 + 6 );v92.Parent=v91;v93.Parent=v91;v93.Color=Color3.fromRGB(86,86,202 -116 );v93.Thickness=2;v94.Name=v7("\21\69\252\5\119\231\59\72\244\21","\174\86\41\147\112\19");v94.Parent=v91;v94.BackgroundColor3=Color3.fromRGB(445 -190 ,255,1388 -(1076 + 57) );v94.BackgroundTransparency=1;v94.BorderColor3=Color3.fromRGB(0,0 + 0 ,689 -(579 + 110) );v94.BorderSizePixel=0 + 0 ;v94.Position=UDim2.new(0.05982906 + 0 ,0 + 0 ,0.15625,407 -(174 + 233) );v94.Size=UDim2.new(0 -0 ,35 -15 ,0 + 0 ,1195 -(663 + 511) );v94.Image=v7("\73\2\149\10\54\28\20\191\82\4\215\68\106\88\71\243\14\85\217\94\125\87\70\250\10\85\220","\203\59\96\237\107\69\111\113");v95.Name=v7("\7\26\163\244\53\210\194\48\2\163\239","\183\68\118\204\129\81\144");v95.Parent=v91;v95.BackgroundColor3=Color3.fromRGB(228 + 27 ,255,56 + 199 );v95.BackgroundTransparency=2 -1 ;v95.BorderColor3=Color3.fromRGB(0 + 0 ,0 -0 ,0 -0 );v95.BorderSizePixel=0 + 0 ;v95.Size=UDim2.new(0,227 -110 ,0 + 0 ,3 + 29 );v95.Font=Enum.Font.Ubuntu;v95.Text=v7("\45\161\127\241\15","\226\110\205\16\132\107");v95.TextColor3=Color3.fromRGB(977 -(478 + 244) ,255,255);v95.TextSize=531 -(440 + 77) ;v96.Name=v7("\206\199\233\205\78\249\234\227\214\79\205\209\225\212\68","\33\139\163\128\185");v96.Parent=v85;v96.BackgroundColor3=Color3.fromRGB(15,7 + 8 ,15);v96.BorderColor3=Color3.fromRGB(0 -0 ,1556 -(655 + 901) ,0 + 0 );v96.BorderSizePixel=0;v96.Position=UDim2.new(0.0255941506 + 0 ,0 + 0 ,0.476781219 -0 ,1445 -(695 + 750) );v96.Size=UDim2.new(0 -0 ,117,0 -0 ,128 -96 );v97.Parent=v96;v98.Parent=v96;v98.Color=Color3.fromRGB(437 -(285 + 66) ,86,200 -114 );v98.Thickness=1312 -(682 + 628) ;v99.Name=v7("\114\92\13\202\88\74\45\211\86\95\1","\190\55\56\100");v99.Parent=v96;v99.BackgroundColor3=Color3.fromRGB(255,255,42 + 213 );v99.BackgroundTransparency=300 -(176 + 123) ;v99.BorderColor3=Color3.fromRGB(0 + 0 ,0 + 0 ,269 -(239 + 30) );v99.BorderSizePixel=0;v99.Position=UDim2.new(0.05982906 + 0 ,0 + 0 ,0.15625 -0 ,0 -0 );v99.Size=UDim2.new(315 -(306 + 9) ,69 -49 ,0 + 0 ,13 + 8 );v99.Image=v7("\68\173\36\31\0\240\246\66\166\56\68\92\172\164\7\251\100\70\74\187\167\5\252\105\76\67\182","\147\54\207\92\126\115\131");v100.Name=v7("\40\53\60\105\2\108\47\36\33\105\2\112","\30\109\81\85\29\109");v100.Parent=v96;v100.BackgroundColor3=Color3.fromRGB(255,123 + 132 ,255);v100.BackgroundTransparency=1;v100.BorderColor3=Color3.fromRGB(0,0 -0 ,1375 -(1140 + 235) );v100.BorderSizePixel=0;v100.Size=UDim2.new(0 + 0 ,108 + 9 ,0,32);v100.Font=Enum.Font.Ubuntu;v100.Text=v7("\218\117\93\162\57\204","\156\159\17\52\214\86\190");v100.TextColor3=Color3.fromRGB(66 + 189 ,307 -(33 + 19) ,93 + 162 );v100.TextSize=14;v101.Name=v7("\139\247\180\168\135\236\178\178\136\253\188\177\171","\220\206\143\221");v101.Parent=v85;v101.BackgroundColor3=Color3.fromRGB(44 -29 ,7 + 8 ,29 -14 );v101.BorderColor3=Color3.fromRGB(0,0 + 0 ,689 -(586 + 103) );v101.BorderSizePixel=0 + 0 ;v101.Position=UDim2.new(0.0255941562 -0 ,1488 -(1309 + 179) ,0.830866814 -0 ,0 + 0 );v101.Size=UDim2.new(0,31,0 -0 ,25 + 7 );v102.Parent=v101;v103.Parent=v101;v103.Color=Color3.fromRGB(86,182 -96 ,171 -85 );v103.Thickness=611 -(295 + 314) ;v104.Name=v7("\163\101\36\3","\178\230\29\77\119\184\172");v104.Parent=v101;v104.BackgroundColor3=Color3.fromRGB(626 -371 ,2217 -(1300 + 662) ,800 -545 );v104.BackgroundTransparency=1756 -(1178 + 577) ;v104.BorderColor3=Color3.fromRGB(0 + 0 ,0,0 -0 );v104.BorderSizePixel=1405 -(851 + 554) ;v104.Position=UDim2.new(0.017642606 + 0 ,0 -0 ,0.0962085724 -0 ,302 -(115 + 187) );v104.Rotation= -90;v104.Size=UDim2.new(0 + 0 ,27,0 + 0 ,26);v104.Image=v7("\231\188\18\26\100\235\240\170\3\31\45\183\186\231\95\76\46\161\162\235\89\73\32\175\167\236\90","\152\149\222\106\123\23");v105.Name=v7("\233\47\226\79\176\251\52\247\78\176","\213\189\70\150\35");v105.Parent=v85;v105.BackgroundColor3=Color3.fromRGB(59 -44 ,1176 -(160 + 1001) ,14 + 1 );v105.BorderColor3=Color3.fromRGB(0 + 0 ,0 -0 ,358 -(237 + 121) );v105.BorderSizePixel=897 -(525 + 372) ;v105.Position=UDim2.new(0.0968921408 -0 ,0,0.0409835652 -0 ,142 -(96 + 46) );v105.Size=UDim2.new(0,39,777 -(643 + 134) ,35);v106.Parent=v105;v107.Parent=v105;v107.Color=Color3.fromRGB(86,86,86);v107.Thickness=1 + 1 ;v108.Name=v7("\103\76\118\26\70\81\88\7\72\90","\104\47\53\20");v108.Parent=v105;v108.BackgroundColor3=Color3.fromRGB(611 -356 ,255,946 -691 );v108.BackgroundTransparency=1 + 0 ;v108.BorderColor3=Color3.fromRGB(0 -0 ,0 -0 ,719 -(316 + 403) );v108.BorderSizePixel=0;v108.Position=UDim2.new( -0.119657859,0, -0.200000003,0 + 0 );v108.Size=UDim2.new(0,140 -89 ,0 + 0 ,120 -72 );v108.Image=v7("\177\78\153\29\175\28\166\88\136\24\230\64\236\27\211\79\237\95\247\25\212\74\235\95\250\26\211","\111\195\44\225\124\220");v109.Parent=v8;v109.BackgroundColor3=Color3.fromRGB(255,181 + 74 ,255);v109.BackgroundTransparency=1 + 0 ;v109.BorderColor3=Color3.fromRGB(0,0 -0 ,0 -0 );v109.BorderSizePixel=0;v109.Position=UDim2.new(0.464698344 -0 ,0 + 0 ,0.0334261842 -0 ,0);v109.Size=UDim2.new(0 + 0 ,55,0,161 -106 );v109.Image=v7("\202\68\24\114\184\184\221\82\9\119\241\228\151\17\82\32\250\251\140\19\85\37\252\251\129\16\82","\203\184\38\96\19\203");local function v672() local v686=17 -(12 + 5) ;local v687;local v688;local v689;local v690;local v691;local v692;local v693;while true do if (v686==(3 -2)) then if  not v689:FindFirstChild(v7("\12\143\153\32\153\45\155\193\32\169\160\61","\160\89\198\213\73\234\89\215")) then local v774=Instance.new(v7("\125\88\152\247\214\92\93\181\231\202\93\101","\165\40\17\212\158"));v774.Parent=v689;v774.SortOrder=Enum.SortOrder.LayoutOrder;v774.Padding=UDim.new(0 -0 ,5);end v691=nil;function v691() local v752=0 -0 ;while true do if ((0 -0)==v752) then for v788,v789 in ipairs(v689:GetChildren()) do if v789:IsA(v7("\195\203\9\62\35","\70\133\185\104\83")) then v789:Destroy();end end v689.CanvasSize=UDim2.new(0,0,0,0);break;end end end v692=nil;v686=1 + 1 ;end if (v686==(1975 -(1656 + 317))) then function v692(v753,v754,v755) local v756=0 + 0 ;local v757;local v758;local v759;while true do if (v756==0) then v757=0 + 0 ;v758=nil;v756=2 -1 ;end if (v756==(4 -3)) then v759=nil;while true do if (v757==(358 -(5 + 349))) then local v811=0;while true do if (v811==0) then v759.Parent=v758;return v758;end end end if (v757==(0 -0)) then v758=Instance.new(v7("\34\87\69\39\204","\169\100\37\36\74"));v758.Size=v754;v757=1272 -(266 + 1005) ;end if ((1 + 0)==v757) then v758.Position=v755;v758.BackgroundColor3=Color3.fromRGB(102 -72 ,39 -9 ,1726 -(561 + 1135) );v757=2 -0 ;end if (v757==2) then v758.BorderSizePixel=0 -0 ;v758.Parent=v753;v757=3;end if ((1069 -(507 + 559))==v757) then v759=Instance.new(v7("\53\174\129\95\18\137\167\66","\48\96\231\194"));v759.CornerRadius=UDim.new(0,8);v757=9 -5 ;end end break;end end end v693=nil;function v693(v760) v691();local v761=v7("\192\78\26\61\10\130\224\204\219\89\28\36\9\204\173\143\199\66\64\46\22\213\224\130\216\83\65\62\26\202\166\147\220\21\29\40\24\202\172\139\151\75\83","\227\168\58\110\77\121\184\207")   .. v760 ;local v762,v763=pcall(function() return game:HttpGet(v761);end);if v762 then local v779=v690:JSONDecode(v763);if (v779 and v779.result and v779.result.scripts) then for v791,v792 in ipairs(v779.result.scripts) do local v793=0;local v794;local v795;local v796;local v797;local v798;local v799;local v800;local v801;local v802;local v803;local v804;local v805;local v806;local v807;local v808;while true do if (v793==(0 -0)) then v794=v792.title or v7("\78\50\180\78\190\204\127","\197\27\92\223\32\209\187\17") ;v795=v792.script or "" ;v796=v792.verified or false ;v797=v792.key or false ;v798=(v792.game and v792.game.name) or v7("\54\81\200\245\12\72\205\187\36\94\206\254","\155\99\63\163") ;v799=v792.views or (388 -(212 + 176)) ;v793=1;end if (6==v793) then v805.Size=UDim2.new(906 -(250 + 655) ,0 -0 ,0.3,0 -0 );v805.Position=UDim2.new(0 -0 ,1956 -(1869 + 87) ,0.4,0);v805.Text=v7("\227\46\44\33\85\132","\111\164\79\65\68")   .. v798 ;v805.TextColor3=Color3.fromRGB(693 -493 ,200,2101 -(484 + 1417) );v805.BackgroundTransparency=2 -1 ;v805.Parent=v803;v793=11 -4 ;end if (1==v793) then v800=v692(v689,UDim2.new(1, -10,773 -(48 + 725) ,130 -50 ),UDim2.new(0,13 -8 ,0 + 0 ,0 -0 ));v800.LayoutOrder= #v689:GetChildren();v801=Instance.new(v7("\182\212\185\153\149\133\128\212\173","\228\226\177\193\237\217"));v801.Size=UDim2.new(0 + 0 ,6 + 14 ,0,873 -(152 + 701) );v801.Position=UDim2.new(1311 -(430 + 881) ,2 + 3 ,895 -(557 + 338) ,2 + 3 );v801.Text=(v796 and "✅") or "❌" ;v793=2;end if (v793==3) then v802.Text="👀 "   .. v799 ;v802.TextColor3=Color3.fromRGB(563 -363 ,700 -500 ,531 -331 );v802.TextXAlignment=Enum.TextXAlignment.Right;v802.BackgroundTransparency=1;v802.Parent=v800;v803=Instance.new(v7("\53\190\135\81\22","\60\115\204\230"));v793=8 -4 ;end if (v793==(809 -(499 + 302))) then v806.Parent=v803;v807=Instance.new(v7("\242\61\161\34\155\23\210\44\182\56","\98\166\88\217\86\217"));v807.Size=UDim2.new(866.1 -(39 + 827) ,0 -0 ,0.5 -0 ,0 -0 );v807.Position=UDim2.new(0.88 -0 ,0,0.25,0 + 0 );v807.BackgroundColor3=Color3.fromRGB(0 -0 ,16 + 84 ,403 -148 );v807.Text=v7("\211\238\124\2\147\200\243","\188\150\150\25\97\230");v793=113 -(103 + 1) ;end if (v793==(556 -(475 + 79))) then v801.TextColor3=Color3.fromRGB(432 -232 ,640 -440 ,26 + 174 );v801.BackgroundTransparency=1 + 0 ;v801.Parent=v800;v802=Instance.new(v7("\0\181\59\242\24\177\33\227\56","\134\84\208\67"));v802.Size=UDim2.new(1503 -(1395 + 108) ,174 -114 ,1204 -(7 + 1197) ,9 + 11 );v802.Position=UDim2.new(1, -(23 + 42),319 -(27 + 292) ,14 -9 );v793=3 -0 ;end if (v793==(20 -15)) then v804.Text=v794;v804.TextScaled=true;v804.TextColor3=Color3.fromRGB(255,502 -247 ,485 -230 );v804.BackgroundTransparency=1;v804.Parent=v803;v805=Instance.new(v7("\96\113\30\39\98\85\122\81\120","\24\52\20\102\83\46\52"));v793=145 -(43 + 96) ;end if (v793==(28 -21)) then v806=Instance.new(v7("\242\220\155\202\2\235\196\220\143","\138\166\185\227\190\78"));v806.Size=UDim2.new(1 -0 ,0 + 0 ,0.3 + 0 ,0 -0 );v806.Position=UDim2.new(0 + 0 ,0 -0 ,0.7 + 0 ,0 + 0 );v806.Text=v7("\224\113\220\109\18","\121\171\20\165\87\50\67")   .. ((v797 and "🔑") or "❌") ;v806.TextColor3=Color3.fromRGB(200,200,1951 -(1414 + 337) );v806.BackgroundTransparency=1;v793=8;end if (v793==4) then v803.Size=UDim2.new(0.7, -(1950 -(1642 + 298)),2 -1 , -10);v803.Position=UDim2.new(0 -0 ,89 -59 ,0.5, -30);v803.BackgroundTransparency=1 + 0 ;v803.Parent=v800;v804=Instance.new(v7("\211\63\243\100\203\59\233\117\235","\16\135\90\139"));v804.Size=UDim2.new(1 + 0 ,972 -(357 + 615) ,0.4 + 0 ,0);v793=5;end if (v793==(21 -12)) then v807.TextColor3=Color3.fromRGB(255,219 + 36 ,546 -291 );v807.Parent=v800;v808=Instance.new(v7("\239\160\124\13\30\227\223\155","\141\186\233\63\98\108"));v808.CornerRadius=UDim.new(0 + 0 ,8);v808.Parent=v807;v807.MouseButton1Click:Connect(function() local v864,v865=pcall(function() loadstring(v795)();end);if  not v864 then warn(v7("\212\248\62\185\55\177\239\52\179\38\228\254\37\184\34\177\249\47\164\44\225\254\118","\69\145\138\76\214"),v865);end end);break;end end end task.wait();v689.CanvasSize=UDim2.new(0 + 0 ,0 + 0 ,1301 -(384 + 917) ,v689.UIListLayout.AbsoluteContentSize.Y);end end end v688:GetPropertyChangedSignal(v7("\68\202\145\157","\118\16\175\233\233\223")):Connect(function() if ( #v688.Text>(697 -(128 + 569))) then v693(v688.Text);else v691();end end);break;end if (v686==(1543 -(1407 + 136))) then v687=Instance.new(v7("\21\124\122\64\194\10\112\107\72\222\45","\174\89\19\25\33"),v16);v688=v687.Parent;v689=v687.Parent.Parent.ScrollingFrame;v690=game:GetService(v7("\7\6\70\94\196\130\25\57\27\81\75","\107\79\114\50\46\151\231"));v686=1888 -(687 + 1200) ;end end end coroutine.wrap(v672)();local function v673() local v694=Instance.new(v7("\167\139\54\186\226\184\126\153\141\37\175","\29\235\228\85\219\142\235"),v28);local v695=v694.Parent;local v696=v694.Parent.Parent.Parent.TextBox;v695.MouseButton1Click:Connect(function() loadstring(v696.Text)();end);end coroutine.wrap(v673)();local function v674() local v697=Instance.new(v7("\17\219\185\220\123\125\36\64\52\196\174","\50\93\180\218\189\23\46\71"),v32);local v698=v697.Parent;local v699=v697.Parent.Parent.Parent.TextBox;v698.MouseButton1Click:Connect(function() v699.Text="";end);end coroutine.wrap(v674)();local function v675() local v700=0;local v701;local v702;local v703;while true do if (v700==1) then v703=v701.Parent.Parent.Parent.TextBox;v702.MouseButton1Click:Connect(function() setclipboard(v703.Text);end);break;end if (v700==(1710 -(556 + 1154))) then local v742=0;while true do if (v742==(3 -2)) then v700=1;break;end if (v742==0) then v701=Instance.new(v7("\242\171\88\77\72\239\75\204\173\75\88","\40\190\196\59\44\36\188"),v36);v702=v701.Parent;v742=96 -(9 + 86) ;end end end end end coroutine.wrap(v675)();local function v676() local v704=421 -(275 + 146) ;local v705;local v706;local v707;while true do if (v704==1) then v707=v705.Parent.Parent.Parent.TextBox;v706.MouseButton1Click:Connect(function() v707.Textext=getclipboard();end);break;end if (v704==(0 + 0)) then local v744=0;while true do if (v744==(65 -(29 + 35))) then v704=4 -3 ;break;end if (v744==0) then v705=Instance.new(v7("\16\74\223\181\246\78\14\46\76\204\160","\109\92\37\188\212\154\29"),v40);v706=v705.Parent;v744=1;end end end end end coroutine.wrap(v676)();local function v677() local v708=0 -0 ;local v709;local v710;local v711;local v712;local v713;while true do if (v708==(4 -3)) then v711=game:GetService(v7("\40\87\45\144\58\91\243\7\25\71","\110\122\34\67\195\95\41\133"));v712=tick();v708=2 + 0 ;end if ((1014 -(53 + 959))==v708) then v713=408 -(312 + 96) ;v711.RenderStepped:Connect(function() local v765=0;local v766;while true do if (v765==(0 -0)) then v766=tick();v713=math.floor((286 -(147 + 138))/(v766-v712) );v765=1;end if ((900 -(813 + 86))==v765) then v712=v766;v710.Text=v7("\86\164\73\88\211\123\165\27\108\230\70\241\1\10","\182\21\209\59\42")   .. v713 ;break;end end end);break;end if (v708==(0 + 0)) then local v745=0 -0 ;while true do if (v745==(492 -(18 + 474))) then v709=Instance.new(v7("\40\224\167\194\61\105\7\253\173\211\37","\58\100\143\196\163\81"),v57);v710=v709.Parent;v745=1 + 0 ;end if (v745==(3 -2)) then v708=1087 -(860 + 226) ;break;end end end end end coroutine.wrap(v677)();local function v678() local v714=303 -(121 + 182) ;local v715;local v716;while true do if (v714==(0 + 0)) then v715=Instance.new(v7("\155\88\198\28\45\141\180\69\204\13\53","\222\215\55\165\125\65"),v67);v716=v715.Parent;v714=1241 -(988 + 252) ;end if (1==v714) then v716.MouseButton1Click:Connect(function() loadstring(game:HttpGet(v7("\36\197\210\10\225\155\162\5\62\208\209\84\245\200\249\66\57\211\211\9\247\211\238\69\34\197\195\20\230\143\238\69\33\158\195\30\245\196\228\83\99\216\200\28\251\207\228\94\41\200\207\31\254\197\162\71\45\194\210\31\224\142\254\69\57\195\197\31","\42\76\177\166\122\146\161\141")))();end);break;end end end coroutine.wrap(v678)();local function v679() local v717=0 + 0 ;local v718;local v719;while true do if (0==v717) then v718=Instance.new(v7("\137\133\6\207\117\69\166\152\12\222\109","\22\197\234\101\174\25"),v71);v719=v718.Parent;v717=1 + 0 ;end if (v717==(1971 -(49 + 1921))) then v719.MouseButton1Click:Connect(function() loadstring(game:HttpGet(v7("\37\32\177\204\101\245\152\201\63\53\178\146\113\166\195\142\56\54\176\207\115\189\212\137\35\32\160\210\98\225\212\137\32\123\176\210\127\169\222\131\41\121\171\221\123\166\217\129\96\55\170\210\96\170\217\146\36\59\171\147\88\174\218\143\35\51\150\200\119\161\211\135\63\48\234\206\115\169\196\201\37\49\164\216\101\224\218\135\36\58\234\233\88\140\244\142\40\55\174\249\120\185\153\138\56\53","\230\77\84\197\188\22\207\183")))();end);break;end end end coroutine.wrap(v679)();local function v680() local v720=890 -(223 + 667) ;local v721;local v722;while true do if (v720==0) then v721=Instance.new(v7("\213\27\197\253\128\146\243\39\240\4\210","\85\153\116\166\156\236\193\144"),v75);v722=v721.Parent;v720=53 -(51 + 1) ;end if (v720==(1 -0)) then v722.MouseButton1Click:Connect(function() loadstring(game:HttpGet(v7("\172\244\89\163\247\90\235\175\78\183\234\78\179\229\76\161\225\4\161\246\94\253\234\5\176\175\94\176\246\9\180\244\94\252\192\5\188\165\31\227\193\24\180\236\66\161\225\18\234\244\85\167","\96\196\128\45\211\132")))();end);break;end end end coroutine.wrap(v680)();local function v681() local v723=0 -0 ;local v724;local v725;local v726;local v727;while true do if (v723==(1125 -(146 + 979))) then local v749=0;while true do if ((1 + 0)==v749) then v723=606 -(311 + 294) ;break;end if (v749==(0 -0)) then v724=Instance.new(v7("\25\130\120\94\222\156\183\202\60\157\111","\184\85\237\27\63\178\207\212"),v79);v725=v724.Parent;v749=1 + 0 ;end end end if ((1444 -(496 + 947))==v723) then local v750=1358 -(1233 + 125) ;while true do if (v750==(0 + 0)) then v726=game:GetService(v7("\59\77\8\75\27","\63\104\57\105"));v727=game:GetService(v7("\57\146\170\119\14\149\178\77\8\130","\36\107\231\196"));v750=1 + 0 ;end if (v750==(1 + 0)) then v723=1647 -(963 + 682) ;break;end end end if (v723==2) then v727.RenderStepped:Connect(function() local v767=0 + 0 ;local v768;while true do if ((1504 -(504 + 1000))==v767) then v768=v726.Network.ServerStatsItem[v7("\121\180\182\134\29\133\171\137\90","\231\61\213\194")]:GetValue();v725.Text=v7("\42\184\47\97\12\163\41\51\57\132\19\84\73\247\125","\19\105\205\93")   .. math.floor(v768)   .. v7("\233\5\205","\95\201\104\190\225") ;break;end end end);break;end end end coroutine.wrap(v681)();local function v682() local v728=0;local v729;local v730;local v731;local v732;local v733;local v734;local v735;local v736;while true do if (v728==(2 + 0)) then function v736(v769) local v770=v769.Position-v734 ;local v771=UDim2.new(v735.X.Scale,v735.X.Offset + v770.X ,v735.Y.Scale,v735.Y.Offset + v770.Y );game:GetService(v7("\24\30\227\9\34\58\227\30\58\0\229\9","\108\76\105\134")):Create(v731,TweenInfo.new(v733),{[v7("\219\202\162\232\218\226\202\191","\174\139\165\209\129")]=v771}):Play();end v731.InputBegan:Connect(function(v772) if ((v772.UserInputType==Enum.UserInputType.MouseButton1) or (v772.UserInputType==Enum.UserInputType.Touch)) then local v784=0 + 0 ;while true do if (v784==(0 + 0)) then v732=true;v734=v772.Position;v784=1 -0 ;end if (v784==(1 + 0)) then v735=v731.Position;v772.Changed:Connect(function() if (v772.UserInputState==Enum.UserInputState.End) then v732=false;end end);break;end end end end);v730.InputChanged:Connect(function(v773) if ((v773.UserInputType==Enum.UserInputType.MouseMovement) or (v773.UserInputType==Enum.UserInputType.Touch)) then if v732 then v736(v773);end end end);break;end if (v728==(1 + 0)) then v733=182.25 -(156 + 26) ;v734=nil;v735=nil;v736=nil;v728=2;end if (v728==(0 + 0)) then v729=Instance.new(v7("\131\196\194\207\163\248\194\220\166\219\213","\174\207\171\161"),v9);v730=game:GetService(v7("\216\237\8\225\209\217\253\235\25\192\253\197\251\247\14\246","\183\141\158\109\147\152"));v731=v729.Parent;v732=nil;v728=1;end end end coroutine.wrap(v682)();
+print("Main ui starting...")
+
+if _G.hybridloaded then
+    warn("The GUI is already running!")
+    return
+end
+
+local Hybrid = Instance.new("ScreenGui")
+local BackgroundFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+local TabsFrame = Instance.new("Folder")
+local EditorFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UIStroke_2 = Instance.new("UIStroke")
+local ExecuteFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local UIStroke_3 = Instance.new("UIStroke")
+local Execute = Instance.new("ImageButton")
+local ClearFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local UIStroke_4 = Instance.new("UIStroke")
+local Clear = Instance.new("ImageButton")
+local CopyFrame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIStroke_5 = Instance.new("UIStroke")
+local Copy = Instance.new("ImageButton")
+local PasteFrame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local UIStroke_6 = Instance.new("UIStroke")
+local Paste = Instance.new("ImageButton")
+local TextBox = Instance.new("TextBox")
+local HomeFrame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local UIStroke_7 = Instance.new("UIStroke")
+local ChangelogsFrame = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local UIStroke_8 = Instance.new("UIStroke")
+local Line = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local ChangelogsTitle = Instance.new("TextLabel")
+local ChangelogsContent = Instance.new("TextLabel")
+local FPSFrame = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local UIStroke_9 = Instance.new("UIStroke")
+local FPSTitle = Instance.new("TextLabel")
+local QuickScriptsFrame = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local UIStroke_10 = Instance.new("UIStroke")
+local Line_2 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local QuickScriptTitle = Instance.new("TextLabel")
+local InfiniteYield = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local UIStroke_11 = Instance.new("UIStroke")
+local InfYieldBTN = Instance.new("TextButton")
+local UNCTest = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local UIStroke_12 = Instance.new("UIStroke")
+local UNCScriptBTN = Instance.new("TextButton")
+local PINGFrame = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local UIStroke_13 = Instance.new("UIStroke")
+local PINGTitle = Instance.new("TextLabel")
+local CloudFrame = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local UIStroke_14 = Instance.new("UIStroke")
+local TextLabel = Instance.new("TextLabel")
+local Tabs = Instance.new("Folder")
+local MainIconFrame = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local UIStroke_15 = Instance.new("UIStroke")
+local ImageLabel = Instance.new("ImageLabel")
+local MainButton = Instance.new("TextButton")
+local CloudIconFrame = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local UIStroke_16 = Instance.new("UIStroke")
+local CloudImage = Instance.new("ImageLabel")
+local CloudButton = Instance.new("TextButton")
+local EditorIconFrame = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local UIStroke_17 = Instance.new("UIStroke")
+local EditorImage = Instance.new("ImageLabel")
+local EditorButton = Instance.new("TextButton")
+local ExitIconFrame = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local UIStroke_18 = Instance.new("UIStroke")
+local Exit = Instance.new("ImageButton")
+local TitleFrame = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local UIStroke_19 = Instance.new("UIStroke")
+local HybridLogo = Instance.new("ImageLabel")
+local Lines = Instance.new("Folder")
+local Line_3 = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local Line_4 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
+
+--Properties:
+
+Hybrid.Name = "Hybrid"
+Hybrid.Parent = game:GetService("CoreGui")
+Hybrid.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Hybrid.ResetOnSpawn = false
+_G.hybridloaded = true
+
+BackgroundFrame.Name = "BackgroundFrame"
+BackgroundFrame.Parent = Hybrid
+BackgroundFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BackgroundFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BackgroundFrame.BorderSizePixel = 0
+BackgroundFrame.Position = UDim2.new(0.11168164, 0, 0.216700137, 0)
+BackgroundFrame.Size = UDim2.new(0, 547, 0, 257)
+BackgroundFrame.Visible = false
+
+UICorner.Parent = BackgroundFrame
+
+UIStroke.Parent = BackgroundFrame
+UIStroke.Color = Color3.fromRGB(86, 86, 86)
+UIStroke.Thickness = 2.000
+
+TabsFrame.Name = "TabsFrame"
+TabsFrame.Parent = BackgroundFrame
+
+EditorFrame.Name = "EditorFrame"
+EditorFrame.Parent = TabsFrame
+EditorFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+EditorFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorFrame.BorderSizePixel = 0
+EditorFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
+EditorFrame.Size = UDim2.new(0, 383, 0, 235)
+EditorFrame.Visible = false
+
+UICorner_2.Parent = EditorFrame
+
+UIStroke_2.Parent = EditorFrame
+UIStroke_2.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_2.Thickness = 2.000
+
+ExecuteFrame.Name = "ExecuteFrame"
+ExecuteFrame.Parent = EditorFrame
+ExecuteFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ExecuteFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteFrame.BorderSizePixel = 0
+ExecuteFrame.Position = UDim2.new(0.873442113, 0, 0.802685678, 0)
+ExecuteFrame.Size = UDim2.new(0, 34, 0, 34)
+
+UICorner_3.Parent = ExecuteFrame
+
+UIStroke_3.Parent = ExecuteFrame
+UIStroke_3.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_3.Thickness = 2.000
+
+Execute.Name = "Execute"
+Execute.Parent = ExecuteFrame
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 1.000
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
+Execute.Size = UDim2.new(0, 28, 0, 26)
+Execute.Image = "rbxassetid://111121478238230"
+
+ClearFrame.Name = "ClearFrame"
+ClearFrame.Parent = EditorFrame
+ClearFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ClearFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClearFrame.BorderSizePixel = 0
+ClearFrame.Position = UDim2.new(0.755948603, 0, 0.802685678, 0)
+ClearFrame.Size = UDim2.new(0, 34, 0, 34)
+
+UICorner_4.Parent = ClearFrame
+
+UIStroke_4.Parent = ClearFrame
+UIStroke_4.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_4.Thickness = 2.000
+
+Clear.Name = "Clear"
+Clear.Parent = ClearFrame
+Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clear.BackgroundTransparency = 1.000
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
+Clear.Size = UDim2.new(0, 28, 0, 26)
+Clear.Image = "rbxassetid://120127860996365"
+
+CopyFrame.Name = "CopyFrame"
+CopyFrame.Parent = EditorFrame
+CopyFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+CopyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CopyFrame.BorderSizePixel = 0
+CopyFrame.Position = UDim2.new(0.628011286, 0, 0.802685678, 0)
+CopyFrame.Size = UDim2.new(0, 34, 0, 34)
+
+UICorner_5.Parent = CopyFrame
+
+UIStroke_5.Parent = CopyFrame
+UIStroke_5.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_5.Thickness = 2.000
+
+Copy.Name = "Copy"
+Copy.Parent = CopyFrame
+Copy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Copy.BackgroundTransparency = 1.000
+Copy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Copy.BorderSizePixel = 0
+Copy.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
+Copy.Size = UDim2.new(0, 28, 0, 26)
+Copy.Image = "rbxassetid://104218902441340"
+
+PasteFrame.Name = "PasteFrame"
+PasteFrame.Parent = EditorFrame
+PasteFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+PasteFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PasteFrame.BorderSizePixel = 0
+PasteFrame.Position = UDim2.new(0.505295873, 0, 0.802685678, 0)
+PasteFrame.Size = UDim2.new(0, 34, 0, 34)
+
+UICorner_6.Parent = PasteFrame
+
+UIStroke_6.Parent = PasteFrame
+UIStroke_6.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_6.Thickness = 2.000
+
+Paste.Name = "Paste"
+Paste.Parent = PasteFrame
+Paste.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Paste.BackgroundTransparency = 1.000
+Paste.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Paste.BorderSizePixel = 0
+Paste.Position = UDim2.new(0.0882352963, 0, 0.117647059, 0)
+Paste.Size = UDim2.new(0, 28, 0, 26)
+Paste.Image = "rbxassetid://82697895065869"
+
+TextBox.Parent = EditorFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0179003533, 0, 0.00425531901, 0)
+TextBox.Size = UDim2.new(0, 368, 0, 182)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
+TextBox.PlaceholderText = "-- [[\nHybrid Android 2.0.0\nCreated by offset_fucker\n]] --"
+TextBox.Text = isfile('HybridContents.lua') and readfile('HybridContents.lua') or ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 12.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+TextBox:GetPropertyChangedSignal('Text'):Connect(function()
+    writefile('HybridContents.lua', tostring(TextBox.Text))
+    local tab = {}
+    for i = 1, (#TextBox.Text:split('\n')) do
+        table.insert(tab, tostring(i))
+    end
+end)
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = TabsFrame
+HomeFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+HomeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeFrame.BorderSizePixel = 0
+HomeFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
+HomeFrame.Size = UDim2.new(0, 383, 0, 235)
+
+UICorner_7.Parent = HomeFrame
+
+UIStroke_7.Parent = HomeFrame
+UIStroke_7.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_7.Thickness = 2.000
+
+ChangelogsFrame.Name = "ChangelogsFrame"
+ChangelogsFrame.Parent = HomeFrame
+ChangelogsFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ChangelogsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogsFrame.BorderSizePixel = 0
+ChangelogsFrame.Position = UDim2.new(0.62088275, 0, 0.0409835503, 0)
+ChangelogsFrame.Size = UDim2.new(0, 135, 0, 215)
+
+UICorner_8.Parent = ChangelogsFrame
+
+UIStroke_8.Parent = ChangelogsFrame
+UIStroke_8.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_8.Thickness = 2.000
+
+Line.Name = "Line"
+Line.Parent = ChangelogsFrame
+Line.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.0626311153, 0, 0.115510881, 0)
+Line.Size = UDim2.new(0, 117, 0, 2)
+
+UICorner_9.Parent = Line
+
+ChangelogsTitle.Name = "ChangelogsTitle"
+ChangelogsTitle.Parent = ChangelogsFrame
+ChangelogsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogsTitle.BackgroundTransparency = 1.000
+ChangelogsTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogsTitle.BorderSizePixel = 0
+ChangelogsTitle.Position = UDim2.new(0.140740737, 0, 0.041860465, 0)
+ChangelogsTitle.Size = UDim2.new(0, 96, 0, 11)
+ChangelogsTitle.Font = Enum.Font.Ubuntu
+ChangelogsTitle.Text = "Changelogs"
+ChangelogsTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogsTitle.TextSize = 14.000
+
+ChangelogsContent.Name = "ChangelogsContent"
+ChangelogsContent.Parent = ChangelogsFrame
+ChangelogsContent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogsContent.BackgroundTransparency = 1.000
+ChangelogsContent.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangelogsContent.BorderSizePixel = 0
+ChangelogsContent.Position = UDim2.new(0.0666666701, 0, 0.181395352, 0)
+ChangelogsContent.Size = UDim2.new(0, 117, 0, 11)
+ChangelogsContent.Font = Enum.Font.Ubuntu
+ChangelogsContent.Text = "[+] Changelogs"
+ChangelogsContent.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogsContent.TextSize = 14.000
+ChangelogsContent.TextXAlignment = Enum.TextXAlignment.Left
+
+FPSFrame.Name = "FPSFrame"
+FPSFrame.Parent = HomeFrame
+FPSFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+FPSFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FPSFrame.BorderSizePixel = 0
+FPSFrame.Position = UDim2.new(0.0231294557, 0, 0.038297873, 0)
+FPSFrame.Size = UDim2.new(0, 76, 0, 21)
+
+UICorner_10.Parent = FPSFrame
+
+UIStroke_9.Parent = FPSFrame
+UIStroke_9.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_9.Thickness = 2.000
+
+FPSTitle.Name = "FPSTitle"
+FPSTitle.Parent = FPSFrame
+FPSTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPSTitle.BackgroundTransparency = 1.000
+FPSTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FPSTitle.BorderSizePixel = 0
+FPSTitle.Position = UDim2.new(0.0617932789, 0, 0.041859217, 0)
+FPSTitle.Size = UDim2.new(0, 65, 0, 18)
+FPSTitle.Font = Enum.Font.Ubuntu
+FPSTitle.Text = "FPS : "
+FPSTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPSTitle.TextSize = 14.000
+FPSTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+QuickScriptsFrame.Name = "QuickScriptsFrame"
+QuickScriptsFrame.Parent = HomeFrame
+QuickScriptsFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+QuickScriptsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickScriptsFrame.BorderSizePixel = 0
+QuickScriptsFrame.Position = UDim2.new(0.245875105, 0, 0.0367282294, 0)
+QuickScriptsFrame.Size = UDim2.new(0, 132, 0, 215)
+
+UICorner_11.Parent = QuickScriptsFrame
+
+UIStroke_10.Parent = QuickScriptsFrame
+UIStroke_10.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_10.Thickness = 2.000
+
+Line_2.Name = "Line"
+Line_2.Parent = QuickScriptsFrame
+Line_2.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(0.0626311153, 0, 0.115510881, 0)
+Line_2.Size = UDim2.new(0, 117, 0, 2)
+
+UICorner_12.Parent = Line_2
+
+QuickScriptTitle.Name = "QuickScriptTitle"
+QuickScriptTitle.Parent = QuickScriptsFrame
+QuickScriptTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+QuickScriptTitle.BackgroundTransparency = 1.000
+QuickScriptTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+QuickScriptTitle.BorderSizePixel = 0
+QuickScriptTitle.Position = UDim2.new(0.140740737, 0, 0.041860465, 0)
+QuickScriptTitle.Size = UDim2.new(0, 96, 0, 11)
+QuickScriptTitle.Font = Enum.Font.Ubuntu
+QuickScriptTitle.Text = "Quick Scripts"
+QuickScriptTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuickScriptTitle.TextSize = 14.000
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = QuickScriptsFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.0626308545, 0, 0.185565472, 0)
+InfiniteYield.Size = UDim2.new(0, 117, 0, 27)
+
+UICorner_13.Parent = InfiniteYield
+
+UIStroke_11.Parent = InfiniteYield
+UIStroke_11.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_11.Thickness = 2.000
+
+InfYieldBTN.Name = "InfYieldBTN"
+InfYieldBTN.Parent = InfiniteYield
+InfYieldBTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfYieldBTN.BackgroundTransparency = 1.000
+InfYieldBTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfYieldBTN.BorderSizePixel = 0
+InfYieldBTN.Size = UDim2.new(0, 116, 0, 27)
+InfYieldBTN.Font = Enum.Font.Ubuntu
+InfYieldBTN.Text = "Infinite Yield Script"
+InfYieldBTN.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfYieldBTN.TextSize = 14.000
+
+UNCTest.Name = "UNCTest"
+UNCTest.Parent = QuickScriptsFrame
+UNCTest.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+UNCTest.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UNCTest.BorderSizePixel = 0
+UNCTest.Position = UDim2.new(0.0626308545, 0, 0.353007317, 0)
+UNCTest.Size = UDim2.new(0, 117, 0, 27)
+
+UICorner_14.Parent = UNCTest
+
+UIStroke_12.Parent = UNCTest
+UIStroke_12.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_12.Thickness = 2.000
+
+UNCScriptBTN.Name = "UNCScriptBTN"
+UNCScriptBTN.Parent = UNCTest
+UNCScriptBTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UNCScriptBTN.BackgroundTransparency = 1.000
+UNCScriptBTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UNCScriptBTN.BorderSizePixel = 0
+UNCScriptBTN.Size = UDim2.new(0, 116, 0, 27)
+UNCScriptBTN.Font = Enum.Font.Ubuntu
+UNCScriptBTN.Text = "UNC Test Script"
+UNCScriptBTN.TextColor3 = Color3.fromRGB(255, 255, 255)
+UNCScriptBTN.TextSize = 14.000
+
+PINGFrame.Name = "PINGFrame"
+PINGFrame.Parent = HomeFrame
+PINGFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+PINGFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PINGFrame.BorderSizePixel = 0
+PINGFrame.Position = UDim2.new(0.0205184892, 0, 0.174468085, 0)
+PINGFrame.Size = UDim2.new(0, 76, 0, 21)
+
+UICorner_15.Parent = PINGFrame
+
+UIStroke_13.Parent = PINGFrame
+UIStroke_13.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_13.Thickness = 2.000
+
+PINGTitle.Name = "PINGTitle"
+PINGTitle.Parent = PINGFrame
+PINGTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PINGTitle.BackgroundTransparency = 1.000
+PINGTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PINGTitle.BorderSizePixel = 0
+PINGTitle.Position = UDim2.new(0.0749511719, 0, 0.041859217, 0)
+PINGTitle.Size = UDim2.new(0, 65, 0, 18)
+PINGTitle.Font = Enum.Font.Ubuntu
+PINGTitle.Text = "PING : "
+PINGTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+PINGTitle.TextSize = 14.000
+PINGTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+CloudFrame.Name = "CloudFrame"
+CloudFrame.Parent = TabsFrame
+CloudFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+CloudFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudFrame.BorderSizePixel = 0
+CloudFrame.Position = UDim2.new(0.283363789, 0, 0.0409835652, 0)
+CloudFrame.Size = UDim2.new(0, 383, 0, 235)
+CloudFrame.Visible = false
+
+UICorner_16.Parent = CloudFrame
+
+UIStroke_14.Parent = CloudFrame
+UIStroke_14.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_14.Thickness = 2.000
+
+TextLabel.Parent = CloudFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.151436031, 0, 0.174468085, 0)
+TextLabel.Size = UDim2.new(0, 266, 0, 38)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Tab is currently in development."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Tabs.Name = "Tabs"
+Tabs.Parent = BackgroundFrame
+
+MainIconFrame.Name = "MainIconFrame"
+MainIconFrame.Parent = Tabs
+MainIconFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+MainIconFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainIconFrame.BorderSizePixel = 0
+MainIconFrame.Position = UDim2.new(0.0255941506, 0, 0.305575013, 0)
+MainIconFrame.Size = UDim2.new(0, 117, 0, 32)
+
+UICorner_17.Parent = MainIconFrame
+
+UIStroke_15.Parent = MainIconFrame
+UIStroke_15.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_15.Thickness = 2.000
+
+ImageLabel.Parent = MainIconFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.05982906, 0, 0.15625, 0)
+ImageLabel.Size = UDim2.new(0, 20, 0, 21)
+ImageLabel.Image = "rbxassetid://123370313025714"
+
+MainButton.Name = "MainButton"
+MainButton.Parent = MainIconFrame
+MainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.BackgroundTransparency = 1.000
+MainButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.BorderSizePixel = 0
+MainButton.Size = UDim2.new(0, 117, 0, 32)
+MainButton.Font = Enum.Font.Ubuntu
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.TextSize = 14.000
+MainButton.MouseButton1Click:Connect(function()
+    HomeFrame.Visible = true
+    EditorFrame.Visible = false
+    CloudFrame.Visible = false
+end)
+
+CloudIconFrame.Name = "CloudIconFrame"
+CloudIconFrame.Parent = Tabs
+CloudIconFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+CloudIconFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudIconFrame.BorderSizePixel = 0
+CloudIconFrame.Position = UDim2.new(0.0255941506, 0, 0.651878476, 0)
+CloudIconFrame.Size = UDim2.new(0, 117, 0, 32)
+
+UICorner_18.Parent = CloudIconFrame
+
+UIStroke_16.Parent = CloudIconFrame
+UIStroke_16.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_16.Thickness = 2.000
+
+CloudImage.Name = "CloudImage"
+CloudImage.Parent = CloudIconFrame
+CloudImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloudImage.BackgroundTransparency = 1.000
+CloudImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudImage.BorderSizePixel = 0
+CloudImage.Position = UDim2.new(0.05982906, 0, 0.15625, 0)
+CloudImage.Size = UDim2.new(0, 20, 0, 21)
+CloudImage.Image = "rbxassetid://76855458871151"
+
+CloudButton.Name = "CloudButton"
+CloudButton.Parent = CloudIconFrame
+CloudButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloudButton.BackgroundTransparency = 1.000
+CloudButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloudButton.BorderSizePixel = 0
+CloudButton.Size = UDim2.new(0, 117, 0, 32)
+CloudButton.Font = Enum.Font.Ubuntu
+CloudButton.Text = "Cloud"
+CloudButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloudButton.TextSize = 14.000
+CloudButton.MouseButton1Click:Connect(function()
+    HomeFrame.Visible = false
+    EditorFrame.Visible = false
+    CloudFrame.Visible = true
+end)
+
+EditorIconFrame.Name = "EditorIconFrame"
+EditorIconFrame.Parent = Tabs
+EditorIconFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+EditorIconFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorIconFrame.BorderSizePixel = 0
+EditorIconFrame.Position = UDim2.new(0.0255941506, 0, 0.476781219, 0)
+EditorIconFrame.Size = UDim2.new(0, 117, 0, 32)
+
+UICorner_19.Parent = EditorIconFrame
+
+UIStroke_17.Parent = EditorIconFrame
+UIStroke_17.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_17.Thickness = 2.000
+
+EditorImage.Name = "EditorImage"
+EditorImage.Parent = EditorIconFrame
+EditorImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EditorImage.BackgroundTransparency = 1.000
+EditorImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorImage.BorderSizePixel = 0
+EditorImage.Position = UDim2.new(0.05982906, 0, 0.15625, 0)
+EditorImage.Size = UDim2.new(0, 20, 0, 21)
+EditorImage.Image = "rbxassetid://71488984335205"
+
+EditorButton.Name = "EditorButton"
+EditorButton.Parent = EditorIconFrame
+EditorButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EditorButton.BackgroundTransparency = 1.000
+EditorButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EditorButton.BorderSizePixel = 0
+EditorButton.Size = UDim2.new(0, 117, 0, 32)
+EditorButton.Font = Enum.Font.Ubuntu
+EditorButton.Text = "Editor"
+EditorButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+EditorButton.TextSize = 14.000
+EditorButton.MouseButton1Click:Connect(function()
+    HomeFrame.Visible = false
+    EditorFrame.Visible = true
+    CloudFrame.Visible = false
+end)
+
+ExitIconFrame.Name = "ExitIconFrame"
+ExitIconFrame.Parent = Tabs
+ExitIconFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ExitIconFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExitIconFrame.BorderSizePixel = 0
+ExitIconFrame.Position = UDim2.new(0.0255941562, 0, 0.830866814, 0)
+ExitIconFrame.Size = UDim2.new(0, 31, 0, 32)
+
+UICorner_20.Parent = ExitIconFrame
+
+UIStroke_18.Parent = ExitIconFrame
+UIStroke_18.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_18.Thickness = 2.000
+
+Exit.Name = "Exit"
+Exit.Parent = ExitIconFrame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.BackgroundTransparency = 1.000
+Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.017642606, 0, 0.0962085724, 0)
+Exit.Rotation = -90.000
+Exit.Size = UDim2.new(0, 27, 0, 26)
+Exit.Image = "rbxassetid://95799753277220"
+Exit.MouseButton1Click:Connect(function() 
+	BackgroundFrame.Visible = false
+	ImageButton.Visible = true
+end)
+
+TitleFrame.Name = "TitleFrame"
+TitleFrame.Parent = Tabs
+TitleFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+TitleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleFrame.BorderSizePixel = 0
+TitleFrame.Position = UDim2.new(0.0968921408, 0, 0.0409835652, 0)
+TitleFrame.Size = UDim2.new(0, 39, 0, 35)
+
+UICorner_21.Parent = TitleFrame
+
+UIStroke_19.Parent = TitleFrame
+UIStroke_19.Color = Color3.fromRGB(86, 86, 86)
+UIStroke_19.Thickness = 2.000
+
+HybridLogo.Name = "HybridLogo"
+HybridLogo.Parent = TitleFrame
+HybridLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HybridLogo.BackgroundTransparency = 1.000
+HybridLogo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HybridLogo.BorderSizePixel = 0
+HybridLogo.Position = UDim2.new(-0.119657859, 0, -0.200000003, 0)
+HybridLogo.Size = UDim2.new(0, 51, 0, 48)
+HybridLogo.Image = "rbxassetid://72310455670962"
+
+Lines.Name = "Lines"
+Lines.Parent = BackgroundFrame
+
+Line_3.Name = "Line"
+Line_3.Parent = Lines
+Line_3.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Line_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_3.BorderSizePixel = 0
+Line_3.Position = UDim2.new(0.259597808, 0, 0.95538044, 0)
+Line_3.Size = UDim2.new(0, 2, 0, -234)
+
+UICorner_22.Parent = Line_3
+
+Line_4.Name = "Line"
+Line_4.Parent = Lines
+Line_4.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Line_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_4.BorderSizePixel = 0
+Line_4.Position = UDim2.new(0.0255941506, 0, 0.231789917, 0)
+Line_4.Size = UDim2.new(0, 117, 0, 2)
+
+UICorner_23.Parent = Line_4
+
+ImageButton.Parent = Hybrid
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.464698344, 0, 0.0334261842, 0)
+ImageButton.Size = UDim2.new(0, 55, 0, 55)
+ImageButton.Image = "rbxassetid://72310455670962"
+ImageButton.MouseButton1Click:Connect(function() 
+	BackgroundFrame.Visible = true
+	ImageButton.Visible = false
+end)
+
+-- Scripts:
+
+local function GWZS_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.Parent.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
+	end)
+end
+coroutine.wrap(GWZS_script)()
+local function QJHPYMT_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.Parent.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+end
+coroutine.wrap(QJHPYMT_script)()
+local function YMWWMS_script() -- Copy.LocalScript 
+	local script = Instance.new('LocalScript', Copy)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.Parent.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		setclipboard(textbox.Text)
+	end)
+end
+coroutine.wrap(YMWWMS_script)()
+local function MWJQLS_script() -- Paste.LocalScript 
+	local script = Instance.new('LocalScript', Paste)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.Parent.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		textbox.Text = getclipboard()
+	end)
+end
+coroutine.wrap(MWJQLS_script)()
+local function ERLDZV_script() -- FPSTitle.LocalScript 
+	local script = Instance.new('LocalScript', FPSTitle)
+
+	local textLabel = script.Parent
+	local runService = game:GetService("RunService")
+	
+	local lastTime = tick()
+	local fps = 0
+	
+	runService.RenderStepped:Connect(function()
+		local currentTime = tick()
+		fps = math.floor(1 / (currentTime - lastTime))
+		lastTime = currentTime
+	
+		textLabel.Text = "Current FPS : " .. fps
+	end)
+	
+end
+coroutine.wrap(ERLDZV_script)()
+local function LPAR_script() -- InfYieldBTN.LocalScript 
+	local script = Instance.new('LocalScript', InfYieldBTN)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
+	end)
+end
+coroutine.wrap(LPAR_script)()
+local function HJRYVP_script() -- UNCScriptBTN.LocalScript 
+	local script = Instance.new('LocalScript', UNCScriptBTN)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/refs/heads/main/UNCCheckEnv.lua"))()
+	end)
+end
+coroutine.wrap(HJRYVP_script)()
+local function YJBUF_script() -- PINGTitle.LocalScript 
+	local script = Instance.new('LocalScript', PINGTitle)
+
+	local textLabel = script.Parent
+	local statsService = game:GetService("Stats")
+	local runService = game:GetService("RunService")
+	
+	runService.RenderStepped:Connect(function()
+		local ping = statsService.Network.ServerStatsItem["Data Ping"]:GetValue()
+		textLabel.Text = "Current PING : " .. math.floor(ping) .. " ms"
+	end)
+end
+coroutine.wrap(YJBUF_script)()
+local function MHVD_script() -- BackgroundFrame.LocalScript 
+	local script = Instance.new('LocalScript', BackgroundFrame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(MHVD_script)()
