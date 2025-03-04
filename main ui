@@ -773,7 +773,7 @@ ImageButton.Image = "rbxassetid://72310455670962"
 
 -- Scripts:
 
-local function JTHNTVM_script() -- TextBox.LocalScript 
+local function GEIPR_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local textBox = script.Parent
@@ -850,7 +850,7 @@ local function JTHNTVM_script() -- TextBox.LocalScript
 					--Properties:
 	
 					Results.Name = "Results"
-					Results.Parent = game.StarterGui.Hybrid.BackgroundFrame.TabsFrame.CloudFrame.ScrollingFrame
+					Results.Parent = script.Parent.Parent.ScrollingFrame
 					Results.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 					Results.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Results.BorderSizePixel = 0
@@ -978,8 +978,8 @@ local function JTHNTVM_script() -- TextBox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JTHNTVM_script)()
-local function WFDMFL_script() -- Execute.LocalScript 
+coroutine.wrap(GEIPR_script)()
+local function CEKDHUQ_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local button = script.Parent
@@ -989,8 +989,8 @@ local function WFDMFL_script() -- Execute.LocalScript
 		loadstring(textbox.Text)()
 	end)
 end
-coroutine.wrap(WFDMFL_script)()
-local function GJAXDKE_script() -- Clear.LocalScript 
+coroutine.wrap(CEKDHUQ_script)()
+local function SSOJNL_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local button = script.Parent
@@ -1000,8 +1000,8 @@ local function GJAXDKE_script() -- Clear.LocalScript
 		textbox.Text = ""
 	end)
 end
-coroutine.wrap(GJAXDKE_script)()
-local function QUDJUE_script() -- Copy.LocalScript 
+coroutine.wrap(SSOJNL_script)()
+local function GEYSQOU_script() -- Copy.LocalScript 
 	local script = Instance.new('LocalScript', Copy)
 
 	local button = script.Parent
@@ -1011,19 +1011,19 @@ local function QUDJUE_script() -- Copy.LocalScript
 		setclipboard(textbox.Text)
 	end)
 end
-coroutine.wrap(QUDJUE_script)()
-local function SKJX_script() -- Paste.LocalScript 
+coroutine.wrap(GEYSQOU_script)()
+local function UCPILU_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	local button = script.Parent
 	local textbox = script.Parent.Parent.Parent.TextBox
 	
 	button.MouseButton1Click:Connect(function()
-		textbox.Textext = getclipboard()
+		textbox.Text = getclipboard()
 	end)
 end
-coroutine.wrap(SKJX_script)()
-local function CQKC_script() -- FPSTitle.LocalScript 
+coroutine.wrap(UCPILU_script)()
+local function LIVTGAH_script() -- FPSTitle.LocalScript 
 	local script = Instance.new('LocalScript', FPSTitle)
 
 	local textLabel = script.Parent
@@ -1041,8 +1041,8 @@ local function CQKC_script() -- FPSTitle.LocalScript
 	end)
 	
 end
-coroutine.wrap(CQKC_script)()
-local function FIFDODN_script() -- InfYieldBTN.LocalScript 
+coroutine.wrap(LIVTGAH_script)()
+local function PPCYWHH_script() -- InfYieldBTN.LocalScript 
 	local script = Instance.new('LocalScript', InfYieldBTN)
 
 	local button = script.Parent
@@ -1051,8 +1051,8 @@ local function FIFDODN_script() -- InfYieldBTN.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(FIFDODN_script)()
-local function DSDQAN_script() -- UNCScriptBTN.LocalScript 
+coroutine.wrap(PPCYWHH_script)()
+local function RCTNB_script() -- UNCScriptBTN.LocalScript 
 	local script = Instance.new('LocalScript', UNCScriptBTN)
 
 	local button = script.Parent
@@ -1061,8 +1061,8 @@ local function DSDQAN_script() -- UNCScriptBTN.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/refs/heads/main/UNCCheckEnv.lua"))()
 	end)
 end
-coroutine.wrap(DSDQAN_script)()
-local function JPAYZX_script() -- DexBTN.LocalScript 
+coroutine.wrap(RCTNB_script)()
+local function NIXLMB_script() -- DexBTN.LocalScript 
 	local script = Instance.new('LocalScript', DexBTN)
 
 	local button = script.Parent
@@ -1070,8 +1070,8 @@ local function JPAYZX_script() -- DexBTN.LocalScript
 		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 	end)
 end
-coroutine.wrap(JPAYZX_script)()
-local function JWAQ_script() -- PINGTitle.LocalScript 
+coroutine.wrap(NIXLMB_script)()
+local function JPUOQV_script() -- PINGTitle.LocalScript 
 	local script = Instance.new('LocalScript', PINGTitle)
 
 	local textLabel = script.Parent
@@ -1083,8 +1083,8 @@ local function JWAQ_script() -- PINGTitle.LocalScript
 		textLabel.Text = "Current PING : " .. math.floor(ping) .. " ms"
 	end)
 end
-coroutine.wrap(JWAQ_script)()
-local function GJBHKBI_script() -- BackgroundFrame.LocalScript 
+coroutine.wrap(JPUOQV_script)()
+local function OXGHHQ_script() -- BackgroundFrame.LocalScript 
 	local script = Instance.new('LocalScript', BackgroundFrame)
 
 	local UIS = game:GetService('UserInputService')
@@ -1122,4 +1122,4 @@ local function GJBHKBI_script() -- BackgroundFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GJBHKBI_script)()
+coroutine.wrap(OXGHHQ_script)()
