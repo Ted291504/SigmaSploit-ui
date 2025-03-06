@@ -734,7 +734,7 @@ EditorImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 EditorImage.BorderSizePixel = 0
 EditorImage.Position = UDim2.new(0.052906, 0, 0.15625, 0)
 EditorImage.Size = UDim2.new(0, 20, 0, 21)
-EditorImage.Image = "rbxassetid://714884335205"
+EditorImage.Image = "rbxassetid://71488984335205"
 
 EditorButton.Name = "EditorButton"
 EditorButton.Parent = EditorIconFrame
