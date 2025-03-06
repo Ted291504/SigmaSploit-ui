@@ -805,6 +805,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.4646344, 0, 0.0334261842, 0)
 ImageButton.Size = UDim2.new(0, 55, 0, 55)
 ImageButton.Image = "rbxassetid://72310455670962"
+ImageButton.Visible = false
 
 -- Scripts:
 
